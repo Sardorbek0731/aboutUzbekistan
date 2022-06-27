@@ -1,0 +1,82 @@
+html {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 90px;
+  align-items: center;
+  background-color: rgb(255, 255, 255, 0.5);
+  backdrop-filter: blur(20px);
+}
+.navUl {
+  display: flex;
+  justify-content: center;
+}
+.brand img {
+  width: 200px;
+  height: 250px;
+}
+.nav__item {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-transform: uppercase;
+  height: 90px;
+}
+.nav__item:hover {
+  background-color: rgba(56, 56, 56, 0.099);
+}
+.nav__item a {
+  color: rgba(0, 0, 0, 0.457);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  transition: all 0.5s ease;
+  padding: 0 20px;
+}
+.nav__item a:hover {
+  color: black;
+}
+.pages__section {
+  display: none;
+  padding: 0;
+  flex-flow: column;
+  width: 180px;
+  box-shadow: 0 0 20px #797979;
+  position: absolute;
+  top: 90px;
+  left: 0;
+  background-color: white;
+}
+.pages__link {
+  position: relative;
+}
+.pages__link:hover .pages__section {
+  display: flex;
+}
+.pages__link__item {
+  margin: 0;
+}
+.pages__section .nav__item {
+  margin-bottom: 15px;
+}
+
+/*  HOME  */
+.home {
+  width: 100%;
+  height: 100vh;
+  background: url(./image/home.bg.jpg) no-repeat fixed center;
+  background-size: cover;
+}
