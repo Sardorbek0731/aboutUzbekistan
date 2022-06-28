@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Ubuntu:ital,wght@1,700&family=Yellowtail&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Quicksand:wght@300&family=Ubuntu:ital,wght@1,700&family=Yellowtail&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -8,10 +8,17 @@ html {
   padding: 0;
   margin: 0;
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 body {
   padding: 0;
   margin: 0;
+}
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.585);
 }
 
 /*  NAV  */
@@ -25,7 +32,9 @@ nav {
   height: 90px;
   align-items: center;
   background-color: rgb(255, 255, 255, 0.5);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
+  transform: perspective(0) rotateX(0) rotateY(0);
+  z-index: 10;
 }
 .navUl {
   display: flex;
@@ -72,8 +81,9 @@ nav {
   box-shadow: 0 0 40px rgba(108, 112, 132, 0.52);
   position: absolute;
   top: 90px;
-  left: 0;
+  left: -25px;
   background-color: white;
+  border-radius: 10px;
 }
 .pages__link {
   position: relative;
@@ -81,8 +91,28 @@ nav {
 .pages__link:hover .pages__section {
   display: flex;
 }
-.pages__link__item {
-  margin-right: 0;
+.nav__item_pages {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-transform: uppercase;
+  height: 90px;
+  border-radius: 10px;
+}
+.nav__item_pages:hover {
+  background-color: rgba(0, 115, 255, 0.099);
+}
+.nav__item_pages a {
+  color: rgba(0, 0, 0, 0.457);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.1rem;
+  transition: all 0.5s ease;
+  padding: 0 20px;
+}
+.nav__item_pages a:hover {
+  color: black;
 }
 
 /*  HOME  */
@@ -153,29 +183,71 @@ nav {
 }
 .home__bg img {
   width: 40rem;
-  box-shadow: 0 0 40px rgba(150, 154, 175, 0.712);
+  box-shadow: 0 0 20px rgba(150, 154, 175, 0.712);
 }
 @keyframes animate__home__bg {
   0% {
   }
   25% {
-    will-change: transform;
-    transition: all 800ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s;
-    transform: perspective(1000px) rotateX(15deg) rotateY(-15deg) scale3d(1, 1, 1);
+    transform: perspective(1000px) rotateX(15deg) rotateY(-15deg);
   }
   50% {
-    will-change: transform;
-    transition: all 800ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s;
-    transform: perspective(1000px) rotateX(15deg) rotateY(15deg) scale3d(1, 1, 1);
+    transform: perspective(1000px) rotateX(15deg) rotateY(15deg);
   }
   75% {
-    will-change: transform;
-    transition: all 800ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s;
-    transform: perspective(1000px) rotateX(-15deg) rotateY(15deg) scale3d(1, 1, 1);
+    transform: perspective(1000px) rotateX(-15deg) rotateY(20deg);
   }
   100% {
-    will-change: transform;
-    transition: all 800ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s;
-    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
   }
+}
+
+/*  REGION  */
+.region {
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.region_title h1 {
+  margin-bottom: 100px;
+  font-size: 3.1rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.507);
+  font-weight: 300;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  position: relative;
+}
+.region_title h1:hover {
+  transform: translateY(-5px);
+}
+.region_title h1::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.507);
+  width: 50%;
+  bottom: -10px;
+  height: 2px;
+  left: 25%;
+}
+.firstRow_region, .secondRow_region, .threeRow_region, .fourRow_region {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.fourRow_region {
+  margin-bottom: 0;
+}
+.regionFirst_img, .regionSecond_img {
+  margin-right: 50px;
+}
+.regionFirst_img img, .regionSecond_img img, .regionThree_img img {
+  width: 25rem;
+}
+.regionFirst_img img:hover,
+.regionSecond_img img:hover,
+.regionThree_img img:hover {
+  transform: scale(1.1);
 }
