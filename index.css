@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Ubuntu:ital,wght@1,700&family=Yellowtail&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Quicksand:wght@300&family=Ubuntu:ital,wght@1,700&family=Yellowtail&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Quicksand:wght@300&family=Ubuntu:ital,wght@1,700&family=Yellowtail&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -81,7 +81,7 @@ nav {
   box-shadow: 0 0 40px rgba(108, 112, 132, 0.52);
   position: absolute;
   top: 90px;
-  left: -25px;
+  left: -5px;
   background-color: white;
   border-radius: 10px;
 }
@@ -195,7 +195,7 @@ nav {
     transform: perspective(1000px) rotateX(15deg) rotateY(15deg);
   }
   75% {
-    transform: perspective(1000px) rotateX(-15deg) rotateY(20deg);
+    transform: perspective(1000px) rotateX(-15deg) rotateY(15deg);
   }
   100% {
     transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
@@ -216,7 +216,7 @@ nav {
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.507);
   font-weight: 300;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   position: relative;
 }
 .region_title h1:hover {
@@ -231,7 +231,10 @@ nav {
   height: 2px;
   left: 25%;
 }
-.firstRow_region, .secondRow_region, .threeRow_region, .fourRow_region {
+.firstRow_region,
+.secondRow_region,
+.threeRow_region,
+.fourRow_region {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -240,14 +243,87 @@ nav {
 .fourRow_region {
   margin-bottom: 0;
 }
-.regionFirst_img, .regionSecond_img {
+.regionFirst_img,
+.regionSecond_img,
+.regionFour_img,
+.regionFive_img,
+.regionSeven_img,
+.regionEight_img,
+.regionTen_img,
+.regionEleven_img {
   margin-right: 50px;
 }
-.regionFirst_img img, .regionSecond_img img, .regionThree_img img {
+.regionItem_img {
   width: 25rem;
+  height: 17rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(40, 40, 83, 0.729);
+  transition: all 1s ease;
 }
-.regionFirst_img img:hover,
-.regionSecond_img img:hover,
-.regionThree_img img:hover {
-  transform: scale(1.1);
+.regionItem_img img {
+  width: 100%;
+  height: 100%;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: all 1s ease;
+}
+.regionItem_img:hover .overlay {
+  background-color: rgb(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+.overlay__item {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.overlayItem__title {
+  text-transform: uppercase;
+  position: absolute;
+  bottom: -50%;
+  left: 20px;
+  transition: all 1s ease;
+  color: white;
+  font-size: 1.7rem;
+  font-weight: 300;
+  font-family: "Audiowide", cursive;
+}
+.learning a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: uppercase;
+}
+.learning svg {
+  transition: all 0.5s ease;
+  margin-left: 0;
+}
+.learning {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -50%;
+  left: 20px;
+  transition: all 2.5s ease;
+}
+.learning:hover svg {
+  margin-left: 10px;
+}
+.regionItem_img:hover .overlay__item {
+  display: flex;
+}
+.overlay__item:hover .overlayItem__title {
+  bottom: 80px;
+}
+.overlay__item:hover .learning {
+  bottom: 30px;
 }
