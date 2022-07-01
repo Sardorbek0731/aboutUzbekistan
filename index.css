@@ -46,6 +46,7 @@ body {
 }
 
 /*  NAV  */
+
 nav {
   position: fixed;
   top: 0;
@@ -146,6 +147,7 @@ nav {
 }
 
 /*  HOME  */
+
 .angle__down {
   position: absolute;
   bottom: 25px;
@@ -233,6 +235,7 @@ nav {
 }
 
 /*  REGION  */
+
 .region {
   padding: 100px 0;
   display: flex;
@@ -366,4 +369,75 @@ nav {
 .overlay__item:hover .learning {
   bottom: 20px;
   transition: all 1s ease;
+}
+
+/*  CULTURE  */
+
+.culture {
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.culture_title h1 {
+  margin-bottom: 100px;
+  font-size: 3.1rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.507);
+  font-weight: 300;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  position: relative;
+}
+.culture_title h1:hover {
+  transform: translateY(-5px);
+}
+.culture_title h1::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.507);
+  width: 50%;
+  bottom: -10px;
+  height: 2px;
+  left: 25%;
+}
+.sumalak {
+  padding-left: 60px;
+  margin-bottom: 70px;
+}
+.clothes {
+  padding-left: 0;
+  padding-right: 60px;
+  margin-bottom: 70px;
+}
+.food {
+  padding-left: 60px;
+}
+.culture_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 76rem;
+  height: 25rem;
+  box-shadow: 0 0 40px rgba(121, 121, 190, 0.396);
+}
+.sumalak_p p,
+.clothes_p p,
+.food_p p {
+  font-size: 1.2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgba(0, 0, 0, 0.482);
+  line-height: 30px;
+}
+.sumalak_img,
+.clothes_img,
+.food_img {
+  display: flex;
+  justify-content: center;
+}
+.sumalak_img img,
+.clothes_img img,
+.food_img img {
+  width: 34rem;
+  height: 25rem;
 }
