@@ -13,12 +13,36 @@ html {
 body {
   padding: 0;
   margin: 0;
+  background-color: white;
 }
 ::-webkit-scrollbar {
   width: 4px;
 }
 ::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0.585);
+}
+
+.angle_top {
+  position: sticky;
+  top: 93vh;
+  left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.7rem;
+  height: 2.7rem;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.459);
+  box-shadow: 0 0 15px rgba(23, 23, 65, 0.555);
+}
+.angle_top:hover svg {
+  transform: rotate(360deg);
+}
+.angle_top svg {
+  width: 1.3rem;
+  color: white;
+  height: 1.3rem;
+  transition: all 1s ease;
 }
 
 /*  NAV  */
@@ -61,7 +85,7 @@ nav {
   height: 90px;
 }
 .nav__item:hover {
-  background-color: rgba(56, 56, 56, 0.099);
+  background-color: rgba(0, 115, 255, 0.099);
 }
 .nav__item a {
   color: rgba(0, 0, 0, 0.457);
@@ -76,20 +100,26 @@ nav {
   color: black;
 }
 .pages__section {
-  display: none;
+  display: flex;
   flex-flow: column;
-  box-shadow: 0 0 40px rgba(108, 112, 132, 0.52);
   position: absolute;
+  opacity: 0;
+  box-shadow: 0 0 15px 0 rgb(68 88 144 / 20%);
   top: 90px;
-  left: -5px;
+  left: -15px;
+  margin-top: 50px;
   background-color: white;
-  border-radius: 10px;
+  visibility: hidden;
+  transition: all 1s ease;
+  border-radius: 20px;
 }
 .pages__link {
   position: relative;
 }
 .pages__link:hover .pages__section {
-  display: flex;
+  opacity: 1;
+  margin-top: 0;
+  visibility: visible;
 }
 .nav__item_pages {
   display: flex;
@@ -97,7 +127,7 @@ nav {
   list-style: none;
   text-transform: uppercase;
   height: 90px;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 .nav__item_pages:hover {
   background-color: rgba(0, 115, 255, 0.099);
@@ -155,7 +185,7 @@ nav {
 }
 .home__brand h1 {
   text-shadow: 0 5px 10px rgba(32, 32, 67, 0.6);
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 300;
   line-height: 50px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -164,7 +194,7 @@ nav {
 .home_brand_about {
   font-family: "Audiowide", cursive;
   color: rgb(0, 0, 118);
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 .home_brand_about {
   color: blue;
@@ -258,12 +288,18 @@ nav {
   height: 17rem;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 0 30px rgba(40, 40, 83, 0.729);
+  box-shadow: 0 0 40px rgba(23, 23, 59, 0.654);
   transition: all 1s ease;
+  border-radius: 15px;
+}
+.regionItem_img:hover img {
+  transform: scale(1.4);
 }
 .regionItem_img img {
   width: 100%;
   height: 100%;
+  border-radius: 15px;
+  transition: all 0.7s ease;
 }
 .overlay {
   position: absolute;
@@ -271,24 +307,26 @@ nav {
   height: 100%;
   left: 0;
   top: 0;
-  transition: all 1s ease;
+  transition: all 3s ease;
 }
 .regionItem_img:hover .overlay {
-  background-color: rgb(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
+  background-color: rgb(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  transition: all 1s ease;
 }
 .overlay__item {
-  display: none;
+  opacity: 0;
   position: absolute;
   width: 100%;
   height: 100%;
+  transition: all 1s ease;
 }
 .overlayItem__title {
   text-transform: uppercase;
   position: absolute;
   bottom: -50%;
   left: 20px;
-  transition: all 1s ease;
+  transition: all 2.5s ease;
   color: white;
   font-size: 1.7rem;
   font-weight: 300;
@@ -313,17 +351,19 @@ nav {
   position: absolute;
   bottom: -50%;
   left: 20px;
-  transition: all 2.5s ease;
+  transition: all 2s ease;
 }
 .learning:hover svg {
   margin-left: 10px;
 }
 .regionItem_img:hover .overlay__item {
-  display: flex;
+  opacity: 1;
 }
 .overlay__item:hover .overlayItem__title {
-  bottom: 80px;
+  bottom: 70px;
+  transition: all 0.5s ease;
 }
 .overlay__item:hover .learning {
-  bottom: 30px;
+  bottom: 20px;
+  transition: all 1s ease;
 }
