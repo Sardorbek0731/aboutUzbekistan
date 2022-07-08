@@ -97,7 +97,8 @@ nav {
   height: 90px;
 }
 .nav__item:hover {
-  background-color: rgba(0, 0, 0, 0.099);
+  background-color: rgba(88, 88, 88, 0.099);
+  border-top: 4px solid rgb(0, 0, 0);
 }
 .nav__item a {
   color: rgba(0, 0, 0, 0.457);
@@ -116,14 +117,13 @@ nav {
   flex-flow: column;
   position: absolute;
   opacity: 0;
-  box-shadow: 0 0 15px 0 rgb(68 88 144 / 20%);
-  top: 90px;
-  left: -15px;
+  box-shadow: 0 0 20px 0 rgb(68 88 144 / 20%);
+  top: 86px;
+  left: 0;
   margin-top: 50px;
   background-color: white;
   visibility: hidden;
-  transition: all 1s ease;
-  border-radius: 20px;
+  transition: all 0.8s ease;
 }
 .pages__link {
   position: relative;
@@ -139,7 +139,6 @@ nav {
   list-style: none;
   text-transform: uppercase;
   height: 90px;
-  border-radius: 20px;
 }
 .nav__item_pages:hover {
   background-color: rgba(0, 115, 255, 0.099);
@@ -188,7 +187,7 @@ nav {
   height: 100vh;
 }
 .home__title {
-  margin-right: 40px;
+  margin-right: 80px;
 }
 .home__brand {
   display: flex;
@@ -226,40 +225,89 @@ nav {
   width: 40rem;
   align-items: center;
   justify-content: center;
-  background: url(../image/home.bg.png) no-repeat;
-  background-size: 40rem 33rem;
   height: 33rem;
+}
+.home__bg svg {
+  position: relative;
+}
+.home__bg svg path {
+  fill: rgb(74, 76, 220);
+  fill-opacity: 1;
+  stroke: rgb(255, 255, 255);
+  stroke-width: 0.493193px;
+  stroke-opacity: 1;
+}
+.home__bg svg .water:hover {
+  fill: blue;
+}
+.home__bg svg .sarvan:hover {
+  fill: black;
+}
+.home__bg svg .andijon:hover {
+  fill: yellow;
+}
+.home__bg svg .buxoro:hover {
+  fill: orange;
+}
+.home__bg svg .fargona:hover {
+  fill: red;
+}
+.home__bg svg .jizzah:hover {
+  fill: pink;
+}
+.home__bg svg .namangan:hover {
+  fill: purple;
+}
+.home__bg svg .navoiy:hover {
+  fill: #67b;
+}
+.home__bg svg .qashqadaryo:hover {
+  fill: aqua;
+}
+.home__bg svg .qoraqolpaqiston:hover {
+  fill: rgba(246, 255, 70, 0.591);
+}
+.home__bg svg .samarqand:hover {
+  fill: chartreuse;
+}
+.home__bg svg .sirdaryo:hover {
+  fill: darksalmon;
+}
+.home__bg svg .surxondaryo:hover {
+  fill: mediumpurple;
+}
+.home__bg svg .tashkent_city:hover {
+  fill: #797979;
+}
+.home__bg svg .tashkent:hover {
+  fill: black;
+}
+.home__bg svg .xorazm:hover {
+  fill: rgb(0, 255, 132);
 }
 
 /*  REGION  */
 
 .region {
-  padding: 100px 0;
+  padding: 150px 0;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
+.region_title {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 130px;
+  padding-bottom: 150px;
+}
 .region_title h1 {
-  margin-bottom: 100px;
-  font-size: 3.1rem;
+  font-size: 3rem;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.507);
+  color: rgb(0, 0, 118);
   font-weight: 300;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  position: relative;
-}
-.region_title h1:hover {
-  transform: translateY(-5px);
-}
-.region_title h1::after {
-  content: "";
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.507);
-  width: 50%;
-  bottom: -10px;
-  height: 2px;
-  left: 25%;
+  font-family: "Audiowide", cursive;
 }
 .firstRow_region,
 .secondRow_region,
@@ -284,7 +332,7 @@ nav {
   margin-right: 50px;
 }
 .regionItem_img {
-  width: 25.1rem;
+  width: 24.5rem;
   height: 17rem;
   position: relative;
   overflow: hidden;
@@ -371,32 +419,25 @@ nav {
 /*  CULTURE  */
 
 .culture {
-  padding: 100px 0;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 150px 0;
+}
+.culture_title {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  padding-right: 130px;
+  padding-bottom: 150px;
 }
 .culture_title h1 {
-  margin-bottom: 100px;
-  font-size: 3.1rem;
+  font-size: 3rem;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.507);
+  color: rgb(0, 0, 118);
   font-weight: 300;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  position: relative;
-}
-.culture_title h1:hover {
-  transform: translateY(-5px);
-}
-.culture_title h1::after {
-  content: "";
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.507);
-  width: 50%;
-  bottom: -10px;
-  height: 2px;
-  left: 25%;
+  font-family: "Audiowide", cursive;
 }
 .sumalak {
   padding-left: 60px;
@@ -419,7 +460,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 82.5rem;
+  width: 79rem;
   height: 25rem;
   box-shadow: 0 0 40px rgba(121, 121, 190, 0.396);
   transition: all 0.5s ease;
@@ -441,32 +482,25 @@ nav {
 
 /* HOTEL */
 .hotel {
-  padding: 100px 0;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 150px 0;
+}
+.hotel_title {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  padding-left: 130px;
+  padding-bottom: 150px;
 }
 .hotel_title h1 {
-  margin-bottom: 100px;
-  font-size: 3.1rem;
+  font-size: 3rem;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.507);
+  color: rgb(0, 0, 118);
   font-weight: 300;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  position: relative;
-}
-.hotel_title h1:hover {
-  transform: translateY(-5px);
-}
-.hotel_title h1::after {
-  content: "";
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.507);
-  width: 50%;
-  bottom: -10px;
-  height: 2px;
-  left: 25%;
+  font-family: "Audiowide", cursive;
 }
 .hotel_img {
   display: flex;
@@ -476,7 +510,7 @@ nav {
 }
 .hotelFirst_img,
 .hotelSecond_img {
-  margin-right: 60px;
+  margin-right: 50px;
 }
 .hotelImg_item {
   display: flex;
@@ -485,7 +519,7 @@ nav {
   box-shadow: 0 0 50px rgb(74, 78, 121, 0.7);
 }
 .hotelImg_item img {
-  width: 25rem;
+  width: 24.5rem;
   height: 18rem;
 }
 .hotelOverlay_img {
@@ -575,7 +609,7 @@ nav {
 .hotel_link {
   position: relative;
   z-index: 0;
-  width: 82.5rem;
+  width: 80rem;
   background: url(../image/hotel/hotel.bg.webp) no-repeat;
   background-size: cover;
   border-radius: 20px;
@@ -586,7 +620,7 @@ nav {
   width: 100%;
   height: 100%;
   border-radius: 20px;
-  background: linear-gradient(110deg, #4274b8 20%, #21448000 70%)
+  background: linear-gradient(110deg, #4274b8 20%, #21448000 70%);
 }
 .hotelLink_brand h1 {
   font-family: "GT Walsheim Pro", sans-serif;
@@ -606,21 +640,24 @@ nav {
 .hotelLink_item {
   display: flex;
   border-radius: 20px;
-  background-color: rgba(255, 255, 255, .1);
+  background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(100px);
-  width: 56rem;
+  width: 58rem;
   height: 11rem;
   margin-left: 40px;
   margin-bottom: 50px;
 }
-.hotelLink_item_first, .hotelLink_item_second, .hotelLink_item_three {
-  width: 16rem;
+.hotelLink_item_first,
+.hotelLink_item_second,
+.hotelLink_item_three {
+  width: 17rem;
   border-radius: 20px;
   padding: 30px 40px;
   transition: all 0.2s linear;
 }
-.hotelLink_item_second, .hotelLink_item_three {
-  width: 20rem;
+.hotelLink_item_second,
+.hotelLink_item_three {
+  width: 21rem;
 }
 .hotelLink_item_first:hover,
 .hotelLink_item_second:hover,
@@ -687,69 +724,23 @@ nav {
 
 /* AIRWAYS */
 .airways {
-  padding: 200px 0;
+  padding: 150px 0;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+.airways_title {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-right: 130px;
 }
 .airways_title h1 {
-  margin-bottom: 100px;
-  font-size: 3.1rem;
+  padding-bottom: 150px;
+  font-size: 3rem;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.507);
+  color: rgb(0, 0, 118);
   font-weight: 300;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  position: relative;
-}
-.airways_title h1:hover {
-  transform: translateY(-5px);
-}
-.airways_title h1::after {
-  content: "";
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.507);
-  width: 50%;
-  bottom: -10px;
-  height: 2px;
-  left: 25%;
-}
-.airways_bg {
-  position: relative;
-}
-.airways_bg img {
-  width: 82.5rem;
-  height: 40rem;
-}
-.ticket {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(20px);
-  box-shadow: 0 0 30px rgba(80, 80, 116, 0.555);
-  left: 50px;
-  right: 50px;
-  bottom: -30%;
-  height: 25rem;
-}
-.ticket_title {
-  margin-bottom: 70px;
-}
-.ticket_title h1 {
-  color: white;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: 300;
-  font-size: 2rem;
-  text-transform: uppercase;
-  text-shadow: 10px 10px 30px blue;
-}
-.ticket_order {
-  border-radius: 20px;
-  background-color: white;
-  width: 70rem;
-  height: 10rem;
-  box-shadow: 0 0 30px rgba(143, 143, 197, 0.571);
+  font-family: "Audiowide", cursive;
 }
