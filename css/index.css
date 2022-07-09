@@ -425,6 +425,16 @@ nav {
   justify-content: center;
   flex-direction: column;
   padding: 150px 0;
+  position: relative;
+}
+.cultureBg_color {
+  position: absolute;
+  width: 100%;
+  background-color: #f9f6eed3;
+  height: 550px;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 .culture_title {
   display: flex;
@@ -451,11 +461,6 @@ nav {
 }
 .food {
   padding-left: 60px;
-  margin-bottom: 70px;
-}
-.history {
-  padding-left: 0;
-  padding-right: 60px;
 }
 .culture_item {
   display: flex;
@@ -465,6 +470,7 @@ nav {
   height: 25rem;
   box-shadow: 0 0 40px rgba(121, 121, 190, 0.396);
   transition: all 0.5s ease;
+  background-color: white;
 }
 .cultureItem_p p {
   font-size: 1.2rem;
@@ -685,21 +691,21 @@ nav {
   color: rgba(255, 255, 255, 0.5);
 }
 
-/* AIRWAYS */
-.airways {
+/* FOOTER */
+.footer {
   padding: 150px 0;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-.airways_title {
+.footer_title {
   display: flex;
   justify-content: flex-end;
   width: 100%;
   padding-right: 130px;
 }
-.airways_title h1 {
+.footer_title h1 {
   padding-bottom: 150px;
   font-size: 3rem;
   text-transform: uppercase;
