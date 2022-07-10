@@ -85,7 +85,7 @@ nav {
 .brand h1 {
   font-family: "Audiowide", cursive;
   color: rgb(0, 0, 118);
-  font-size: 30px;
+  font-size: 2.2rem;
 }
 .brand span {
   color: blue;
@@ -698,6 +698,13 @@ nav {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background: url(../image/contact/about-bg.jpg) no-repeat;
+  background-size: cover;
+}
+.footer_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .footer_title {
   display: flex;
@@ -712,4 +719,223 @@ nav {
   color: rgb(0, 0, 118);
   font-weight: 300;
   font-family: "Audiowide", cursive;
+}
+.form {
+  margin-right: 85px;
+}
+.form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 30px rgba(68, 68, 107, 0.3);
+  padding: 90px 70px;
+  background-color: white;
+}
+.firstName,
+.email,
+.password {
+  position: relative;
+  margin-bottom: 35px;
+}
+form .contact_item input {
+  position: relative;
+  border-radius: 0;
+  width: 13.5rem;
+  border-left: 1px solid rgba(0, 0, 0, 0.491);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.491);
+  border-right: 1px solid rgba(0, 0, 0, 0.491);
+  border-top: 0;
+  height: 2.5rem;
+  padding: 0 13px;
+  outline: none;
+  transition: all 0.5s linear;
+}
+form .password {
+  margin-bottom: 50px;
+}
+.form .contact_item label {
+  position: absolute;
+  left: 0.8rem;
+  top: 0.5rem;
+  z-index: 1;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgba(0, 0, 0, 0.491);
+  transition: all 0.5s linear;
+}
+form .contact_item input:focus {
+  border-radius: 10px;
+  border-left: 1px solid red;
+  border-bottom: 1px solid red;
+  border-right: 1px solid red;
+}
+form .contact_item input:valid {
+  border-radius: 30px;
+  border-left: 1px solid rgb(0, 167, 172);
+  border-bottom: 1px solid rgb(0, 167, 172);
+  border-right: 1px solid rgb(0, 167, 172);
+}
+form .contact_item input:focus ~ label {
+  margin-top: -0.9rem;
+  font-size: 0.8rem;
+  color: red;
+  margin-left: 0.3rem;
+}
+form .contact_item input:valid ~ label {
+  font-size: 0.8rem;
+  margin-top: -0.9rem;
+  margin-left: 0.8rem;
+  color: rgb(0, 167, 172);
+}
+form .btn {
+  width: 11rem;
+  height: 3.2rem;
+  border: 1px solid #4274b8;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.491);
+  transition: all 0.5s linear;
+  font-size: 1rem;
+}
+form .btn::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  background-color: #4274b8;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: all 0.5s linear;
+  z-index: -1;
+}
+form .btn:hover::before {
+  width: 11rem;
+  border-radius: 40px;
+}
+form .btn:hover {
+  color: white;
+  border-radius: 40px;
+  border: none;
+}
+
+.contactCard_row {
+  margin-bottom: 85px;
+}
+.contactCard_row,
+.contactCardRow_second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactCard_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 15rem;
+  height: 12rem;
+  box-shadow: 0 0 30px rgba(68, 68, 107, 0.3);
+}
+.contactCard_item i {
+  color: #4274b8;
+  font-size: 1.8rem;
+  border: 1px dashed #4274b8;
+  padding: 15px 15px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.contactCard_item h1 {
+  color: #4274b8;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.contactCard_item a {
+  color: rgba(0, 0, 0, 0.686);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  text-decoration: none;
+}
+.contactCard_item a:hover {
+  color: #4274b8;
+}
+.contactCard_email, .telegram {
+  margin-right: 85px;
+}
+
+.goodbye {
+  background-color: #4274b8;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.website_map {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 150px;
+}
+.website_map h1 {
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.website_map a {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.website_map a:hover {
+  margin-left: 30px;
+}
+.website_map a svg {
+  color: white;
+}
+.contactSecond_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact_brand {
+  margin-bottom: 50px;
+}
+.contact_brand a {
+  text-decoration: none;
+  padding-left: 100px;
+}
+.contact_brand a h1 {
+  font-family: "Audiowide", cursive;
+  color: rgb(0, 0, 118);
+  font-size: 2.7rem;
+}
+.contact_brand a span {
+  color: blue;
+}
+
+.website_admin h1 {
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 3rem;
+  font-weight: 300;
+  margin-left: 20px;
+}
+.website_admin h3 {
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 10px;
 }
