@@ -698,7 +698,7 @@ nav {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: url(../image/contact/about-bg.jpg) no-repeat;
+  background: url(../image/contact/contactBg1.webp) no-repeat;
   background-size: cover;
 }
 .footer_item {
@@ -730,7 +730,7 @@ nav {
   justify-content: center;
   box-shadow: 0 0 30px rgba(68, 68, 107, 0.3);
   padding: 90px 70px;
-  background-color: white;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.51) 10%, #fff 80%);
 }
 .firstName,
 .email,
