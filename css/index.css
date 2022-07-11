@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 0;
 }
 html {
   padding: 0;
@@ -730,7 +731,7 @@ nav {
   justify-content: center;
   box-shadow: 0 0 30px rgba(68, 68, 107, 0.3);
   padding: 90px 70px;
-  background: linear-gradient(to top, rgba(255, 255, 255, 0.51) 10%, #fff 80%);
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.386) 30%, #fff 60%);
 }
 .firstName,
 .email,
@@ -742,14 +743,13 @@ form .contact_item input {
   position: relative;
   border-radius: 0;
   width: 13.5rem;
-  border-left: 1px solid rgba(0, 0, 0, 0.491);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.491);
-  border-right: 1px solid rgba(0, 0, 0, 0.491);
+  border: 1px solid rgba(0, 0, 0, 0.491);
   border-top: 0;
   height: 2.5rem;
   padding: 0 13px;
   outline: none;
   transition: all 0.5s linear;
+  background-color: transparent;
 }
 form .password {
   margin-bottom: 50px;
@@ -766,25 +766,23 @@ form .password {
 }
 form .contact_item input:focus {
   border-radius: 10px;
-  border-left: 1px solid red;
-  border-bottom: 1px solid red;
-  border-right: 1px solid red;
+  border: 1px solid red;
+  border-top: 0;
 }
 form .contact_item input:valid {
   border-radius: 30px;
-  border-left: 1px solid rgb(0, 167, 172);
-  border-bottom: 1px solid rgb(0, 167, 172);
-  border-right: 1px solid rgb(0, 167, 172);
+  border: 1px solid rgb(0, 167, 172);
+  border-top: 0;
 }
 form .contact_item input:focus ~ label {
-  margin-top: -0.9rem;
+  margin-top: -1rem;
   font-size: 0.8rem;
   color: red;
-  margin-left: 0.3rem;
+  margin-left: 0.1rem;
 }
 form .contact_item input:valid ~ label {
   font-size: 0.8rem;
-  margin-top: -0.9rem;
+  margin-top: -1rem;
   margin-left: 0.8rem;
   color: rgb(0, 167, 172);
 }
@@ -794,8 +792,8 @@ form .btn {
   border: 1px solid #4274b8;
   position: relative;
   z-index: 1;
-  background-color: white;
-  color: rgba(0, 0, 0, 0.491);
+  background-color: rgba(255, 255, 255, 0.713);
+  color: #4274b8;
   transition: all 0.5s linear;
   font-size: 1rem;
 }
@@ -834,7 +832,7 @@ form .btn:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: white;
+  background: linear-gradient(to bottom, #fff 10%,rgba(255, 255, 255, 0.5) 80%);
   width: 15rem;
   height: 12rem;
   box-shadow: 0 0 30px rgba(68, 68, 107, 0.3);
