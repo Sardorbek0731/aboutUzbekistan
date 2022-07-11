@@ -875,39 +875,32 @@ form .btn:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .website_map {
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  margin-right: 150px;
-}
-.website_map h1 {
-  color: white;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-weight: 300;
-  font-size: 2rem;
-  margin-bottom: 20px;
+  align-items: center;
+  margin-bottom: 50px;
 }
 .website_map a {
-  margin-left: 20px;
-  margin-bottom: 20px;
+  margin-top: 0;
+  margin-right: 40px;
   text-decoration: none;
   color: white;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 1.2rem;
   font-weight: 300;
+  transition: all 0.3s linear;
+}
+.website_map a:last-child {
+  margin-right: 0;
 }
 .website_map a:hover {
-  margin-left: 30px;
+  margin-top: -15px;
 }
 .website_map a svg {
   color: white;
-}
-.contactSecond_column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 .contact_brand {
   margin-bottom: 50px;
@@ -931,11 +924,4 @@ form .btn:hover {
   font-size: 3rem;
   font-weight: 300;
   margin-left: 20px;
-}
-.website_admin h3 {
-  color: white;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 1.5rem;
-  font-weight: 300;
-  margin-bottom: 10px;
 }
