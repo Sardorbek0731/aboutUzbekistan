@@ -789,11 +789,11 @@ form .contact_item input:valid ~ label {
 form .btn {
   width: 11rem;
   height: 3.2rem;
-  border: 1px solid #4274b8;
+  border: 1px solid rgb(0, 167, 172);
   position: relative;
   z-index: 1;
   background-color: rgba(255, 255, 255, 0.713);
-  color: #4274b8;
+  color: rgb(0, 167, 172);
   transition: all 0.5s linear;
   font-size: 1rem;
 }
@@ -801,7 +801,7 @@ form .btn::before {
   content: "";
   position: absolute;
   width: 0;
-  background-color: #4274b8;
+  background-color: #5f9dac;
   height: 100%;
   top: 0;
   left: 0;
@@ -838,15 +838,15 @@ form .btn:hover {
   box-shadow: 0 0 30px rgba(68, 68, 107, 0.3);
 }
 .contactCard_item i {
-  color: #4274b8;
+  color: #5f9dac;
   font-size: 1.8rem;
-  border: 1px dashed #4274b8;
+  border: 1px dashed #5f9dac;
   padding: 15px 15px;
   border-radius: 50%;
   margin-bottom: 10px;
 }
 .contactCard_item h1 {
-  color: #4274b8;
+  color: #5f9dac;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 1.5rem;
   font-weight: 300;
@@ -860,7 +860,7 @@ form .btn:hover {
   text-decoration: none;
 }
 .contactCard_item a:hover {
-  color: #4274b8;
+  color: #5f9dac;
 }
 .contactCard_email, .telegram {
   margin-right: 85px;
