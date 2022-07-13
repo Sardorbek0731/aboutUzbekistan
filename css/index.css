@@ -268,25 +268,22 @@ nav {
 }
 .region_about {
   position: absolute;
-  bottom: -25%;
+  bottom: -38%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-}
-.region_carosul {
-  padding: 30px 30px;
-  border-radius: 20px;
-  width: 24rem;
+  padding: 50px 30px;
+  width: 80rem;
   background-color: white;
-  box-shadow: 0 0 40px rgba(109, 109, 160, 0.276);
-  transition: all 0.1s linear;
+  box-shadow: 0 0 40px rgba(109, 109, 160, 0.3);
 }
-.region_carosul:hover {
+.region_about:hover {
   border: 1px solid blue;
-  transform: translateY(-10px);
 }
-.regionAbout_uzbekistan, .regionAbout_qoraqalpaqistan {
-  margin-right: 70px;
+.regionCarosul_hr {
+  width: 1px;
+  height: 15rem;
+  background-color: black;
 }
 .regionCarosul_title,
 .territory,
