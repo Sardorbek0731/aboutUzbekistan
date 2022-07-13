@@ -70,7 +70,7 @@ nav {
   height: 90px;
   align-items: center;
   background-color: rgb(255, 255, 255, 0.5);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(15px);
   transform: perspective(0) rotateX(0) rotateY(0);
   z-index: 10;
 }
@@ -160,27 +160,6 @@ nav {
 
 /*  HOME  */
 
-.angle__down {
-  position: absolute;
-  bottom: 25px;
-}
-.angle__down svg {
-  color: rgb(0, 0, 0);
-  width: 2.8rem;
-  height: 2.8rem;
-  animation: angle__animate 1.5s ease infinite;
-}
-.angle__down svg:hover {
-  animation-play-state: paused;
-}
-@keyframes angle__animate {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(20px);
-  }
-}
 .home {
   display: flex;
   justify-content: center;
@@ -199,7 +178,7 @@ nav {
 }
 .home__brand h1 {
   text-shadow: 0 5px 10px rgba(32, 32, 67, 0.6);
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 300;
   line-height: 50px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -208,7 +187,7 @@ nav {
 .home_brand_about {
   font-family: "Audiowide", cursive;
   color: rgb(0, 0, 118);
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 .home_brand_about {
   color: blue;
@@ -287,10 +266,64 @@ nav {
 .home__bg svg .xorazm:hover {
   fill: rgb(0, 255, 132);
 }
+.region_about {
+  position: absolute;
+  bottom: -25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.region_carosul {
+  padding: 30px 30px;
+  border-radius: 20px;
+  width: 24rem;
+  background-color: white;
+  box-shadow: 0 0 40px rgba(109, 109, 160, 0.276);
+  transition: all 0.1s linear;
+}
+.region_carosul:hover {
+  border: 1px solid blue;
+  transform: translateY(-10px);
+}
+.regionAbout_uzbekistan, .regionAbout_qoraqalpaqistan {
+  margin-right: 70px;
+}
+.regionCarosul_title,
+.territory,
+.population {
+  margin-bottom: 30px;
+}
+.regionCarosul_title h1 {
+  color: rgb(0, 0, 118);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+.territory h1,
+.population h1,
+.gdp h1 {
+  color: #000;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+.territory h3,
+.population h3,
+.gdp h3 {
+  color: #4274b8;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
 
 /*  REGION  */
 
 .region {
+  margin-top: 300px;
   padding: 150px 0;
   display: flex;
   align-items: center;
@@ -426,16 +459,6 @@ nav {
   justify-content: center;
   flex-direction: column;
   padding: 150px 0;
-  position: relative;
-}
-.cultureBg_color {
-  position: absolute;
-  width: 100%;
-  background-color: #f9f6eed3;
-  height: 550px;
-  top: 0;
-  left: 0;
-  z-index: -1;
 }
 .culture_title {
   display: flex;
@@ -748,7 +771,7 @@ form .contact_item input {
   height: 2.5rem;
   padding: 0 13px;
   outline: none;
-  transition: all 0.5s linear;
+  transition: all 0.2s linear;
   background-color: transparent;
 }
 form .password {
@@ -762,7 +785,7 @@ form .password {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   color: rgba(0, 0, 0, 0.491);
-  transition: all 0.5s linear;
+  transition: all 0.2s linear;
 }
 form .contact_item input:focus {
   border-radius: 10px;
@@ -771,7 +794,7 @@ form .contact_item input:focus {
 }
 form .contact_item input:valid {
   border-radius: 30px;
-  border: 1px solid rgb(0, 167, 172);
+  border: 1px solid #4c8897;
   border-top: 0;
 }
 form .contact_item input:focus ~ label {
@@ -784,24 +807,25 @@ form .contact_item input:valid ~ label {
   font-size: 0.8rem;
   margin-top: -1rem;
   margin-left: 0.8rem;
-  color: rgb(0, 167, 172);
+  color: #4c8897;
 }
 form .btn {
   width: 11rem;
   height: 3.2rem;
-  border: 1px solid rgb(0, 167, 172);
+  border: 1px solid #6ca0b1;
   position: relative;
   z-index: 1;
   background-color: rgba(255, 255, 255, 0.713);
-  color: rgb(0, 167, 172);
+  color: #6ca0b1;
   transition: all 0.5s linear;
   font-size: 1rem;
+  cursor: pointer;
 }
 form .btn::before {
   content: "";
   position: absolute;
   width: 0;
-  background-color: #5f9dac;
+  background-color: #6ca0b1;
   height: 100%;
   top: 0;
   left: 0;
@@ -832,37 +856,55 @@ form .btn:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to bottom, #fff 10%,rgba(255, 255, 255, 0.5) 80%);
+  background: linear-gradient(
+    to bottom,
+    #fff 10%,
+    rgba(255, 255, 255, 0.5) 80%
+  );
   width: 15rem;
   height: 12rem;
   box-shadow: 0 0 30px rgba(68, 68, 107, 0.3);
 }
 .contactCard_item i {
-  color: #5f9dac;
-  font-size: 1.8rem;
-  border: 1px dashed #5f9dac;
-  padding: 15px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.45rem;
+  height: 3.45rem;
+  color: #4c8897;
+  font-size: 1.5rem;
+  border: 1px dashed #4c8897;
   border-radius: 50%;
   margin-bottom: 10px;
+  transition: all 0.3s linear;
+}
+.contactCard_item:hover i {
+  color: white;
+  border: 0;
+  background-color: #6ca0b1;
+  box-shadow: 0 0 0 6px #6ca0b16f;
 }
 .contactCard_item h1 {
-  color: #5f9dac;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #4c8897;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-size: 1.5rem;
   font-weight: 300;
   margin-bottom: 20px;
 }
 .contactCard_item a {
   color: rgba(0, 0, 0, 0.686);
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-size: 1rem;
   font-weight: 300;
   text-decoration: none;
 }
 .contactCard_item a:hover {
-  color: #5f9dac;
+  color: #4c8897;
 }
-.contactCard_email, .telegram {
+.contactCard_email,
+.telegram {
   margin-right: 85px;
 }
 
@@ -886,7 +928,8 @@ form .btn:hover {
   margin-right: 40px;
   text-decoration: none;
   color: white;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-size: 1.2rem;
   font-weight: 300;
   transition: all 0.3s linear;
@@ -918,7 +961,8 @@ form .btn:hover {
 
 .website_admin h1 {
   color: white;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-size: 3rem;
   font-weight: 300;
   margin-left: 20px;
