@@ -97,10 +97,27 @@ nav {
   list-style: none;
   text-transform: uppercase;
   height: 90px;
+  position: relative;
+  margin-right: 10px;
 }
-.nav__item:hover {
-  background-color: rgba(88, 88, 88, 0.099);
-  border-top: 4px solid rgb(0, 0, 0);
+.nav__item:last-child {
+  margin-right: 0;
+}
+.nav__item::before {
+  content: "";
+  width: 0;
+  left: 50%;
+  height: 5px;
+  top: 0;
+  background-color: #000;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: absolute;
+  transition: all 0.3s linear;
+}
+.nav__item:hover::before {
+  width: 100%;
+  left: 0;
 }
 .nav__item a {
   color: rgba(0, 0, 0, 0.457);
@@ -109,7 +126,7 @@ nav {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1.1rem;
   transition: all 0.5s ease;
-  padding: 0 20px;
+  padding: 0 13px;
 }
 .nav__item a:hover {
   color: black;
@@ -119,13 +136,18 @@ nav {
   flex-flow: column;
   position: absolute;
   opacity: 0;
-  box-shadow: 0 0 20px 0 rgb(68 88 144 / 20%);
-  top: 86px;
+  width: 14rem;
+  box-shadow: 0 0 20px rgba(76, 83, 102, 0.206);
+  top: 90px;
   left: 0;
   margin-top: 50px;
   background-color: white;
   visibility: hidden;
   transition: all 0.8s ease;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border: 1px solid black;
 }
 .pages__link {
   position: relative;
@@ -142,9 +164,6 @@ nav {
   text-transform: uppercase;
   height: 90px;
 }
-.nav__item_pages:hover {
-  background-color: rgba(0, 115, 255, 0.099);
-}
 .nav__item_pages a {
   color: rgba(0, 0, 0, 0.457);
   text-transform: uppercase;
@@ -155,7 +174,7 @@ nav {
   padding: 0 20px;
 }
 .nav__item_pages a:hover {
-  color: black;
+  color: #4274b8;
 }
 
 /*  HOME  */
@@ -275,10 +294,10 @@ nav {
   padding: 50px 30px;
   width: 80rem;
   background-color: white;
-  box-shadow: 0 0 40px rgba(109, 109, 160, 0.3);
+  box-shadow: 0 0 50px rgba(109, 109, 160, 0.2);
 }
 .region_about:hover {
-  border: 1px solid blue;
+  border: 1px solid black;
 }
 .regionCarosul_hr {
   width: 1px;
@@ -368,9 +387,12 @@ nav {
   height: 17rem;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 0 40px rgba(23, 23, 59, 0.654);
+  box-shadow: 0 0 20px rgba(77, 77, 103, 0.3);
   transition: all 1s ease;
   border-radius: 10px;
+}
+.regionItem_img:hover {
+  box-shadow: 0 20px 40px rgba(94, 94, 137, 0.6);
 }
 .regionItem_img:hover img {
   transform: scale(1.5);
@@ -448,6 +470,94 @@ nav {
   transition: all 1s ease;
 }
 
+/* SYMBOL */
+
+.symbol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 150px 0;
+}
+.symbol_title {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  padding-right: 130px;
+  padding-bottom: 150px;
+}
+.symbol_title h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: rgb(0, 0, 118);
+  font-weight: 300;
+  font-family: "Audiowide", cursive;
+}
+.symbolItem_gerb {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 0 30px rgba(97, 97, 123, 0.451);
+  padding: 30px 30px;
+  position: relative;
+  min-height: 35rem;
+  width: 32rem;
+  z-index: 0;
+}
+.symbolItemGerb_img {
+  position: absolute;
+  top: 2%;
+}
+.symbolItemGerb_img img {
+  width: 27rem;
+  margin-bottom: 20px;
+}
+.symbolItemGerb_title {
+  position: absolute;
+  bottom: 2%;
+  z-index: 2;
+  transition: all 0.3s linear;
+}
+.symbolItemGerb_title h1 {
+  text-align: center;
+  color: #67adbe;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 300;
+}
+.symbolItem_gerb:hover .symbolItemGerb_title {
+  bottom: 80%;
+}
+.symbolItemGerb_overlay {
+  position: absolute;
+  bottom: -100%;
+  z-index: 2;
+  transition: all 0.3s linear;
+}
+.symbolItemGerb_overlay_bg {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  left: 0;
+  top: 0;
+  z-index: 1;
+  transition: all 0.3s linear;
+}
+.symbolItem_gerb:hover .symbolItemGerb_overlay_bg {
+  opacity: 1;
+}
+.symbolItemGerb_overlay p {
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 350;
+}
+.symbolItem_gerb:hover .symbolItemGerb_overlay {
+  bottom: 10%;
+}
+
 /*  CULTURE  */
 
 .culture {
@@ -460,8 +570,8 @@ nav {
 .culture_title {
   display: flex;
   width: 100%;
-  justify-content: flex-end;
-  padding-right: 130px;
+  justify-content: flex-start;
+  padding-left: 130px;
   padding-bottom: 150px;
 }
 .culture_title h1 {
@@ -518,9 +628,9 @@ nav {
 }
 .hotel_title {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   width: 100%;
-  padding-left: 130px;
+  padding-right: 130px;
   padding-bottom: 150px;
 }
 .hotel_title h1 {
@@ -729,9 +839,9 @@ nav {
 }
 .footer_title {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   width: 100%;
-  padding-right: 130px;
+  padding-left: 130px;
 }
 .footer_title h1 {
   padding-bottom: 150px;
@@ -918,7 +1028,7 @@ form .btn:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 .website_map a {
   margin-top: 0;
@@ -941,7 +1051,7 @@ form .btn:hover {
   color: white;
 }
 .contact_brand {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 .contact_brand a {
   text-decoration: none;
