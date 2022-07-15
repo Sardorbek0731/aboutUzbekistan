@@ -498,7 +498,8 @@ nav {
   align-items: center;
   justify-content: center;
 }
-.symbolItem_gerb, .symbolItem_flag {
+.symbolItem_gerb,
+.symbolItem_flag {
   margin-right: 50px;
 }
 .symbol_item {
@@ -515,7 +516,7 @@ nav {
   overflow: hidden;
 }
 .symbolItemGerb_img,
-.symbolItemFlag_img, 
+.symbolItemFlag_img,
 .symbolItemArt_img {
   position: absolute;
   margin-bottom: 120px;
@@ -529,7 +530,7 @@ nav {
   width: 20rem;
 }
 .symbolItemGerb_title,
-.symbolItemFlag_title, 
+.symbolItemFlag_title,
 .symbolItemArt_title {
   position: absolute;
   bottom: 4%;
@@ -537,7 +538,7 @@ nav {
   transition: all 0.4s linear;
 }
 .symbolItemGerb_title h1,
-.symbolItemFlag_title h1, 
+.symbolItemFlag_title h1,
 .symbolItemArt_title h1 {
   text-align: center;
   color: #67adbe;
