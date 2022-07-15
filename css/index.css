@@ -107,7 +107,7 @@ nav {
   content: "";
   width: 0;
   left: 50%;
-  height: 5px;
+  height: 3px;
   top: 0;
   background-color: #000;
   border-bottom-left-radius: 20px;
@@ -493,69 +493,95 @@ nav {
   font-weight: 300;
   font-family: "Audiowide", cursive;
 }
-.symbolItem_gerb {
+.symbol_div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.symbolItem_gerb, .symbolItem_flag {
+  margin-right: 50px;
+}
+.symbol_item {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   background-color: white;
   box-shadow: 0 0 30px rgba(97, 97, 123, 0.451);
-  padding: 30px 30px;
   position: relative;
-  min-height: 35rem;
-  width: 32rem;
+  min-height: 650px;
+  width: 24rem;
   z-index: 0;
+  overflow: hidden;
 }
-.symbolItemGerb_img {
+.symbolItemGerb_img,
+.symbolItemFlag_img, 
+.symbolItemArt_img {
   position: absolute;
-  top: 2%;
+  margin-bottom: 120px;
 }
-.symbolItemGerb_img img {
-  width: 27rem;
-  margin-bottom: 20px;
+.symbolItemFlag_img img {
+  height: 17rem;
 }
-.symbolItemGerb_title {
+.symbolItemGerb_img img,
+.symbolItemFlag_img img,
+.symbolItemArt_img img {
+  width: 20rem;
+}
+.symbolItemGerb_title,
+.symbolItemFlag_title, 
+.symbolItemArt_title {
   position: absolute;
-  bottom: 2%;
+  bottom: 4%;
   z-index: 2;
-  transition: all 0.3s linear;
+  transition: all 0.4s linear;
 }
-.symbolItemGerb_title h1 {
+.symbolItemGerb_title h1,
+.symbolItemFlag_title h1, 
+.symbolItemArt_title h1 {
   text-align: center;
   color: #67adbe;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-weight: 300;
 }
-.symbolItem_gerb:hover .symbolItemGerb_title {
-  bottom: 80%;
+.symbol_item:hover .symbolItemGerb_title,
+.symbol_item:hover .symbolItemFlag_title,
+.symbol_item:hover .symbolItemArt_title {
+  bottom: 85%;
+  transition: all 0.5s linear;
 }
-.symbolItemGerb_overlay {
+.symbolItem_overlay {
   position: absolute;
   bottom: -100%;
   z-index: 2;
-  transition: all 0.3s linear;
+  transition: all 1s linear;
 }
-.symbolItemGerb_overlay_bg {
+.symbolItem_overlay_bg {
   opacity: 0;
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.85);
   left: 0;
-  top: 0;
+  bottom: 0;
   z-index: 1;
-  transition: all 0.3s linear;
+  transition: all 0.4s linear;
 }
-.symbolItem_gerb:hover .symbolItemGerb_overlay_bg {
+.symbol_item:hover .symbolItem_overlay_bg {
   opacity: 1;
+  transition: 0;
 }
-.symbolItemGerb_overlay p {
+.symbolItem_overlay p {
   color: white;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-weight: 350;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 300;
+  font-size: 0.8rem;
+  line-height: 25px;
 }
-.symbolItem_gerb:hover .symbolItemGerb_overlay {
-  bottom: 10%;
+.symbol_item:hover .symbolItem_overlay {
+  bottom: 2%;
+  transition: all 1.3s linear;
 }
 
 /*  CULTURE  */
