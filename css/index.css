@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Ubuntu:ital,wght@1,700&family=Yellowtail&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Quicksand:wght@300&family=Ubuntu:ital,wght@1,700&family=Yellowtail&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Quicksand:wght@300&family=Roboto:wght@100&family=Ubuntu:ital,wght@1,700&family=Yellowtail&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -136,7 +137,7 @@ nav {
   flex-flow: column;
   position: absolute;
   opacity: 0;
-  width: 14rem;
+  width: 15rem;
   box-shadow: 0 0 20px rgba(76, 83, 102, 0.206);
   top: 90px;
   left: 0;
@@ -162,7 +163,7 @@ nav {
   align-items: center;
   list-style: none;
   text-transform: uppercase;
-  height: 90px;
+  height: 80px;
 }
 .nav__item_pages a {
   color: rgba(0, 0, 0, 0.457);
@@ -849,6 +850,154 @@ nav {
   color: rgba(255, 255, 255, 0.5);
 }
 
+/* MANAGMENT */
+.managment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 150px 0;
+}
+.managment_title {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  padding-left: 130px;
+}
+.managment_title h1 {
+  padding-bottom: 150px;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: rgb(0, 0, 118);
+  font-weight: 300;
+  font-family: "Audiowide", cursive;
+}
+.firstManagment_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.firstPrizident_managment {
+  display: flex;
+  flex-direction: column;
+  width: 27rem;
+  transition: all 0.4s linear;
+  height: 40rem;
+  margin-right: 150px;
+}
+.firstPrizident_managment img {
+  width: 100%;
+  height: 22rem;
+}
+.prizidentManagment_icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.managmentIcon_item a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.managmentIcon_item i {
+  color: #797979;
+  margin-right: 10px;
+  font-size: 1.1rem;
+}
+.managmentIcon_item:hover i,
+.managmentIcon_item:hover h2 {
+  color: blue;
+}
+.managmentIcon_item h2 {
+  font-size: 1.1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #797979;
+}
+.prizidentManagment_p {
+  background-color: #f8faff;
+  padding: 40px 40px;
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s linear;
+}
+.firstPrizident_managment:hover .prizidentManagment_p {
+  background-color: white;
+  box-shadow: 0 10px 30px rgb(0 0 0 / 13%);
+}
+.prizidentManagment_p h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  color: #05364d;
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+.prizidentManagment_p p {
+  color: #2b3036ca;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  line-height: 25px;
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+.managment_learning {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #05364d;
+  font-size: 1.2rem;
+  position: relative;
+}
+.managment_learning::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(90deg, #1345e6 0%, #ed239f 100%);
+  width: 80%;
+  left: 0;
+  bottom: -10px;
+  height: 2px;
+}
+.PrizidentManagment_about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40rem;
+  background-color: #f8faff;
+  padding: 0 75px;
+  transition: all 0.4s linear;
+}
+.PrizidentManagment_about:hover {
+  background-color: white;
+  box-shadow: 0 10px 30px rgb(0 0 0 / 13%);
+}
+.PrizidentManagment_about p {
+  color: #2b3036ca;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  line-height: 25px;
+  font-size: 1.2rem;
+}
+.IslomKarimov_managment_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.IslomKarimov_managment_img_item {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+.IslomKarimov_managment_img_item img {
+  width: 18.5rem;
+  height: 14rem;
+}
+.IslomKarimov_first_img,
+.IslomKarimov_second_img,
+.IslomKarimov_threeth_img {
+  margin-right: 30px;
+}
+
 /* FOOTER */
 .footer {
   padding: 150px 0;
@@ -866,9 +1015,9 @@ nav {
 }
 .footer_title {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   width: 100%;
-  padding-left: 130px;
+  padding-right: 130px;
 }
 .footer_title h1 {
   padding-bottom: 150px;
