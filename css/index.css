@@ -130,6 +130,23 @@ nav {
   transition: all 0.5s ease;
   padding: 0 13px;
 }
+.language {
+  color: rgba(0, 0, 0, 0.457);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.1rem;
+  transition: all 0.5s ease;
+  padding: 12px 5px;
+  background-color: transparent;
+  border: 1px solid black;
+  outline: none;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.language:hover {
+  color: black;
+}
 .nav__item a:hover {
   color: black;
 }
@@ -176,7 +193,7 @@ nav {
   padding: 0 20px;
 }
 .nav__item_pages a:hover {
-  color: #4274b8;
+  color: #000;
 }
 
 /*  HOME  */
@@ -317,11 +334,11 @@ nav {
 .regionAbout_qoraqalpaqistan {
   margin-right: 80px;
 }
+#one:checked ~ .homeRegion_row {
+  margin-left: 0;
+}
 #two:checked ~ .homeRegion_row {
   margin-left: -100%;
-}
-#three:checked ~ .homeRegion_row {
-  margin-left: -200%;
 }
 #four:checked ~ .homeRegion_row {
   margin-left: -300%;
@@ -368,6 +385,7 @@ nav {
   align-items: center;
   transition: all 2s ease;
   margin-bottom: 70px;
+  margin-left: -200%;
 }
 .regionCarousel_button {
   display: flex;
@@ -375,8 +393,8 @@ nav {
   align-items: center;
 }
 .regionCarousel_button label {
-  width: 15px;
-  height: 15px;
+  width: 18px;
+  height: 18px;
   background-color: #67adbe76;
   margin: 0 6px;
   border-radius: 20px;
@@ -387,63 +405,36 @@ nav {
   transform: scale(1.5);
   background-color: #67adbe;
 }
-#one:checked ~ .regionCarousel_button label.one {
-  transform: scale(1.5);
-  background-color: #67adbe;
+.regionCarousel_button label.one, .five {
+  transform: scale(0.8);
+  background-color: #67adbe76;
 }
-#two:checked ~ .regionCarousel_button label.two {
-  transform: scale(1.5);
-  background-color: #67adbe;
-}
-#three:checked ~ .regionCarousel_button label.three {
-  transform: scale(1.5);
-  background-color: #67adbe;
-}
-#four:checked ~ .regionCarousel_button label.four {
-  transform: scale(1.5);
-  background-color: #67adbe;
-}
+#one:checked ~ .regionCarousel_button label.one, 
+#two:checked ~ .regionCarousel_button label.two,
+#three:checked ~ .regionCarousel_button label.three,
+#four:checked ~ .regionCarousel_button label.four,
 #five:checked ~ .regionCarousel_button label.five {
   transform: scale(1.5);
   background-color: #67adbe;
 }
 
-#five:checked ~ .regionCarousel_button label.four {
+#five:checked ~ .regionCarousel_button label.four,
+#four:checked ~ .regionCarousel_button label.three,
+#three:checked ~ .regionCarousel_button label.two,
+#one:checked ~ .regionCarousel_button label.two,
+#one:checked ~ .regionCarousel_button label.three,
+#two:checked ~ .regionCarousel_button label.three,
+#five:checked ~ .regionCarousel_button label.three {
   transform: scale(1);
   background-color: #67adbe76;
 }
-#four:checked ~ .regionCarousel_button label.three {
-  transform: scale(1);
-  background-color: #67adbe76;
-}
-#three:checked ~ .regionCarousel_button label.two {
-  transform: scale(1);
-  background-color: #67adbe76;
-}
-#two:checked ~ .regionCarousel_button label.one {
-  transform: scale(1);
-  background-color: #67adbe76;
-}
-#one:checked ~ .regionCarousel_button label.two {
-  transform: scale(1);
-  background-color: #67adbe76;
-}
-#two:checked ~ .regionCarousel_button label.one {
-  transform: scale(1);
+#two:checked ~ .regionCarousel_button label.one,
+#three:checked ~ .regionCarousel_button label.one,
+#four:checked ~ .regionCarousel_button label.one,
+#five:checked ~ .regionCarousel_button label.one {
+  transform: scale(0.8);
   background-color: #67adbe76;
 } 
-#three:checked ~ .regionCarousel_button label.one {
-  transform: scale(1);
-  background-color: #67adbe76;
-}
-#four:checked ~ .regionCarousel_button label.one {
-  transform: scale(1);
-  background-color: #67adbe76;
-}
-#five:checked ~ .regionCarousel_button label.one {
-  transform: scale(1);
-  background-color: #67adbe76;
-}
 
 input[type="radio"] {
   display: none;
