@@ -330,8 +330,7 @@ nav {
   transform: translateY(-15px);
   box-shadow: 0 20px 40px rgb(0 0 0 / 13%);
 }
-.regionAbout_uzbekistan,
-.regionAbout_qoraqalpaqistan {
+.regionAbout_margin {
   margin-right: 80px;
 }
 #one:checked ~ .homeRegion_row {
@@ -393,8 +392,8 @@ nav {
   align-items: center;
 }
 .regionCarousel_button label {
-  width: 18px;
-  height: 18px;
+  width: 22px;
+  height: 22px;
   background-color: #67adbe76;
   margin: 0 6px;
   border-radius: 20px;
@@ -402,11 +401,11 @@ nav {
   cursor: pointer;
 }
 .regionCarousel_button label.active {
-  transform: scale(1.5);
+  transform: scale(1.4);
   background-color: #67adbe;
 }
 .regionCarousel_button label.one, .five {
-  transform: scale(0.8);
+  transform: scale(0.7);
   background-color: #67adbe76;
 }
 #one:checked ~ .regionCarousel_button label.one, 
@@ -414,7 +413,7 @@ nav {
 #three:checked ~ .regionCarousel_button label.three,
 #four:checked ~ .regionCarousel_button label.four,
 #five:checked ~ .regionCarousel_button label.five {
-  transform: scale(1.5);
+  transform: scale(1.4);
   background-color: #67adbe;
 }
 
@@ -432,7 +431,7 @@ nav {
 #three:checked ~ .regionCarousel_button label.one,
 #four:checked ~ .regionCarousel_button label.one,
 #five:checked ~ .regionCarousel_button label.one {
-  transform: scale(0.8);
+  transform: scale(0.7);
   background-color: #67adbe76;
 } 
 
