@@ -1037,7 +1037,7 @@ input[type="radio"] {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 1.5rem;
 }
 .managmentIcon_item a {
   text-decoration: none;
@@ -1064,7 +1064,7 @@ input[type="radio"] {
   position: absolute;
   bottom: 0;
   background-color: #f8faff;
-  padding: 40px 40px;
+  padding: 2.5rem 2.5rem;
   width: 100%;
   transition: all 0.4s linear;
   border-radius: 30px;
@@ -1078,14 +1078,14 @@ input[type="radio"] {
   font-weight: 800;
   color: #05364d;
   font-size: 2rem;
-  margin-bottom: 25px;
+  margin-bottom: 1.5rem;
 }
 .prizidentManagment_p p {
   color: #2b3036ca;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  line-height: 25px;
-  font-size: 1.2rem;
-  margin-bottom: 25px;
+  line-height: 1.5;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
 }
 .managment_learning {
   display: inline-block;
@@ -1177,7 +1177,7 @@ input[type="radio"] {
   padding: 40px 30px;
 }
 .ManagmentImg_item_about p {
-  font-size: 1.3rem;
+  font-size: 1.15rem;
   color: #2b3036ca;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin-bottom: 40px;
