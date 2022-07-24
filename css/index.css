@@ -167,6 +167,7 @@ nav {
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
   border: 1px solid black;
+  padding: 5px 5px;
 }
 .pages__link {
   position: relative;
@@ -993,14 +994,19 @@ input[type="radio"] {
 .firstPrizident_managment {
   display: flex;
   flex-direction: column;
-  width: 27rem;
+  width: 26rem;
   transition: all 0.4s linear;
-  height: 40rem;
+  height: 42rem;
   margin-right: 150px;
+  position: relative;
 }
 .firstPrizident_managment img {
   width: 100%;
   height: 22rem;
+  position: absolute;
+  top: 0;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 .prizidentManagment_icon {
   display: flex;
@@ -1030,11 +1036,13 @@ input[type="radio"] {
   color: #797979;
 }
 .prizidentManagment_p {
+  position: absolute;
+  bottom: 0;
   background-color: #f8faff;
   padding: 40px 40px;
   width: 100%;
-  height: 100%;
   transition: all 0.4s linear;
+  border-radius: 30px;
 }
 .firstPrizident_managment:hover .prizidentManagment_p {
   background-color: white;
@@ -1075,10 +1083,11 @@ input[type="radio"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40rem;
+  height: 42rem;
   background-color: #f8faff;
   padding: 0 75px;
   transition: all 0.4s linear;
+  border-radius: 30px;
 }
 .PrizidentManagment_about:hover {
   background-color: white;
