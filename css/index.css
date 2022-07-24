@@ -1127,19 +1127,28 @@ input[type="radio"] {
   line-height: 25px;
   font-size: 1.2rem;
 }
-.IslomKarimov_managment_img {
+.Managment_img {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.IslomKarimov_managment_img_item {
+.Managment_img_item {
+  display: flex;
+  justify-content: flex-start;
+  width: 22.5rem;
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgb(0 0 0 / 13%);
+  background-color: white;
+}
+.Managment_img_item_img {
   display: flex;
   justify-content: center;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  height: 16rem;
+  width: 100%;
   position: relative;
   overflow: hidden;
 }
-.IslomKarimov_managment_img_item::before {
+.Managment_img_item_img::before {
   content: "";
   position: absolute;
   width: 40%;
@@ -1150,20 +1159,38 @@ input[type="radio"] {
   left: 100%;
   transition: all 1s linear;
 }
-.IslomKarimov_managment_img_item:hover::before {
+.Managment_img_item_img:hover::before {
   width: 300%;
   height: 300%;
   top: -100%;
   left: -100%;
 }
-.IslomKarimov_managment_img_item img {
-  width: 18.5rem;
-  height: 14rem;
+.Managment_img_item_img img {
+  width: 100%;
+  height: 100%;
 }
-.IslomKarimov_first_img,
-.IslomKarimov_second_img,
-.IslomKarimov_threeth_img {
-  margin-right: 30px;
+.Managment_img_first,
+.Managment_img_second {
+  margin-right: 70px;
+}
+.ManagmentImg_item_about {
+  padding: 40px 30px;
+}
+.ManagmentImg_item_about p {
+  font-size: 1.3rem;
+  color: #2b3036ca;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+.ManagmentImg_item_about a {
+  text-decoration: none;
+}
+.ManagmentImg_item_about a h1 {
+  font-size: 1.1rem;
+  color: #797979;
+  font-weight: 300;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .managmentImg_overlay {
   opacity: 0;
@@ -1181,7 +1208,7 @@ input[type="radio"] {
   font-weight: 300;
   transition: all 0.5s linear;
 }
-.IslomKarimov_managment_img_item:hover .managmentImg_overlay {
+.Managment_img_item_img:hover .managmentImg_overlay {
   opacity: 1;
   transition: all 1.5s linear;
 }
