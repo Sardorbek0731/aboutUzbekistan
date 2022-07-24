@@ -130,23 +130,6 @@ nav {
   transition: all 0.5s ease;
   padding: 0 13px;
 }
-.language {
-  color: rgba(0, 0, 0, 0.457);
-  text-transform: uppercase;
-  text-decoration: none;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 1.1rem;
-  transition: all 0.5s ease;
-  padding: 12px 5px;
-  background-color: transparent;
-  border: 1px solid black;
-  outline: none;
-  border-bottom-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-.language:hover {
-  color: black;
-}
 .nav__item a:hover {
   color: black;
 }
@@ -195,6 +178,41 @@ nav {
 }
 .nav__item_pages a:hover {
   color: #000;
+}
+.language {
+  position: relative;
+}
+.navItem_language {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  opacity: 0;
+  width: 5rem;
+  height: 5rem;
+  box-shadow: 0 0 20px rgba(76, 83, 102, 0.206);
+  top: 90px;
+  left: 0;
+  margin-top: 30px;
+  background-color: white;
+  visibility: hidden;
+  transition: all 0.8s ease;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border: 1px solid black;
+}
+.language:hover .navItem_language {
+  visibility: visible;
+  opacity: 1;
+  margin-top: 0;
+}
+.navItem_language li {
+  list-style: none;
+}
+.navItem_language li:first-child {
+  margin-bottom: 10px;
 }
 
 /*  HOME  */
@@ -405,11 +423,12 @@ nav {
   transform: scale(1.4);
   background-color: #67adbe;
 }
-.regionCarousel_button label.one, .five {
+.regionCarousel_button label.one,
+.five {
   transform: scale(0.7);
   background-color: #67adbe76;
 }
-#one:checked ~ .regionCarousel_button label.one, 
+#one:checked ~ .regionCarousel_button label.one,
 #two:checked ~ .regionCarousel_button label.two,
 #three:checked ~ .regionCarousel_button label.three,
 #four:checked ~ .regionCarousel_button label.four,
@@ -434,7 +453,7 @@ nav {
 #five:checked ~ .regionCarousel_button label.one {
   transform: scale(0.7);
   background-color: #67adbe76;
-} 
+}
 
 input[type="radio"] {
   display: none;
@@ -985,13 +1004,16 @@ input[type="radio"] {
   font-weight: 300;
   font-family: "Audiowide", cursive;
 }
-.firstManagment_div {
+.Islom-Karimov {
+  margin-bottom: 150px;
+}
+.Managment_div {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 100px;
 }
-.firstPrizident_managment {
+.Prizident_managment {
   display: flex;
   flex-direction: column;
   width: 26rem;
@@ -1000,7 +1022,10 @@ input[type="radio"] {
   margin-right: 150px;
   position: relative;
 }
-.firstPrizident_managment img {
+.secondPrizident_managment {
+  margin-right: 0;
+}
+.Prizident_managment img {
   width: 100%;
   height: 22rem;
   position: absolute;
@@ -1044,7 +1069,7 @@ input[type="radio"] {
   transition: all 0.4s linear;
   border-radius: 30px;
 }
-.firstPrizident_managment:hover .prizidentManagment_p {
+.Prizident_managment:hover .prizidentManagment_p {
   background-color: white;
   box-shadow: 0 10px 30px rgb(0 0 0 / 13%);
 }
@@ -1088,6 +1113,9 @@ input[type="radio"] {
   padding: 0 75px;
   transition: all 0.4s linear;
   border-radius: 30px;
+}
+.secondPrizident_about {
+  margin-right: 150px;
 }
 .PrizidentManagment_about:hover {
   background-color: white;
