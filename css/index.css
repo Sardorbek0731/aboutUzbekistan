@@ -65,14 +65,13 @@ body {
 
 nav {
   position: fixed;
-  top: 0;
   left: 0;
+  top: 0;
   display: flex;
   justify-content: center;
   width: 100%;
   height: 90px;
   align-items: center;
-  box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
   backdrop-filter: blur(15px);
   transform: perspective(0) rotateX(0) rotateY(0);
   z-index: 10;
@@ -161,7 +160,7 @@ svg {
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
   border: 1px solid black;
-  padding: 0 20px;
+  padding: 0 1.4rem;
 }
 .pages__link {
   position: relative;
@@ -180,7 +179,7 @@ svg {
   align-items: center;
   list-style: none;
   text-transform: uppercase;
-  padding: 30px 0;
+  padding: 1.6rem 0;
 }
 .nav__item_pages a {
   text-decoration: none;
@@ -347,6 +346,14 @@ svg {
 .homeRegion_about {
   padding-bottom: 107px;
 }
+.inset_shadow {
+  padding: 25px 25px;
+  box-shadow: inset 0 0 15px rgba(38, 39, 46, 0.15);
+  border-radius: 20px;
+}
+.regionAbout_margin {
+  margin-right: 60px;
+}
 .homeRegionRow_item {
   display: flex;
   width: 100%;
@@ -359,17 +366,13 @@ svg {
   flex-direction: column;
   padding: 50px 30px;
   background-color: white;
-  box-shadow: 0 0 30px rgba(51, 51, 51, 0.11);
-  width: 24rem;
+  width: 21rem;
   border-radius: 20px;
-  transition: all 0.5s ease;
+  transition: all 0.4s ease;
 }
 .homeRegion_item:hover {
-  transform: translateY(-15px);
-  box-shadow: 0 20px 40px rgb(0 0 0 / 13%);
-}
-.regionAbout_margin {
-  margin-right: 80px;
+  transform: translateY(-50px);
+  box-shadow: 0 0 40px rgb(0 0 0 / 13%);
 }
 #one:checked ~ .homeRegion_row {
   margin-left: 0;
@@ -1037,7 +1040,7 @@ input[type="radio"] {
   flex-direction: column;
   width: 26rem;
   transition: all 0.4s linear;
-  height: 42rem;
+  height: 40rem;
   margin-right: 150px;
   position: relative;
 }
@@ -1104,24 +1107,6 @@ input[type="radio"] {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   line-height: 1.5;
   font-size: 1.1rem;
-  margin-bottom: 1.5rem;
-}
-.managment_learning {
-  display: inline-block;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  color: #05364d;
-  font-size: 1.2rem;
-  position: relative;
-}
-.managment_learning::before {
-  content: "";
-  position: absolute;
-  background: linear-gradient(90deg, #1345e6 0%, #ed239f 100%);
-  width: 80%;
-  left: 0;
-  bottom: -10px;
-  height: 2px;
 }
 .PrizidentManagment_about {
   display: flex;
