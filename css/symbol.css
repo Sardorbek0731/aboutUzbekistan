@@ -1,0 +1,511 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Ubuntu:ital,wght@1,700&family=Yellowtail&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Quicksand:wght@300&family=Ubuntu:ital,wght@1,700&family=Yellowtail&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Quicksand:wght@300&family=Roboto:wght@100&family=Ubuntu:ital,wght@1,700&family=Yellowtail&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:wght@500&family=Quicksand:wght@300&family=Roboto:wght@100&family=Ubuntu:ital,wght@1,700&family=Yellowtail&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+html {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.585);
+}
+
+/*  NAV  */
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 90px;
+  align-items: center;
+  backdrop-filter: blur(15px);
+  transform: perspective(0) rotateX(0) rotateY(0);
+  z-index: 10;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 80%;
+}
+.navUl {
+  display: flex;
+  justify-content: center;
+}
+.brand {
+  text-decoration: none;
+}
+.brand h1 {
+  font-family: "Audiowide", cursive;
+  color: rgb(0, 0, 118);
+  font-size: 1.6rem;
+}
+.brand span {
+  color: blue;
+}
+.nav__item {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-transform: uppercase;
+  height: 90px;
+  position: relative;
+  margin-right: 20px;
+  padding: 0 10px;
+}
+.nav__item:last-child {
+  margin-right: 0;
+}
+.nav__item::before {
+  content: "";
+  width: 0;
+  left: 50%;
+  height: 3px;
+  top: 0;
+  background-color: #000;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: absolute;
+  transition: all 0.5s linear;
+}
+.nav__item:hover::before {
+  width: 100%;
+  left: 0;
+}
+.nav__item a,
+svg {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Poppins", helvetica;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  transition: all 0.8s linear;
+}
+.nav__item:hover a,
+.nav__item:hover svg {
+  color: black;
+}
+.language {
+  position: relative;
+}
+.navItem_language {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  position: absolute;
+  opacity: 0;
+  padding: 15px 30px;
+  box-shadow: 0 0 20px rgba(76, 83, 102, 0.206);
+  top: 90px;
+  left: 0;
+  margin-top: 30px;
+  background-color: white;
+  visibility: hidden;
+  transition: all 0.5s ease;
+}
+.language:hover .navItem_language {
+  visibility: visible;
+  opacity: 1;
+  margin-top: 0;
+}
+.navItem_language li {
+  margin-bottom: 15px;
+  list-style: none;
+}
+.navItem_language li:last-child {
+  margin-bottom: 0;
+}
+.language_link a:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* SYMBOL */
+
+.symbol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 150px 0;
+}
+.symbol_title {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  padding-right: 130px;
+  padding-bottom: 150px;
+}
+.symbol_title h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: rgb(0, 0, 118);
+  font-weight: 300;
+  font-family: "Audiowide", cursive;
+}
+.symbol_div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.symbolItem_gerb,
+.symbolItem_flag {
+  margin-right: 50px;
+}
+.symbol_item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 0 30px rgba(97, 97, 123, 0.451);
+  position: relative;
+  min-height: 650px;
+  width: 24rem;
+  z-index: 0;
+  overflow: hidden;
+}
+.symbolItemGerb_img,
+.symbolItemFlag_img,
+.symbolItemArt_img {
+  position: absolute;
+  margin-bottom: 120px;
+}
+.symbolItemFlag_img img {
+  height: 17rem;
+}
+.symbolItemGerb_img img,
+.symbolItemFlag_img img,
+.symbolItemArt_img img {
+  width: 20rem;
+}
+.symbolItemGerb_title,
+.symbolItemFlag_title,
+.symbolItemArt_title {
+  position: absolute;
+  bottom: 4%;
+  z-index: 2;
+  transition: all 0.4s linear;
+}
+.symbolItemGerb_title h1,
+.symbolItemFlag_title h1,
+.symbolItemArt_title h1 {
+  text-align: center;
+  color: #67adbe;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 300;
+}
+.symbol_item:hover .symbolItemGerb_title,
+.symbol_item:hover .symbolItemFlag_title,
+.symbol_item:hover .symbolItemArt_title {
+  bottom: 85%;
+  transition: all 0.5s linear;
+}
+.symbolItem_overlay {
+  position: absolute;
+  bottom: -100%;
+  z-index: 2;
+  transition: all 1s linear;
+}
+.symbolItem_overlay_bg {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  transition: all 0.4s linear;
+}
+.symbol_item:hover .symbolItem_overlay_bg {
+  opacity: 1;
+  transition: 0;
+}
+.symbolItem_overlay p {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 300;
+  font-size: 0.8rem;
+  line-height: 25px;
+}
+.symbol_item:hover .symbolItem_overlay {
+  bottom: 2%;
+  transition: all 1.3s linear;
+}
+
+/* FOOTER */
+.footer {
+  padding: 150px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: url(../image/contact/contactBg1.webp) no-repeat;
+  background-size: cover;
+}
+.footer_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer_title {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-right: 130px;
+}
+.footer_title h1 {
+  padding-bottom: 150px;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: rgb(0, 0, 118);
+  font-weight: 300;
+  font-family: "Audiowide", cursive;
+}
+.form {
+  margin-right: 85px;
+}
+.form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 30px rgba(68, 68, 107, 0.3);
+  padding: 90px 70px;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.386) 30%, #fff 60%);
+}
+.firstName,
+.email,
+.password {
+  position: relative;
+  margin-bottom: 35px;
+}
+form .contact_item input {
+  position: relative;
+  border-radius: 0;
+  width: 13.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.491);
+  border-top: 0;
+  height: 2.5rem;
+  padding: 0 13px;
+  outline: none;
+  transition: all 0.2s linear;
+  background-color: transparent;
+}
+form .password {
+  margin-bottom: 50px;
+}
+.form .contact_item label {
+  position: absolute;
+  left: 0.8rem;
+  top: 0.5rem;
+  z-index: 1;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgba(0, 0, 0, 0.491);
+  transition: all 0.2s linear;
+}
+form .contact_item input:focus {
+  border-radius: 10px;
+  border: 1px solid red;
+  border-top: 0;
+}
+form .contact_item input:valid {
+  border-radius: 30px;
+  border: 1px solid #4c8897;
+  border-top: 0;
+}
+form .contact_item input:focus ~ label {
+  margin-top: -1rem;
+  font-size: 0.8rem;
+  color: red;
+  margin-left: 0.1rem;
+}
+form .contact_item input:valid ~ label {
+  font-size: 0.8rem;
+  margin-top: -1rem;
+  margin-left: 0.8rem;
+  color: #4c8897;
+}
+form .btn {
+  width: 11rem;
+  height: 3.2rem;
+  border: 1px solid #6ca0b1;
+  position: relative;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.713);
+  color: #6ca0b1;
+  transition: all 0.5s linear;
+  font-size: 1rem;
+  cursor: pointer;
+}
+form .btn::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  background-color: #6ca0b1;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: all 0.5s linear;
+  z-index: -1;
+}
+form .btn:hover::before {
+  width: 11rem;
+  border-radius: 40px;
+}
+form .btn:hover {
+  color: white;
+  border-radius: 40px;
+  border: none;
+}
+
+.contactCard_row {
+  margin-bottom: 85px;
+}
+.contactCard_row,
+.contactCardRow_second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactCard_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    to bottom,
+    #fff 10%,
+    rgba(255, 255, 255, 0.5) 80%
+  );
+  width: 15rem;
+  height: 12rem;
+  box-shadow: 0 0 30px rgba(68, 68, 107, 0.3);
+}
+.contactCard_item i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.45rem;
+  height: 3.45rem;
+  color: #4c8897;
+  font-size: 1.5rem;
+  border: 1px dashed #4c8897;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  transition: all 0.3s linear;
+}
+.contactCard_item:hover i {
+  color: white;
+  border: 0;
+  background-color: #6ca0b1;
+  box-shadow: 0 0 0 6px #6ca0b16f;
+}
+.contactCard_item h1 {
+  color: #4c8897;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.contactCard_item a {
+  color: rgba(0, 0, 0, 0.686);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  text-decoration: none;
+}
+.contactCard_item a:hover {
+  color: #4c8897;
+}
+.contactCard_email,
+.telegram {
+  margin-right: 85px;
+}
+
+.goodbye {
+  background-color: #4274b8;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.website_map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.website_map a {
+  margin-top: 0;
+  margin-right: 40px;
+  text-decoration: none;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  transition: all 0.3s linear;
+}
+.website_map a:last-child {
+  margin-right: 0;
+}
+.website_map a:hover {
+  margin-top: -15px;
+}
+.website_map a svg {
+  color: white;
+}
+.contact_brand {
+  margin-bottom: 60px;
+}
+.contact_brand a {
+  text-decoration: none;
+  padding-left: 100px;
+}
+.contact_brand a h1 {
+  font-family: "Audiowide", cursive;
+  color: rgb(0, 0, 118);
+  font-size: 2.7rem;
+}
+.contact_brand a span {
+  color: blue;
+}
+
+.website_admin h1 {
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 3rem;
+  font-weight: 300;
+  margin-left: 20px;
+}
