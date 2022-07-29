@@ -29,87 +29,57 @@ body {
 
 /*  NAV  */
 
-nav {
-  position: fixed;
-  left: 0;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 90px;
-  align-items: center;
-  backdrop-filter: blur(15px);
-  transform: perspective(0) rotateX(0) rotateY(0);
-  z-index: 10;
-}
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-width: 80%;
-}
 .navUl {
   display: flex;
   justify-content: center;
-}
-.brand {
-  text-decoration: none;
-}
-.brand h1 {
-  font-family: "Audiowide", cursive;
-  color: rgb(0, 0, 118);
-  font-size: 1.6rem;
-}
-.brand span {
-  color: blue;
+  flex-direction: column;
+  padding: 0 30px;
+  width: 300px;
+  background-color: rgba(0, 49, 94, 0.64);
+  height: 100%;
 }
 .nav__item {
   display: flex;
   align-items: center;
   list-style: none;
   text-transform: uppercase;
-  height: 90px;
-  position: relative;
-  margin-right: 20px;
-  padding: 0 10px;
-}
-.nav__item:last-child {
-  margin-right: 0;
-}
-.nav__item::before {
-  content: "";
-  width: 0;
-  left: 50%;
-  height: 3px;
-  top: 0;
-  background-color: #000;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  position: absolute;
-  transition: all 0.5s linear;
-}
-.nav__item:hover::before {
+  margin: 5px 0;
   width: 100%;
-  left: 0;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: all 0.5s ease;
 }
-.nav__item a,
-svg {
+.nav__item:hover {
+  background-color: rgba(190, 214, 255, 0.56);
+}
+.nav__item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   font-size: 0.9rem;
-  color: rgba(0, 0, 0, 0.5);
-  font-family: "Poppins", helvetica;
-  font-weight: 500;
-  line-height: 20px;
+  color: #fff;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 300;
+  line-height: 30px;
   text-transform: uppercase;
   letter-spacing: 0.02em;
-  transition: all 0.8s linear;
+  transition: all 0.5 ease;
 }
-.nav__item:hover a,
-.nav__item:hover svg {
-  color: black;
+.nav__item svg {
+  margin-right: 15px;
 }
 .language {
+  display: flex;
+  align-items: center;
   position: relative;
+}
+.language a {
+  margin-right: 5px;
+}
+.language svg {
+  color: #fff;
 }
 .navItem_language {
   display: flex;
@@ -119,12 +89,13 @@ svg {
   opacity: 0;
   padding: 15px 30px;
   box-shadow: 0 0 20px rgba(76, 83, 102, 0.206);
-  top: 90px;
+  top: 50px;
   left: 0;
   margin-top: 30px;
   background-color: white;
   visibility: hidden;
   transition: all 0.5s ease;
+  border-radius: 10px;
 }
 .language:hover .navItem_language {
   visibility: visible;
@@ -138,6 +109,9 @@ svg {
 .navItem_language li:last-child {
   margin-bottom: 0;
 }
+.language_link a {
+  color: black;
+}
 .language_link a:hover {
   color: rgba(0, 0, 0, 0.5);
 }
@@ -149,21 +123,35 @@ svg {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 150px 0;
+  padding-bottom: 150px;
+  width: 100%;
+}
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 250px;
+  background: url(../image/symbol/symbol.head.jpg) no-repeat;
+  background-size: cover;
+  margin-bottom: 100px;
 }
 .symbol_title {
   display: flex;
-  width: 100%;
-  justify-content: flex-end;
-  padding-right: 130px;
-  padding-bottom: 150px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-right: 200px;
+  padding-left: 70px;
+  background-color: rgba(190, 214, 255, 0.56);
 }
 .symbol_title h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   text-transform: uppercase;
-  color: rgb(0, 0, 118);
-  font-weight: 300;
-  font-family: "Audiowide", cursive;
+  color: #0a586b;
+  font-weight: 400;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 .symbol_div {
   display: flex;

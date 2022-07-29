@@ -83,6 +83,7 @@ nav {
   backdrop-filter: blur(15px);
   transform: perspective(0) rotateX(0) rotateY(0);
   z-index: 20;
+  box-shadow: 0px 2px 92px 0px rgb(0 0 0 / 18%);
 }
 .navUl {
   display: flex;
@@ -131,7 +132,7 @@ nav {
 .nav__item a,
 svg {
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: rgba(0, 0, 0, 0.5);
   font-family: "Poppins", helvetica;
   font-weight: 500;
@@ -231,7 +232,8 @@ svg {
   align-items: center;
   position: relative;
 }
-#search, #search_x {
+#search,
+#search_x {
   display: none;
 }
 .searchNav_label_x i {
@@ -241,23 +243,25 @@ svg {
   position: absolute;
   top: 100px;
   right: 100px;
-  background-color: white;  
-  width: 3rem;
-  height: 3rem;
+  background-color: white;
+  width: 3.4rem;
+  height: 3.4rem;
   border-radius: 50%;
   font-size: 1.1rem;
   color: rgb(0, 0, 118);
+  cursor: pointer;
 }
 #search:checked ~ .searchNav_label_x i {
   display: flex;
   z-index: 110;
 }
 .searchNav_label i {
-  padding: 15px 15px;
-  border: 2px solid #000;
+  padding: 20px 20px;
+  background-color: #e6edff8d;
   border-radius: 50%;
   font-size: 1.1rem;
   color: rgb(0, 0, 118);
+  cursor: pointer;
 }
 .search_bg {
   display: none;
@@ -267,7 +271,7 @@ svg {
   left: 0;
   height: 100vh;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   z-index: 100;
 }
 #search:checked ~ .search_bg {
@@ -299,11 +303,12 @@ svg {
 }
 .search_label i {
   position: absolute;
-  right: 10px;
+  right: 0.6rem;
   background-color: #4274b8;
   padding: 15px 15px;
   border-radius: 50%;
   color: white;
+  cursor: pointer;
 }
 /*  HOME  */
 
@@ -311,8 +316,106 @@ svg {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 150px;
   width: 100%;
   height: 100vh;
+}
+.home_bg_row {
+  display: flex;
+  justify-content: space-evenly;
+  width: 400%;
+  height: 100vh;
+  transition: all 1s linear;
+}
+.HomeCarousel_button {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  bottom: 30px;
+  z-index: 10;
+}
+.HomeCarousel_button label {
+  background-color: #fff;
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+  margin: 0 15px;
+  cursor: pointer;
+}
+.HomeCarousel_button label.active {
+  background-color: #4274b8;
+  box-shadow: 0 0 0 6px #ffffff6f;
+}
+#one_bg:checked ~ .home_bg_row {
+  margin-left: 0;
+}
+#two_bg:checked ~ .home_bg_row {
+  margin-left: -100%;
+}
+#three_bg:checked ~ .home_bg_row {
+  margin-left: -200%;
+}
+#four_bg:checked ~ .home_bg_row {
+  margin-left: -300%;
+}
+
+#two_bg:checked ~ .HomeCarousel_button label.one_bg {
+  background-color: #fff;
+  box-shadow: 0 0 0;
+}
+#two_bg:checked ~ .HomeCarousel_button label.two_bg {
+  background-color: #4274b8;
+  box-shadow: 0 0 0 6px #ffffff6f;
+}
+#three_bg:checked ~ .HomeCarousel_button label.three_bg {
+  background-color: #4274b8;
+  box-shadow: 0 0 0 6px #ffffff6f;
+}
+#three_bg:checked ~ .HomeCarousel_button label.two_bg {
+  background-color: #fff;
+  box-shadow: 0 0 0;
+}
+#three_bg:checked ~ .HomeCarousel_button label.one_bg {
+  background-color: #fff;
+  box-shadow: 0 0 0;
+}
+#four_bg:checked ~ .HomeCarousel_button label.four_bg {
+  background-color: #4274b8;
+  box-shadow: 0 0 0 6px #ffffff6f;
+}
+#four_bg:checked ~ .HomeCarousel_button label.one_bg {
+  background-color: #fff;
+  box-shadow: 0 0 0;
+}
+#four_bg:checked ~ .HomeCarousel_button label.two_bg {
+  background-color: #fff;
+  box-shadow: 0 0 0;
+}
+#four_bg:checked ~ .HomeCarousel_button label.three_bg {
+  background-color: #fff;
+  box-shadow: 0 0 0;
+}
+
+.home_bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+}
+.home_bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.homeBg_color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #48c8f72b;
 }
 .home__brand {
   display: flex;
@@ -321,7 +424,10 @@ svg {
   margin-bottom: 30px;
 }
 .home__brand h1 {
+  position: relative;
+  z-index: 10;
   text-shadow: 0 5px 10px rgba(32, 32, 67, 0.6);
+  color: #fff;
   font-size: 2.2rem;
   font-weight: 300;
   line-height: 50px;
@@ -337,77 +443,81 @@ svg {
   color: blue;
 }
 .home__title p {
+  position: relative;
+  z-index: 10;
   line-height: 30px;
   margin-left: 30px;
-  color: rgba(0, 0, 0, 0.457);
+  color: rgba(255, 255, 255);
   font-size: 1rem;
   font-weight: 200;
   text-transform: uppercase;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.home__bg {
+.home_map {
+  position: relative;
+  z-index: 10;
   display: flex;
   width: 50%;
   align-items: center;
   justify-content: center;
   height: 50vh;
 }
-.home__bg svg {
+.home_map svg {
   position: relative;
 }
-.home__bg svg path {
-  fill: rgb(74, 76, 220);
+.home_map svg path {
+  fill: rgb(255, 255, 255);
   fill-opacity: 1;
-  stroke: rgb(255, 255, 255);
+  stroke: rgb(34, 130, 255);
   stroke-width: 0.493193px;
   stroke-opacity: 1;
 }
-.home__bg svg .water:hover {
+.home_map svg .water:hover {
   fill: blue;
 }
-.home__bg svg .sarvan:hover {
+.home_map svg .sarvan:hover {
   fill: black;
 }
-.home__bg svg .andijon:hover {
+.home_map svg .andijon:hover {
   fill: yellow;
 }
-.home__bg svg .buxoro:hover {
+.home_map svg .buxoro:hover {
   fill: orange;
 }
-.home__bg svg .fargona:hover {
+.home_map svg .fargona:hover {
   fill: red;
 }
-.home__bg svg .jizzah:hover {
+.home_map svg .jizzah:hover {
   fill: pink;
 }
-.home__bg svg .namangan:hover {
+.home_map svg .namangan:hover {
   fill: purple;
 }
-.home__bg svg .navoiy:hover {
+.home_map svg .navoiy:hover {
   fill: #67b;
 }
-.home__bg svg .qashqadaryo:hover {
+.home_map svg .qashqadaryo:hover {
   fill: aqua;
 }
-.home__bg svg .qoraqolpaqiston:hover {
-  fill: rgba(246, 255, 70, 0.591);
+.home_map svg .qoraqolpaqiston:hover {
+  fill: gray;
 }
-.home__bg svg .samarqand:hover {
+.home_map svg .samarqand:hover {
   fill: chartreuse;
 }
-.home__bg svg .sirdaryo:hover {
+.home_map svg .sirdaryo:hover {
   fill: darksalmon;
 }
-.home__bg svg .surxondaryo:hover {
+.home_map svg .surxondaryo:hover {
   fill: mediumpurple;
 }
-.home__bg svg .tashkent_city:hover {
+.home_map svg .tashkent_city:hover {
   fill: #797979;
 }
-.home__bg svg .tashkent:hover {
+.home_map svg .tashkent:hover {
   fill: black;
 }
-.home__bg svg .xorazm:hover {
+.home_map svg .xorazm:hover {
   fill: rgb(0, 255, 132);
 }
 
@@ -789,7 +899,7 @@ input[type="radio"] {
 .ramadaOverlay_title h1 {
   display: flex;
   justify-content: center;
-  font-size: 35px;
+  font-size: 2.3rem;
   font-weight: 350;
   text-transform: uppercase;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
