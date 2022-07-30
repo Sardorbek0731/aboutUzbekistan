@@ -80,7 +80,7 @@ nav {
   width: 100%;
   height: 90px;
   align-items: center;
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(10px);
   transform: perspective(0) rotateX(0) rotateY(0);
   z-index: 20;
   box-shadow: 0px 2px 92px 0px rgb(0 0 0 / 18%);
@@ -315,17 +315,19 @@ svg {
 .home {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   margin-bottom: 150px;
+  padding-bottom: 80px;
   width: 100%;
   height: 100vh;
+  box-shadow: 0px 0 40px 0px rgba(0, 0, 0, 0.858);
 }
 .home_bg_row {
   display: flex;
   justify-content: space-evenly;
-  width: 400%;
+  width: 500%;
   height: 100vh;
-  transition: all 1s linear;
+  transition: all 2s ease;
 }
 .HomeCarousel_button {
   display: flex;
@@ -358,6 +360,9 @@ svg {
 }
 #four_bg:checked ~ .home_bg_row {
   margin-left: -300%;
+}
+#five_bg:checked ~ .home_bg_row {
+  margin-left: -400%;
 }
 
 #two_bg:checked ~ .HomeCarousel_button label.one_bg {
@@ -396,7 +401,26 @@ svg {
   background-color: #fff;
   box-shadow: 0 0 0;
 }
-
+#five_bg:checked ~ .HomeCarousel_button label.five_bg {
+  background-color: #4274b8;
+  box-shadow: 0 0 0 6px #ffffff6f;
+}
+#five_bg:checked ~ .HomeCarousel_button label.one_bg {
+  background-color: #fff;
+  box-shadow: 0 0 0;
+}
+#five_bg:checked ~ .HomeCarousel_button label.two_bg {
+  background-color: #fff;
+  box-shadow: 0 0 0;
+}
+#five_bg:checked ~ .HomeCarousel_button label.three_bg {
+  background-color: #fff;
+  box-shadow: 0 0 0;
+}
+#five_bg:checked ~ .HomeCarousel_button label.four_bg {
+  background-color: #fff;
+  box-shadow: 0 0 0;
+}
 .home_bg {
   position: absolute;
   left: 0;
@@ -409,14 +433,6 @@ svg {
   height: 100%;
   object-fit: cover;
 }
-.homeBg_color {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #48c8f72b;
-}
 .home__brand {
   display: flex;
   align-items: center;
@@ -424,8 +440,7 @@ svg {
   margin-bottom: 30px;
 }
 .home__brand h1 {
-  position: relative;
-  z-index: 10;
+  text-align: center;
   text-shadow: 0 5px 10px rgba(32, 32, 67, 0.6);
   color: #fff;
   font-size: 2.2rem;
@@ -442,83 +457,74 @@ svg {
 .home_brand_about {
   color: blue;
 }
-.home__title p {
+.home__title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   z-index: 10;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.home__title p {
+  text-align: center;
   line-height: 30px;
-  margin-left: 30px;
   color: rgba(255, 255, 255);
   font-size: 1rem;
   font-weight: 200;
   text-transform: uppercase;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.home_map {
-  position: relative;
-  z-index: 10;
-  display: flex;
-  width: 50%;
-  align-items: center;
-  justify-content: center;
-  height: 50vh;
+.homeTitle_img {
+  transition: all 2.5s ease;
+  position: absolute;
 }
-.home_map svg {
-  position: relative;
+.homeTitle_palov {
+  left: -5%;
+  bottom: -25%;
+  width: 10rem;
+  height: 10rem;
 }
-.home_map svg path {
-  fill: rgb(255, 255, 255);
-  fill-opacity: 1;
-  stroke: rgb(34, 130, 255);
-  stroke-width: 0.493193px;
-  stroke-opacity: 1;
+.homeTitle_bread {
+  left: -5%;
+  bottom: -2%;
+  width: 7rem;
+  height: 7rem;
 }
-.home_map svg .water:hover {
-  fill: blue;
+.homeTitle_clothes {
+  left: 4%;
+  bottom: -25%;
+  width: 7rem;
+  height: 7rem;
 }
-.home_map svg .sarvan:hover {
-  fill: black;
+.homeTitle_clothes img, .homeTitle_bread img {
+  width: 100%;
+  border-radius: 50%;
+  height: 100%;
 }
-.home_map svg .andijon:hover {
-  fill: yellow;
+.homeTitle_palov img {
+  width: 100%;
 }
-.home_map svg .buxoro:hover {
-  fill: orange;
+.home__title:hover .homeTitle_palov {
+  transform: rotate(360deg);
+  left: 2%;
+  bottom: 5%;
 }
-.home_map svg .fargona:hover {
-  fill: red;
+.home__title:hover .homeTitle_bread {
+  transform: rotate(360deg);
+  left: 4%;
+  bottom: 50%;
 }
-.home_map svg .jizzah:hover {
-  fill: pink;
-}
-.home_map svg .namangan:hover {
-  fill: purple;
-}
-.home_map svg .navoiy:hover {
-  fill: #67b;
-}
-.home_map svg .qashqadaryo:hover {
-  fill: aqua;
-}
-.home_map svg .qoraqolpaqiston:hover {
-  fill: gray;
-}
-.home_map svg .samarqand:hover {
-  fill: chartreuse;
-}
-.home_map svg .sirdaryo:hover {
-  fill: darksalmon;
-}
-.home_map svg .surxondaryo:hover {
-  fill: mediumpurple;
-}
-.home_map svg .tashkent_city:hover {
-  fill: #797979;
-}
-.home_map svg .tashkent:hover {
-  fill: black;
-}
-.home_map svg .xorazm:hover {
-  fill: rgb(0, 255, 132);
+.home__title:hover .homeTitle_clothes {
+  transform: rotate(360deg);
+  left: 11%;
+  bottom: 5%;
 }
 
 /* HOME REGION ABOUT */
