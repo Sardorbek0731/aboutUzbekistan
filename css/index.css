@@ -38,8 +38,8 @@ body {
 .angle_top {
   position: sticky;
   z-index: 20;
-  top: 93vh;
-  left: 10px;
+  top: 92vh;
+  left: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -322,6 +322,32 @@ svg {
   height: 100vh;
   box-shadow: 0px 0 40px 0px rgba(0, 0, 0, 0.858);
 }
+.my_telephone {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 20px;
+  right: 20px;
+  width: 3rem;
+  height: 3rem;
+  background-color: #67adbe;
+  border-radius: 50%;
+  animation: animate_tel 0.6s linear infinite;
+}
+@keyframes animate_tel {
+  0% {
+    box-shadow: 0 4px 7px #67adbe34, 0 0 0 0 #67adbe34,
+      0 0 0 5px #67adbe34, 0 0 0 10px #67adbe34;
+  }
+  100% {
+    box-shadow: 0 4px 7px #67adbe34, 0 0 0 5px #67adbe34,
+      0 0 0 7px #67adbe34, 0 0 0 17px#67adbe34;
+  }
+}
+.my_telephone a i {
+  color: white;
+}
 .home_bg_row {
   display: flex;
   justify-content: space-evenly;
@@ -503,7 +529,8 @@ svg {
   width: 7rem;
   height: 7rem;
 }
-.homeTitle_clothes img, .homeTitle_bread img {
+.homeTitle_clothes img,
+.homeTitle_bread img {
   width: 100%;
   border-radius: 50%;
   height: 100%;
