@@ -154,96 +154,42 @@ body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
-.symbol_div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.symbolItem_gerb,
-.symbolItem_flag {
-  margin-right: 50px;
-}
 .symbol_item {
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
-  background-color: white;
-  box-shadow: 0 0 30px rgba(97, 97, 123, 0.451);
-  position: relative;
-  min-height: 650px;
-  width: 24rem;
-  z-index: 0;
-  overflow: hidden;
+  width: 65rem;
+  height: 22.8125rem;
+  padding: 40px 40px;
+  background-color: #fff;
+  box-shadow: 0 0 40px #03295e22;
 }
-.symbolItemGerb_img,
-.symbolItemFlag_img,
-.symbolItemArt_img {
-  position: absolute;
-  margin-bottom: 120px;
+.symbol_gerb, .symbol_flag {
+  margin-bottom: 40px;
 }
-.symbolItemFlag_img img {
-  height: 17rem;
+.symbolItem_img {
+  margin-right: 40px;
 }
-.symbolItemGerb_img img,
-.symbolItemFlag_img img,
-.symbolItemArt_img img {
-  width: 20rem;
+.symbolGerb_img img {
+  width: 17rem;
 }
-.symbolItemGerb_title,
-.symbolItemFlag_title,
-.symbolItemArt_title {
-  position: absolute;
-  bottom: 4%;
-  z-index: 2;
-  transition: all 0.4s linear;
+.symbolFlag_img img, .symbolAnthem_img img {
+  width: 17rem;
+  height: 14rem;
 }
-.symbolItemGerb_title h1,
-.symbolItemFlag_title h1,
-.symbolItemArt_title h1 {
-  text-align: center;
-  color: #67adbe;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+.symbolItem_paragraph p {
+  color: #073c86;
+  font-size: 1rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: 300;
-}
-.symbol_item:hover .symbolItemGerb_title,
-.symbol_item:hover .symbolItemFlag_title,
-.symbol_item:hover .symbolItemArt_title {
-  bottom: 85%;
-  transition: all 0.5s linear;
-}
-.symbolItem_overlay {
-  position: absolute;
-  bottom: -100%;
-  z-index: 2;
-  transition: all 1s linear;
-}
-.symbolItem_overlay_bg {
-  opacity: 0;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.85);
-  left: 0;
-  bottom: 0;
-  z-index: 1;
-  transition: all 0.4s linear;
-}
-.symbol_item:hover .symbolItem_overlay_bg {
-  opacity: 1;
-  transition: 0;
-}
-.symbolItem_overlay p {
-  color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 300;
-  font-size: 0.8rem;
   line-height: 25px;
 }
-.symbol_item:hover .symbolItem_overlay {
-  bottom: 2%;
-  transition: all 1.3s linear;
+.symbolAthemP_first_column {
+  display: flex;
+  margin-top: 20px;
+}
+.Athem_first {
+  margin-right: 60px;
 }
 
 /* FOOTER */
