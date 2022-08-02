@@ -80,17 +80,15 @@ body {
   height: 3rem;
   background-color: #67adbe;
   border-radius: 50%;
-  animation: animate_tel 0.6s linear infinite;
+  animation: animate_tel 1s ease infinite;
   z-index: 20;
 }
 @keyframes animate_tel {
   0% {
-    box-shadow: 0 4px 7px #67adbe34, 0 0 0 0 #67adbe34, 0 0 0 5px #67adbe34,
-      0 0 0 10px #67adbe34;
+    box-shadow: 0 4px 7px #67adbe34, 0 0 0 5px #67adbe34, 0 0 0 7px #67adbe34;
   }
   100% {
-    box-shadow: 0 4px 7px #67adbe34, 0 0 0 5px #67adbe34, 0 0 0 7px #67adbe34,
-      0 0 0 17px#67adbe34;
+    box-shadow: 0 4px 7px #67adbe34, 0 0 0 7px #67adbe34, 0 0 0 14px#67adbe34;
   }
 }
 .my_telephone a i {
@@ -161,6 +159,10 @@ nav {
   width: 100%;
   left: 0;
 }
+.navUl .active::before {
+  width: 100%;
+  left: 0;
+}
 .nav__item a,
 svg {
   text-decoration: none;
@@ -176,6 +178,9 @@ svg {
 .nav__item:hover a,
 .nav__item:hover svg {
   color: black;
+}
+.nav__item .active {
+  color: #000;
 }
 .pages__section {
   display: flex;
@@ -868,7 +873,7 @@ input[type="radio"] {
   display: flex;
   justify-content: center;
   position: relative;
-  box-shadow: 0 0 50px rgb(74, 78, 121, 0.7);
+  box-shadow: 0 10px 30px rgb(0 0 0 / 13%);
 }
 .hotelImg_item img {
   width: 23rem;
@@ -877,11 +882,10 @@ input[type="radio"] {
 .hotel_overlay {
   position: absolute;
   background-color: rgb(255, 255, 255);
-  left: 60px;
-  right: 60px;
-  max-height: 90px;
-  padding: 0 15px;
-  padding-top: 25px;
+  left: 3.8rem;
+  right: 3.8rem;
+  max-height: 5rem;
+  padding-top: 1.5rem;
   padding-bottom: 10px;
   top: 85%;
   overflow: hidden;
@@ -896,22 +900,24 @@ input[type="radio"] {
 .ramadaOverlay_title {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .hiltonOverlay_title h1,
 .SaraLindOverlay_title h1,
 .ramadaOverlay_title h1 {
   display: flex;
   justify-content: center;
-  font-size: 2.3rem;
-  font-weight: 350;
+  font-size: 1.7rem;
+  font-weight: 300;
   text-transform: uppercase;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   margin-bottom: 25px;
 }
 .hotel_overlay p {
   line-height: 30px;
   text-align: center;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 350;
   color: rgba(0, 0, 0, 0.519);
@@ -1287,7 +1293,8 @@ input[type="radio"] {
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 30px rgba(68, 68, 107, 0.3);
-  padding: 90px 70px;
+  padding: 0 70px;
+  height: 32.625rem;
   background: linear-gradient(to top, rgba(255, 255, 255, 0.386) 30%, #fff 60%);
 }
 .firstName,
@@ -1377,7 +1384,7 @@ form .btn:hover {
 }
 
 .contactCard_row {
-  margin-bottom: 85px;
+  margin-bottom: 50px;
 }
 .contactCard_row,
 .contactCardRow_second {
@@ -1386,60 +1393,62 @@ form .btn:hover {
   align-items: center;
 }
 .contactCard_item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background: linear-gradient(
     to bottom,
     #fff 10%,
     rgba(255, 255, 255, 0.5) 80%
   );
-  width: 15rem;
-  height: 12rem;
+  padding: 2.4rem 2.4rem;
+  width: 20rem;
   box-shadow: 0 0 30px rgba(68, 68, 107, 0.3);
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+}
+.contactCard_item::before {
+  content: "";
+  position: absolute;
+  background: #fff;
+  left: 0;
+  right: 0;
+  top: 100%;
+  bottom: 0;
+  transition: all 0.5s;
+  z-index: -1;
+}
+.contactCard_item:hover::before {
+  top: 0;
+  background-color: #67adbe;
 }
 .contactCard_item i {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 3.45rem;
-  height: 3.45rem;
   color: #4c8897;
-  font-size: 1.5rem;
-  border: 1px dashed #4c8897;
-  border-radius: 50%;
-  margin-bottom: 10px;
-  transition: all 0.3s linear;
-}
-.contactCard_item:hover i {
-  color: white;
-  border: 0;
-  background-color: #6ca0b1;
-  box-shadow: 0 0 0 6px #6ca0b16f;
+  font-size: 3.2rem;
+  margin-bottom: 1.4rem;
 }
 .contactCard_item h1 {
   color: #4c8897;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-size: 1.5rem;
-  font-weight: 300;
-  margin-bottom: 20px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1.4rem;
 }
 .contactCard_item a {
   color: rgba(0, 0, 0, 0.686);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 300;
   text-decoration: none;
 }
-.contactCard_item a:hover {
-  color: #4c8897;
-}
 .contactCard_email,
 .telegram {
-  margin-right: 85px;
+  margin-right: 50px;
+}
+.contactCard_item:hover i,
+.contactCard_item:hover h1,
+.contactCard_item:hover a {
+  color: white;
 }
 
 .goodbye {
