@@ -1263,6 +1263,7 @@ input[type="radio"] {
   flex-direction: column;
   background: url(../image/contact/contactBg1.webp) no-repeat;
   background-size: cover;
+  width: 100%;
 }
 .footer_item {
   display: flex;
@@ -1271,10 +1272,8 @@ input[type="radio"] {
 }
 .footer_title {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   padding-bottom: 150px;
-  padding-right: 150px;
-  width: 100%;
 }
 .footer_title h1 {
   font-size: 2rem;
