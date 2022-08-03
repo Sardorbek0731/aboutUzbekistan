@@ -34,6 +34,61 @@ body {
 ::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0.585);
 }
+.submit_alert {
+  position: fixed;
+  top: 150px;
+  right: -100%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 4px;
+  padding: 15px 10px;
+  width: 20rem;
+  border-bottom: 5px solid #67adbe;
+  transition: all 1s ease-in-out; 
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.264);
+}
+.submit_alert i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  background-color: #67adbe;
+  color: white;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+.submit_alert h1 {
+  color: #67adbe;
+  font-size: 1.1rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 300;
+}
+#submit:checked ~ .submit_alert {
+  right: 20px;
+}
+#submit:checked ~ .submit_x {
+  right: 20px;
+}
+#submit_x:checked ~ .submit_alert {
+  right: -100%;
+}
+#submit_x:checked ~ .submit_x {
+  right: -100%;
+}
+.submit_x {
+  position: fixed;
+  right: -100%;
+  top: 110px;
+  transition: all 1s ease-in-out;
+}
+.submit_x i {
+  font-size: 1.6rem;
+  color: #67adbe;
+}
 
 .angle_top {
   position: sticky;
@@ -1349,7 +1404,10 @@ form .contact_item input:valid ~ label {
   margin-left: 0.8rem;
   color: #4c8897;
 }
-form .btn {
+form .submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 11rem;
   height: 3.2rem;
   border: 1px solid #6ca0b1;
@@ -1359,9 +1417,10 @@ form .btn {
   color: #6ca0b1;
   transition: all 0.5s linear;
   font-size: 1rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   cursor: pointer;
 }
-form .btn::before {
+form .submit::before {
   content: "";
   position: absolute;
   width: 0;
@@ -1372,11 +1431,11 @@ form .btn::before {
   transition: all 0.5s linear;
   z-index: -1;
 }
-form .btn:hover::before {
+form .submit:hover::before {
   width: 11rem;
   border-radius: 40px;
 }
-form .btn:hover {
+form .submit:hover {
   color: white;
   border-radius: 40px;
   border: none;
