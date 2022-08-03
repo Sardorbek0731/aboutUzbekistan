@@ -47,7 +47,7 @@ body {
   padding: 15px 10px;
   width: 20rem;
   border-bottom: 5px solid #67adbe;
-  transition: all 1s ease-in-out; 
+  transition: all 1s ease-in-out;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.264);
 }
 .submit_alert i {
@@ -64,7 +64,8 @@ body {
 .submit_alert h1 {
   color: #67adbe;
   font-size: 1.1rem;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-weight: 300;
 }
 #submit:checked ~ .submit_alert {
@@ -829,7 +830,7 @@ input[type="radio"] {
   background-color: #fff;
   border: 1px solid #67adbe;
 }
-.threeth_row video {
+.threeth_row iframe {
   width: 23rem;
   height: 17rem;
   margin-right: 50px;
@@ -1417,7 +1418,8 @@ form .submit {
   color: #6ca0b1;
   transition: all 0.5s linear;
   font-size: 1rem;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   cursor: pointer;
 }
 form .submit::before {
@@ -1486,7 +1488,7 @@ form .submit:hover {
 }
 .contactCard_item h1 {
   color: #4c8897;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 2rem;
   font-weight: 400;
   margin-bottom: 1.4rem;
