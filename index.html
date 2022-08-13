@@ -1181,29 +1181,42 @@
         <div class="container">
           <div class="footer_item">
             <div class="form">
-              <form>
+              <form id="signup-form">
                 <div class="contact_item firstName">
-                  <input type="text" id="firstName" required="required" />
+                  <input type="text" id="firstName" required />
                   <label for="firstName">Ism</label>
                 </div>
                 <div class="contact_item email">
-                  <input type="email" id="email" required="required" />
+                  <input type="email" id="email" required />
                   <label for="email">Email</label>
                 </div>
                 <div class="contact_item password">
-                  <input type="password" id="password" required="required" />
+                  <input type="password" id="password" required />
                   <label for="password">Parol</label>
                 </div>
-                <input type="radio" name="submit" id="submit" />
-                <input type="radio" name="submit" id="submit_x" />
-                <div class="submit_alert">
-                  <i class="fa-solid fa-check"></i>
-                  <h1>Email yoki parol noto'g'ri!</h1>
+                <div class="submit_alert warning_alert" id="warning_alert">
+                  <div class="alert_body">
+                    <div class="alert_check">
+                      <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="alert_title">
+                      <h1>Email yoki parol noto'g'ri!</h1>
+                    </div>
+                  </div>
+                  <div class="warningAlert_close alert_close">
+                    <i class="fa-solid fa-xmark" id="closeWarning_alert"></i>
+                  </div>
                 </div>
-                <label for="submit" class="submit">Yuborish</label>
-                <label for="submit_x" class="submit_x">
-                  <i class="fa-solid fa-xmark"></i>
-                </label>
+                <div class="submit_alert correct_alert" id="correct_alert">
+                  <div class="alert_correct_check alert_check">
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                  <h1>Xabar muaffaqiyatli jo'natildi!</h1>
+                  <div class="correctAlert_close alert_close">
+                    <i class="fa-solid fa-xmark" id="closeCorrect_alert"></i>
+                  </div>
+                </div>
+                <button class="submit" id="submit">Yuborish</button>
               </form>
             </div>
             <div class="contact_card">
@@ -1342,5 +1355,6 @@
         </div>
       </div>
     </footer>
+    <script src="./app.js"></script>
   </body>
 </html>

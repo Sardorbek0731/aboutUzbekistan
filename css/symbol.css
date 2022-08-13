@@ -14,6 +14,14 @@ html {
   font-size: 16px;
   scroll-behavior: smooth;
 }
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75rem;
+  margin-right: auto;
+  margin-left: auto;
+}
 body {
   padding: 0;
   margin: 0;
@@ -164,7 +172,8 @@ body {
   background-color: #fff;
   box-shadow: 0 0 40px #03295e22;
 }
-.symbol_gerb, .symbol_flag {
+.symbol_gerb,
+.symbol_flag {
   margin-bottom: 40px;
 }
 .symbolItem_img {
@@ -173,14 +182,16 @@ body {
 .symbolGerb_img img {
   width: 17rem;
 }
-.symbolFlag_img img, .symbolAnthem_img img {
+.symbolFlag_img img,
+.symbolAnthem_img img {
   width: 17rem;
   height: 14rem;
 }
 .symbolItem_paragraph p {
   color: #073c86;
   font-size: 1rem;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-weight: 300;
   line-height: 25px;
 }
@@ -201,28 +212,29 @@ body {
   flex-direction: column;
   background: url(../image/contact/contactBg1.webp) no-repeat;
   background-size: cover;
+  width: 100%;
 }
 .footer_item {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 .footer_title {
   display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  padding-right: 130px;
+  justify-content: center;
+  padding-bottom: 150px;
 }
 .footer_title h1 {
-  padding-bottom: 150px;
-  font-size: 3rem;
+  font-size: 2rem;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  color: rgb(0, 0, 118);
-  font-weight: 300;
-  font-family: "Audiowide", cursive;
+  color: #4c8897;
+  font-weight: 500;
+  font-family: "Poppins", helvetica;
 }
 .form {
-  margin-right: 85px;
+  width: 40%;
 }
 .form form {
   display: flex;
@@ -230,14 +242,20 @@ body {
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 30px rgba(68, 68, 107, 0.3);
-  padding: 90px 70px;
+  padding: 20px 50px;
+  width: 23rem;
+  height: 34rem;
+  transition: all 0.7s ease;
   background: linear-gradient(to top, rgba(255, 255, 255, 0.386) 30%, #fff 60%);
+}
+.form form:hover {
+  border-radius: 20px;
 }
 .firstName,
 .email,
 .password {
   position: relative;
-  margin-bottom: 35px;
+  margin-bottom: 2rem;
 }
 form .contact_item input {
   position: relative;
@@ -252,7 +270,7 @@ form .contact_item input {
   background-color: transparent;
 }
 form .password {
-  margin-bottom: 50px;
+  margin-bottom: 3.5rem;
 }
 .form .contact_item label {
   position: absolute;
@@ -264,29 +282,33 @@ form .password {
   color: rgba(0, 0, 0, 0.491);
   transition: all 0.2s linear;
 }
-form .contact_item input:focus {
+.form .contact_item input:focus {
   border-radius: 10px;
-  border: 1px solid red;
-  border-top: 0;
+  border-bottom: 1px solid red;
+  border-right: 1px solid red;
+  border-left: 1px solid red;
 }
-form .contact_item input:valid {
-  border-radius: 30px;
-  border: 1px solid #4c8897;
-  border-top: 0;
+.form .contact_item input:valid {
+  border-radius: 20px;
+  border-bottom: 1px solid rgb(0, 168, 112);
+  border-right: 1px solid rgb(0, 168, 112);
+  border-left: 1px solid rgb(0, 168, 112);
 }
-form .contact_item input:focus ~ label {
-  margin-top: -1rem;
-  font-size: 0.8rem;
+.form .contact_item input:focus ~ label {
   color: red;
-  margin-left: 0.1rem;
-}
-form .contact_item input:valid ~ label {
+  margin-top: -0.9rem;
   font-size: 0.8rem;
-  margin-top: -1rem;
-  margin-left: 0.8rem;
-  color: #4c8897;
 }
-form .btn {
+.form .contact_item input:valid ~ label {
+  color: rgb(0, 168, 112);
+  margin-top: -0.9rem;
+  font-size: 0.8rem;
+  left: 1.4rem;
+}
+form .submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 11rem;
   height: 3.2rem;
   border: 1px solid #6ca0b1;
@@ -296,9 +318,11 @@ form .btn {
   color: #6ca0b1;
   transition: all 0.5s linear;
   font-size: 1rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   cursor: pointer;
 }
-form .btn::before {
+form .submit::before {
   content: "";
   position: absolute;
   width: 0;
@@ -309,18 +333,104 @@ form .btn::before {
   transition: all 0.5s linear;
   z-index: -1;
 }
-form .btn:hover::before {
+form .submit:hover::before {
   width: 11rem;
   border-radius: 40px;
 }
-form .btn:hover {
+form .submit:hover {
   color: white;
   border-radius: 40px;
   border: none;
 }
 
+.submit_alert {
+  position: fixed;
+  right: -100%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 160, 160);
+  padding-left: 10px;
+  width: 23rem;
+  height: 4.5rem;
+  transition: all 0.5s;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.264);
+  border-radius: 5px;
+  border-left: 5px solid red;
+}
+.submit_alert.active {
+  right: 20px;
+}
+.warning_alert {
+  top: 110px;
+}
+.correct_alert {
+  bottom: 110px;
+  background-color: rgb(160, 255, 209);
+  box-shadow: 0 0 40px rgba(29, 30, 52, 0.212);
+  border-left: 5px solid rgb(0, 162, 130);
+}
+.alert_body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.alert_check i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  background-color: red;
+  color: white;
+  margin-right: 15px;
+  border-radius: 50%;
+}
+.alert_correct_check i {
+  background-color: rgb(0, 162, 130);
+}
+.submit_alert h1 {
+  color: red;
+  font-size: 1.1rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 300;
+}
+.correct_alert h1 {
+  color: rgb(0, 162, 130);
+}
+.alert_close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 100%;
+}
+.warningAlert_close {
+  background-color: #ff8a8a;
+}
+.correctAlert_close {
+  background-color: rgb(106, 255, 225);
+}
+.warningAlert_close i {
+  font-size: 1.4rem;
+  color: red;
+}
+.correctAlert_close i {
+  font-size: 1.4rem;
+  color: rgb(0, 162, 130);
+}
+
+.contact_card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 60%;
+}
 .contactCard_row {
-  margin-bottom: 85px;
+  margin-bottom: 5rem;
 }
 .contactCard_row,
 .contactCardRow_second {
@@ -338,36 +448,40 @@ form .btn:hover {
     #fff 10%,
     rgba(255, 255, 255, 0.5) 80%
   );
-  width: 15rem;
-  height: 12rem;
+  width: 19rem;
+  height: 14.5rem;
   box-shadow: 0 0 30px rgba(68, 68, 107, 0.3);
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  border-radius: 20px;
+}
+.contactCard_item::before {
+  content: "";
+  position: absolute;
+  background: #fff;
+  left: 0;
+  right: 0;
+  top: 100%;
+  bottom: 0;
+  transition: all 0.3s;
+  z-index: -1;
+}
+.contactCard_item:hover::before {
+  top: 0;
+  background-color: #67adbe;
 }
 .contactCard_item i {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 3.45rem;
-  height: 3.45rem;
   color: #4c8897;
-  font-size: 1.5rem;
-  border: 1px dashed #4c8897;
-  border-radius: 50%;
-  margin-bottom: 10px;
-  transition: all 0.3s linear;
-}
-.contactCard_item:hover i {
-  color: white;
-  border: 0;
-  background-color: #6ca0b1;
-  box-shadow: 0 0 0 6px #6ca0b16f;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
 }
 .contactCard_item h1 {
   color: #4c8897;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-size: 1.5rem;
-  font-weight: 300;
-  margin-bottom: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
 }
 .contactCard_item a {
   color: rgba(0, 0, 0, 0.686);
@@ -376,13 +490,19 @@ form .btn:hover {
   font-size: 1rem;
   font-weight: 300;
   text-decoration: none;
+  transition: all 0.5s ease;
 }
-.contactCard_item a:hover {
-  color: #4c8897;
+.contactCard_item:hover a:hover {
+  color: rgba(255, 255, 255, 0.8);
 }
 .contactCard_email,
 .telegram {
-  margin-right: 85px;
+  margin-right: 5rem;
+}
+.contactCard_item:hover i,
+.contactCard_item:hover h1,
+.contactCard_item:hover a {
+  color: white;
 }
 
 .goodbye {
@@ -402,7 +522,7 @@ form .btn:hover {
 }
 .website_map a {
   margin-top: 0;
-  margin-right: 80px;
+  margin-right: 40px;
   text-decoration: none;
   color: white;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",

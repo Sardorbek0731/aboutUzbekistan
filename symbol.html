@@ -176,8 +176,10 @@
           </div>
           <div class="symbolItem_paragraph symbolAthem_p">
             <p>
-              Davlat bayrog`i O`zbekiston Respublikasining 1991 yil 18-noyabrdagi 407-XII-sonli «O`z-<br>
-              bekiston Respublikasining Davlat bayrog`i to`g`risida»gi Qonuni bilan tasdiqlangan.
+              Davlat bayrog`i O`zbekiston Respublikasining 1991 yil
+              18-noyabrdagi 407-XII-sonli «O`z-<br />
+              bekiston Respublikasining Davlat bayrog`i to`g`risida»gi Qonuni
+              bilan tasdiqlangan.
             </p>
             <div class="symbolAthemP_first_column">
               <p class="Athem_first">
@@ -213,50 +215,80 @@
     <!---------  FOOTER  --------->
     <footer id="footer">
       <div class="footer">
-        <div class="footer_title">
-          <h1>Aloqa</h1>
-        </div>
-        <div class="footer_item">
-          <div class="form">
-            <form>
-              <div class="contact_item firstName">
-                <input type="text" id="firstName" required />
-                <label for="firstName">Ism</label>
-              </div>
-              <div class="contact_item email">
-                <input type="email" id="email" required />
-                <label for="email">Email</label>
-              </div>
-              <div class="contact_item password">
-                <input type="password" id="password" required />
-                <label for="password">Parol</label>
-              </div>
-              <button type="button" class="btn">Yuborish</button>
-            </form>
+        <div class="container">
+          <div class="footer_title">
+            <h1>Aloqa</h1>
           </div>
-          <div class="contact_card">
-            <div class="contactCard_row">
-              <div class="contactCard_item contactCard_email">
-                <i class="fa-regular fa-envelope"></i>
-                <h1>Email</h1>
-                <a href="#"> sardor.20070731@gmail.com </a>
-              </div>
-              <div class="contactCard_item number">
-                <i class="fa-solid fa-phone"></i>
-                <h1>Telefon</h1>
-                <a href="#"> +998 99 3477826 </a>
-              </div>
+        </div>
+        <div class="container">
+          <div class="footer_item">
+            <div class="form">
+              <form id="signup-form">
+                <div class="contact_item firstName">
+                  <input type="text" id="firstName" required />
+                  <label for="firstName">Ism</label>
+                </div>
+                <div class="contact_item email">
+                  <input type="email" id="email" required />
+                  <label for="email">Email</label>
+                </div>
+                <div class="contact_item password">
+                  <input type="password" id="password" required />
+                  <label for="password">Parol</label>
+                </div>
+                <div class="submit_alert warning_alert" id="warning_alert">
+                  <div class="alert_body">
+                    <div class="alert_check">
+                      <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="alert_title">
+                      <h1>Email yoki parol noto'g'ri!</h1>
+                    </div>
+                  </div>
+                  <div class="warningAlert_close alert_close">
+                    <i class="fa-solid fa-xmark" id="closeWarning_alert"></i>
+                  </div>
+                </div>
+                <div class="submit_alert correct_alert" id="correct_alert">
+                  <div class="alert_correct_check alert_check">
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                  <h1>Xabar muaffaqiyatli jo'natildi!</h1>
+                  <div class="correctAlert_close alert_close">
+                    <i class="fa-solid fa-xmark" id="closeCorrect_alert"></i>
+                  </div>
+                </div>
+                <button class="submit" id="submit">Yuborish</button>
+              </form>
             </div>
-            <div class="contactCardRow_second">
-              <div class="contactCard_item telegram">
-                <i class="fa-solid fa-paper-plane"></i>
-                <h1>Telegram</h1>
-                <a href="#"> t.me/Sardorbek0731 </a>
+            <div class="contact_card">
+              <div class="contactCard_row">
+                <div class="contactCard_item contactCard_email">
+                  <i class="fa-solid fa-square-envelope"></i>
+                  <h1>Email</h1>
+                  <a href="#"> sardor.20070731@gmail.com </a>
+                </div>
+                <div class="contactCard_item github">
+                  <i class="fa-brands fa-github"></i>
+                  <h1>Github</h1>
+                  <a href="https://github.com/sardorbek0731" target="_blank">
+                    github.com/sardorbek0731</a
+                  >
+                </div>
               </div>
-              <div class="contactCard_item github">
-                <i class="fa-brands fa-github"></i>
-                <h1>Github</h1>
-                <a href="#"> github.com/sardorbek0731</a>
+              <div class="contactCardRow_second">
+                <div class="contactCard_item telegram">
+                  <i class="fa-brands fa-telegram"></i>
+                  <h1>Telegram</h1>
+                  <a href="https://t.me/Sardorbek20070731" target="_blank">
+                    t.me/Sardorbek20070731
+                  </a>
+                </div>
+                <div class="contactCard_item number">
+                  <i class="fa-solid fa-square-phone-flip"></i>
+                  <h1>Telefon</h1>
+                  <a href="tel:993477826"> +998 99 3477826 </a>
+                </div>
               </div>
             </div>
           </div>
@@ -269,8 +301,23 @@
           </a>
         </div>
         <div class="website_map">
-          <a href="index.html">
+          <a href="#home">
             Bosh sahifa
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-up"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
+              /></svg
+          ></a>
+          <a href="#region">
+            Viloyatlar
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -286,6 +333,36 @@
           ></a>
           <a href="#symbol">
             Ramzlari
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-up"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
+              /></svg
+          ></a>
+          <a href="#culture">
+            Madaniyat
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-up"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
+              /></svg
+          ></a>
+          <a href="#hotel">
+            Mehmonxona
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -320,5 +397,6 @@
         </div>
       </div>
     </footer>
+    <script src="./app.js"></script>
   </body>
 </html>
