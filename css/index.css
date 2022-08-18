@@ -348,7 +348,8 @@ svg {
   bottom: -40px;
   font-size: 1rem;
   left: 20px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-weight: 300;
   color: red;
 }
@@ -1394,7 +1395,7 @@ form .submit:hover {
 
 .submit_alert {
   position: fixed;
-  right: -100%;
+  right: 20px;
   z-index: 10;
   display: flex;
   justify-content: space-between;
@@ -1403,13 +1404,14 @@ form .submit:hover {
   padding-left: 10px;
   width: 23rem;
   height: 4.5rem;
-  transition: all 0.5s;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.264);
+  transition: all 0.4s cubic-bezier(0.4, -1.5, 0.01, 2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.264);
   border-radius: 5px;
-  border-left: 5px solid red;
+  overflow: hidden;
+  transform: translateX(calc(100% + 40px));
 }
 .submit_alert.active {
-  right: 20px;
+  transform: translateX(0);
 }
 .warning_alert {
   top: 130px;
@@ -1418,7 +1420,6 @@ form .submit:hover {
   top: 240px;
   background-color: rgb(160, 255, 209);
   box-shadow: 0 0 40px rgba(29, 30, 52, 0.212);
-  border-left: 5px solid rgb(0, 162, 130);
 }
 .alert_body {
   display: flex;
@@ -1448,6 +1449,41 @@ form .submit:hover {
 }
 .correct_alert h1 {
   color: rgb(0, 162, 130);
+}
+.progress {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  right: 0;
+  bottom: 0;
+}
+.warning-progress {
+  background-color: rgb(255, 160, 160);
+}
+.correct-progress {
+  background-color: rgb(160, 255, 209);
+}
+.progress::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  right: 0;
+  bottom: 0;
+}
+.warning-progress::before {
+  background-color: red;
+}
+.correct-progress::before {
+  background-color: rgb(0, 162, 130);
+}
+.progress.active::before {
+  animation: progress 5s linear forwards;
+}
+@keyframes progress {
+  100% {
+    right: -100%;
+  }
 }
 .alert_close {
   display: flex;
@@ -1570,6 +1606,9 @@ form .submit:hover {
   margin-bottom: 60px;
 }
 .website_map a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 0;
   margin-right: 40px;
   text-decoration: none;
@@ -1588,6 +1627,7 @@ form .submit:hover {
 }
 .website_map a svg {
   color: white;
+  margin-left: 10px;
 }
 .contact_brand {
   margin-bottom: 60px;
