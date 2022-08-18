@@ -9,11 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <title>Uzbekistan</title>
   </head>
   <body>
@@ -26,16 +27,27 @@
           </a>
           <ul class="navUl">
             <li class="nav__item active">
-              <a class="nav__link active" href="#home">Bosh sahifa</a>
+              <a class="nav__link active" href="#home">
+                <i class="fa-solid fa-house-chimney"></i>
+                Bosh sahifa</a
+              >
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="symbol.html">Ramzlari</a>
+              <a class="nav__link" href="symbol.html">
+                <i class="fa-solid fa-atom"></i>
+                Ramzlari</a
+              >
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#home">Tarixi</a>
+              <a class="nav__link" href="#home">
+                <i class="fa-solid fa-landmark-dome"></i>
+                Tarixi</a
+              >
             </li>
             <li class="nav__item pages__link">
-              <a class="nav__link" href="#"> Sahifa </a>
+              <a class="nav__link" href="#">
+                <i class="fa-solid fa-book-open"></i> Sahifa
+              </a>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="15"
@@ -51,24 +63,37 @@
               </svg>
               <ul class="pages__section">
                 <li class="nav__item_pages">
-                  <a class="pages__link__item" href="#region">Viloyatlar</a>
+                  <a class="pages__link__item" href="#region">
+                    <i class="fa-solid fa-earth-americas"></i>
+                    Viloyatlar</a>
                 </li>
                 <li class="nav__item_pages">
-                  <a class="pages__link__item" href="#culture">Madaniyat</a>
+                  <a class="pages__link__item" href="#culture">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    Madaniyat</a>
                 </li>
                 <li class="nav__item_pages">
-                  <a class="pages__link__item" href="#hotel">Mehmonxona</a>
+                  <a class="pages__link__item" href="#hotel">
+                    <i class="fa-solid fa-hotel"></i>
+                    Mehmonxona</a>
                 </li>
                 <li class="nav__item_pages">
-                  <a class="pages__link__item" href="#managment">Boshqaruv</a>
+                  <a class="pages__link__item" href="#managment">
+                    <i class="fa-solid fa-chart-line"></i>
+                    Boshqaruv</a>
                 </li>
                 <li class="nav__item_pages">
-                  <a class="pages__link__item" href="#footer"> Aloqa </a>
+                  <a class="pages__link__item" href="#footer"> 
+                    <i class="fa-solid fa-user"></i>
+                    Aloqa </a>
                 </li>
               </ul>
             </li>
             <li class="nav__item language">
-              <a class="nav__link" href="#"> UZB </a>
+              <a class="nav__link" href="#">
+                <i class="fa-solid fa-language"></i> UZB
+              </a>
+
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="15"
@@ -93,40 +118,16 @@
             </li>
           </ul>
           <div class="search">
-            <input
-              type="radio"
-              id="search"
-              class="searchNav_input"
-              name="search"
-              placeholder=""
-            />
-            <label for="search" class="searchNav_label">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </label>
-            <input
-              type="radio"
-              id="search_x"
-              class="searchNav_input_x"
-              name="search"
-              placeholder=""
-            />
-            <label for="search_x" class="searchNav_label_x">
-              <i class="fa-solid fa-x"></i>
-            </label>
-            <div class="search_bg">
-              <div class="search_bg_input">
-                <input
-                  type="search"
-                  name="search"
-                  class="search_input"
-                  required
-                  placeholder="Qidirish..."
-                />
-                <label for="search" class="search_label">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </label>
+            <i class="fa-solid fa-magnifying-glass" id="openSearch"></i>
+            <div class="searchOverlay hidden"></div>
+            <div class="searchInput hidden">
+              <input type="search" placeholder="Qidiruv..." id="searchInputValue"/>
+              <div class="message"></div>
+              <div class="searchIcon">
+                <i class="fa-solid fa-magnifying-glass" id="inputSearch"></i>
               </div>
             </div>
+            <i class="fa-solid fa-xmark" id="close--searchInput"></i>
           </div>
         </div>
       </nav>
@@ -1238,8 +1239,8 @@
                 <div class="contactCard_item telegram">
                   <i class="fa-brands fa-telegram"></i>
                   <h1>Telegram</h1>
-                  <a href="https://t.me/Sardorbek20070731" target="_blank">
-                    t.me/Sardorbek20070731
+                  <a href="https://t.me/Sardorbek_0731" target="_blank">
+                    t.me/Sardorbek_0731
                   </a>
                 </div>
                 <div class="contactCard_item number">
