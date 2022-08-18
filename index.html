@@ -26,22 +26,34 @@
             <h1>Uzbek<span>About</span></h1>
           </a>
           <ul class="navUl">
-            <li class="nav__item active">
-              <a class="nav__link active" href="#home">
+            <li class="nav__item">
+              <a class="nav__link" href="#home">
                 <i class="fa-solid fa-house-chimney"></i>
                 Bosh sahifa</a
               >
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="symbol.html">
-                <i class="fa-solid fa-atom"></i>
-                Ramzlari</a
+              <a class="nav__link" href="#region">
+                <i class="fa-solid fa-earth-americas"></i>
+                Viloyatlar</a
               >
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#home">
-                <i class="fa-solid fa-landmark-dome"></i>
-                Tarixi</a
+              <a class="nav__link" href="#culture">
+                <i class="fa-solid fa-graduation-cap"></i>
+                Madaniyat</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#hotel">
+                <i class="fa-solid fa-hotel"></i>
+                Mehmonxona</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#managment">
+                <i class="fa-solid fa-chart-line"></i>
+                Boshqaruv</a
               >
             </li>
             <li class="nav__item pages__link">
@@ -63,31 +75,19 @@
               </svg>
               <ul class="pages__section">
                 <li class="nav__item_pages">
-                  <a class="pages__link__item" href="#region">
-                    <i class="fa-solid fa-earth-americas"></i>
-                    Viloyatlar</a
+                  <a class="pages__link__item" href="symbol.html">
+                    <i class="fa-solid fa-atom"></i>
+                    Ramzlari</a
                   >
                 </li>
                 <li class="nav__item_pages">
-                  <a class="pages__link__item" href="#culture">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    Madaniyat</a
+                  <a class="pages__link__item" href="#home">
+                    <i class="fa-solid fa-landmark-dome"></i>
+                    Tarixi</a
                   >
                 </li>
                 <li class="nav__item_pages">
-                  <a class="pages__link__item" href="#hotel">
-                    <i class="fa-solid fa-hotel"></i>
-                    Mehmonxona</a
-                  >
-                </li>
-                <li class="nav__item_pages">
-                  <a class="pages__link__item" href="#managment">
-                    <i class="fa-solid fa-chart-line"></i>
-                    Boshqaruv</a
-                  >
-                </li>
-                <li class="nav__item_pages">
-                  <a class="pages__link__item" href="#footer">
+                  <a class="pages__link__item" href="contact.html">
                     <i class="fa-solid fa-user"></i>
                     Aloqa
                   </a>
@@ -192,26 +192,24 @@
           <i class="fa-solid fa-phone"></i>
         </a>
       </div>
+      <div class="angle_top">
+        <a href="#home">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-chevron-up"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
+            />
+          </svg>
+        </a>
+      </div>
     </section>
-
-    <!---------  ANGLE UP  --------->
-    <div class="angle_top">
-      <a href="#home">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          fill="currentColor"
-          class="bi bi-chevron-up"
-          viewBox="0 0 16 16"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
-          />
-        </svg>
-      </a>
-    </div>
 
     <!---------  HOME REGION ABOUT  --------->
     <div class="homeRegion_about">
@@ -1181,89 +1179,7 @@
     </section>
 
     <!---------  FOOTER  --------->
-    <footer id="footer">
-      <div class="footer">
-        <div class="container">
-          <div class="footer_title">
-            <h1>Aloqa</h1>
-          </div>
-        </div>
-        <div class="container">
-          <div class="footer_item">
-            <div class="form">
-              <form id="signup-form">
-                <div class="contact_item firstName">
-                  <input type="text" id="firstName" required />
-                  <label for="firstName">Ism</label>
-                </div>
-                <div class="contact_item email">
-                  <input type="email" id="email" required />
-                  <label for="email">Email</label>
-                </div>
-                <div class="contact_item password">
-                  <input type="password" id="password" required />
-                  <label for="password">Parol</label>
-                </div>
-                <div class="submit_alert warning_alert" id="warning_alert">
-                  <div class="alert_body">
-                    <div class="alert_check">
-                      <i class="fa-solid fa-check"></i>
-                    </div>
-                    <h1>Email yoki parol noto'g'ri!</h1>
-                    <div class="warning-progress progress"></div>
-                  </div>
-                  <div class="warningAlert_close alert_close">
-                    <i class="fa-solid fa-xmark" id="closeWarning_alert"></i>
-                  </div>
-                </div>
-                <div class="submit_alert correct_alert" id="correct_alert">
-                  <div class="alert_body">
-                    <div class="alert_correct_check alert_check">
-                      <i class="fa-solid fa-check"></i>
-                    </div>
-                    <h1>Xabar muaffaqiyatli jo'natildi!</h1>
-                    <div class="correct-progress progress"></div>
-                  </div>
-                  <div class="correctAlert_close alert_close">
-                    <i class="fa-solid fa-xmark" id="closeCorrect_alert"></i>
-                  </div>
-                </div>
-                <button class="submit" id="submit">Yuborish</button>
-              </form>
-            </div>
-            <div class="contact_card">
-              <div class="contactCard_row">
-                <div class="contactCard_item contactCard_email">
-                  <i class="fa-solid fa-square-envelope"></i>
-                  <h1>Email</h1>
-                  <a href="#"> sardor.20070731@gmail.com </a>
-                </div>
-                <div class="contactCard_item github">
-                  <i class="fa-brands fa-github"></i>
-                  <h1>Github</h1>
-                  <a href="https://github.com/sardorbek0731" target="_blank">
-                    github.com/sardorbek0731</a
-                  >
-                </div>
-              </div>
-              <div class="contactCardRow_second">
-                <div class="contactCard_item telegram">
-                  <i class="fa-brands fa-telegram"></i>
-                  <h1>Telegram</h1>
-                  <a href="https://t.me/Sardorbek_0731" target="_blank">
-                    t.me/Sardorbek_0731
-                  </a>
-                </div>
-                <div class="contactCard_item number">
-                  <i class="fa-solid fa-square-phone-flip"></i>
-                  <h1>Telefon</h1>
-                  <a href="tel:993477826"> +998 99 3477826 </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <footer>
       <div class="goodbye">
         <div class="contact_brand">
           <a href="#home">
@@ -1346,7 +1262,7 @@
                 d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
               /></svg
           ></a>
-          <a href="#">
+          <a href="contact.html">
             Aloqa
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -1367,6 +1283,7 @@
         </div>
       </div>
     </footer>
+
     <script src="./app.js"></script>
   </body>
 </html>

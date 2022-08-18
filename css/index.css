@@ -36,11 +36,11 @@ body {
 }
 
 .angle_top {
-  position: sticky;
+  display: none;
+  position: fixed;
   z-index: 10;
-  top: 91vh;
+  bottom: 30px;
   left: 30px;
-  display: flex;
   justify-content: center;
   align-items: center;
   width: 2.7rem;
@@ -71,7 +71,7 @@ body {
 
 .my_telephone {
   position: fixed;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   bottom: 30px;
@@ -117,7 +117,7 @@ nav {
   box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.4);
 }
 .navUl {
-  display: flex;
+  display: none;
   justify-content: center;
 }
 nav.scroll-header .brand {
@@ -128,12 +128,12 @@ nav.scroll-header .brand {
 }
 .brand h1 {
   font-family: "Audiowide", cursive;
-  color: rgb(0, 72, 255);
+  color: rgb(0, 77, 170);
   font-size: 1.6rem;
-  text-shadow: 10px 10px 10px rgba(57, 90, 123, 0.7);
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
 }
 .brand span {
-  color: #6a94ff;
+  color: #3971ff;
 }
 .nav__item {
   display: flex;
@@ -181,7 +181,7 @@ svg {
   display: flex;
   align-items: center;
   text-decoration: none;
-  font-size: 0.85rem;
+  font-size: 0.7rem;
   color: rgba(0, 0, 0, 0.5);
   font-family: "Poppins", helvetica;
   font-weight: 500;
@@ -1253,342 +1253,7 @@ input[type="radio"] {
   transition: all 1.5s linear;
 }
 
-/* FOOTER */
-.footer {
-  padding: 150px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background: url(../image/contact/contactBg1.webp) no-repeat;
-  background-size: cover;
-  width: 100%;
-}
-.footer_item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.footer_title {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 150px;
-}
-.footer_title h1 {
-  font-size: 2rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #4c8897;
-  font-weight: 500;
-  font-family: "Poppins", helvetica;
-}
-.form {
-  width: 40%;
-}
-.form form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 30px rgba(68, 68, 107, 0.3);
-  padding: 20px 50px;
-  width: 23rem;
-  height: 34rem;
-  transition: all 0.7s ease;
-  background: linear-gradient(to top, rgba(255, 255, 255, 0.386) 30%, #fff 60%);
-}
-.form form:hover {
-  border-radius: 20px;
-}
-.firstName,
-.email,
-.password {
-  position: relative;
-  margin-bottom: 2rem;
-}
-form .contact_item input {
-  position: relative;
-  border-radius: 0;
-  width: 13.5rem;
-  border: 1px solid rgba(0, 0, 0, 0.491);
-  border-top: 0;
-  height: 2.5rem;
-  padding: 0 13px;
-  outline: none;
-  transition: all 0.2s linear;
-  background-color: transparent;
-}
-form .password {
-  margin-bottom: 3.5rem;
-}
-.form .contact_item label {
-  position: absolute;
-  left: 0.8rem;
-  top: 0.5rem;
-  z-index: 1;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  color: rgba(0, 0, 0, 0.491);
-  transition: all 0.2s linear;
-}
-.form .contact_item input:focus {
-  border-radius: 10px;
-  border-bottom: 1px solid red;
-  border-right: 1px solid red;
-  border-left: 1px solid red;
-}
-.form .contact_item input:valid {
-  border-radius: 20px;
-  border-bottom: 1px solid rgb(0, 168, 112);
-  border-right: 1px solid rgb(0, 168, 112);
-  border-left: 1px solid rgb(0, 168, 112);
-}
-.form .contact_item input:focus ~ label {
-  color: red;
-  margin-top: -0.9rem;
-  font-size: 0.8rem;
-}
-.form .contact_item input:valid ~ label {
-  color: rgb(0, 168, 112);
-  margin-top: -0.9rem;
-  font-size: 0.8rem;
-  left: 1.4rem;
-}
-form .submit {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 11rem;
-  height: 3.2rem;
-  border: 1px solid #6ca0b1;
-  position: relative;
-  z-index: 1;
-  background-color: rgba(255, 255, 255, 0.713);
-  color: #6ca0b1;
-  transition: all 0.5s linear;
-  font-size: 1rem;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  cursor: pointer;
-}
-form .submit::before {
-  content: "";
-  position: absolute;
-  width: 0;
-  background-color: #6ca0b1;
-  height: 100%;
-  top: 0;
-  left: 0;
-  transition: all 0.5s linear;
-  z-index: -1;
-}
-form .submit:hover::before {
-  width: 11rem;
-  border-radius: 40px;
-}
-form .submit:hover {
-  color: white;
-  border-radius: 40px;
-  border: none;
-}
-
-.submit_alert {
-  position: fixed;
-  right: 20px;
-  z-index: 10;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgb(255, 160, 160);
-  padding-left: 10px;
-  width: 23rem;
-  height: 4.5rem;
-  transition: all 0.4s cubic-bezier(0.4, -1.5, 0.01, 2);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.264);
-  border-radius: 5px;
-  overflow: hidden;
-  transform: translateX(calc(100% + 40px));
-}
-.submit_alert.active {
-  transform: translateX(0);
-}
-.warning_alert {
-  top: 130px;
-}
-.correct_alert {
-  top: 240px;
-  background-color: rgb(160, 255, 209);
-  box-shadow: 0 0 40px rgba(29, 30, 52, 0.212);
-}
-.alert_body {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.alert_check i {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 2rem;
-  height: 2rem;
-  background-color: red;
-  color: white;
-  margin-right: 15px;
-  border-radius: 50%;
-}
-.alert_correct_check i {
-  background-color: rgb(0, 162, 130);
-}
-.submit_alert h1 {
-  color: red;
-  font-size: 1.1rem;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-weight: 300;
-}
-.correct_alert h1 {
-  color: rgb(0, 162, 130);
-}
-.progress {
-  position: absolute;
-  width: 100%;
-  height: 3px;
-  right: 0;
-  bottom: 0;
-}
-.warning-progress {
-  background-color: rgb(255, 160, 160);
-}
-.correct-progress {
-  background-color: rgb(160, 255, 209);
-}
-.progress::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 3px;
-  right: 0;
-  bottom: 0;
-}
-.warning-progress::before {
-  background-color: red;
-}
-.correct-progress::before {
-  background-color: rgb(0, 162, 130);
-}
-.progress.active::before {
-  animation: progress 5s linear forwards;
-}
-@keyframes progress {
-  100% {
-    right: -100%;
-  }
-}
-.alert_close {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 3rem;
-  height: 100%;
-}
-.warningAlert_close {
-  background-color: #ff8a8a;
-}
-.correctAlert_close {
-  background-color: rgb(106, 255, 225);
-}
-.warningAlert_close i {
-  font-size: 1.4rem;
-  color: red;
-}
-.correctAlert_close i {
-  font-size: 1.4rem;
-  color: rgb(0, 162, 130);
-}
-
-.contact_card {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: flex-end;
-  width: 60%;
-}
-.contactCard_row {
-  margin-bottom: 5rem;
-}
-.contactCard_row,
-.contactCardRow_second {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.contactCard_item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(
-    to bottom,
-    #fff 10%,
-    rgba(255, 255, 255, 0.5) 80%
-  );
-  width: 19rem;
-  height: 14.5rem;
-  box-shadow: 0 0 30px rgba(68, 68, 107, 0.3);
-  overflow: hidden;
-  position: relative;
-  z-index: 1;
-  border-radius: 20px;
-}
-.contactCard_item::before {
-  content: "";
-  position: absolute;
-  background: #fff;
-  left: 0;
-  right: 0;
-  top: 100%;
-  bottom: 0;
-  transition: all 0.3s;
-  z-index: -1;
-}
-.contactCard_item:hover::before {
-  top: 0;
-  background-color: #67adbe;
-}
-.contactCard_item i {
-  color: #4c8897;
-  font-size: 3.5rem;
-  margin-bottom: 1rem;
-}
-.contactCard_item h1 {
-  color: #4c8897;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 2rem;
-  font-weight: 400;
-  margin-bottom: 2rem;
-}
-.contactCard_item a {
-  color: rgba(0, 0, 0, 0.686);
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-size: 1rem;
-  font-weight: 300;
-  text-decoration: none;
-  transition: all 0.5s ease;
-}
-.contactCard_item:hover a:hover {
-  color: rgba(255, 255, 255, 0.8);
-}
-.contactCard_email,
-.telegram {
-  margin-right: 5rem;
-}
-.contactCard_item:hover i,
-.contactCard_item:hover h1,
-.contactCard_item:hover a {
-  color: white;
-}
+/* GOODBYE */
 
 .goodbye {
   background-color: #4274b8;
