@@ -505,43 +505,61 @@ form .submit:hover {
   color: white;
 }
 
+/* GOODBYE */
+
 .goodbye {
-  background-color: #4274b8;
-  height: 400px;
+  position: relative;
+  background-color: #4c86d6;
+  border-radius: 0 50px 50px 50px;
+  height: 700px;
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  padding-left: 20%;
+  padding-right: 10%;
   flex-direction: column;
+  margin-bottom: 100px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
 }
-.website_map {
+.goodbye_links {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 60px;
+  width: 100%;
+  justify-content: space-between;
 }
-.website_map a {
-  margin-top: 0;
-  margin-right: 40px;
+.website_map,
+.follow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.website_map a,
+.follow a {
   text-decoration: none;
   color: white;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 300;
   transition: all 0.3s linear;
+  margin-bottom: 20px;
+  letter-spacing: 1.5px;
 }
-.website_map a:last-child {
-  margin-right: 0;
+.website_map a:last-child,
+.follow a:last-child {
+  margin-bottom: 0;
 }
-.website_map a:hover {
-  margin-top: -15px;
+.website_map a:first-child,
+.follow a:first-child {
+  margin-bottom: 50px;
+  font-size: 1.5rem;
 }
-.website_map a svg {
-  color: white;
+.website_map a:first-child:hover,
+.follow a:first-child:hover {
+  opacity: 1;
 }
-.contact_brand {
-  margin-bottom: 60px;
+.website_map a:hover,
+.follow a:hover {
+  opacity: 0.7;
 }
 .contact_brand a {
   text-decoration: none;
@@ -549,11 +567,27 @@ form .submit:hover {
 }
 .contact_brand a h1 {
   font-family: "Audiowide", cursive;
-  color: rgb(0, 0, 118);
-  font-size: 2.7rem;
+  color: rgb(0, 77, 170);
+  font-size: 2.4rem;
+  text-shadow: 10px 10px 10px rgba(220, 220, 220, 0.209);
+  margin-bottom: 30px;
 }
 .contact_brand a span {
-  color: blue;
+  color: #3971ff;
+}
+.contact_brand p {
+  color: rgba(255, 255, 255, 0.653);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 150%;
+  letter-spacing: 1.5px;
+}
+.footer_hr {
+  width: 100%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.38);
 }
 
 .website_admin h1 {
@@ -563,4 +597,23 @@ form .submit:hover {
   font-size: 3rem;
   font-weight: 300;
   margin-left: 20px;
+}
+
+.by {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+}
+.by h1,
+.by a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 300;
+  opacity: 0.9;
+}
+.by i {
+  margin-right: 10px;
 }
