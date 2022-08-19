@@ -174,72 +174,57 @@ document.addEventListener("scroll", () => {
   scrollItem();
 });
 
-// Alert progress
-const signupForm = document.getElementById("signup-form");
-const warningAlert = document.getElementById("warning_alert");
-const correctAlert = document.getElementById("correct_alert");
-const submit = document.getElementById("submit");
-const warningCloseAlert = document.getElementById("closeWarning_alert");
-const correctCloseAlert = document.getElementById("closeCorrect_alert");
-const warningProgress = document.querySelector(".warning-progress");
-const correctProgress = document.querySelector(".correct-progress");
+// Home Carousel
+const prew = document.getElementById("prew");
+const next = document.getElementById("next");
+const imgs = document.querySelector(".imgs");
 
-function warningAlertProgress() {
-  setTimeout(() => {
-    warningProgress.classList.remove("active");
-  }, 5400);
-}
-function correctAlertProgress() {
-  setTimeout(() => {
-    correctProgress.classList.remove("active");
-  }, 5400);
-}
-function warningCloseAlertProgress() {
-  setTimeout(() => {
-    warningProgress.classList.remove("active");
-  }, 300);
-}
-function correctCloseAlertProgress() {
-  setTimeout(() => {
-    correctProgress.classList.remove("active");
-  }, 300);
-}
-submit.addEventListener("click", (e) => {
-  e.preventDefault();
-  let regEx = /[a-zA-Z]{2,}/;
-  let regExEmail = /[a-zA-Z0-9]{2,}@gmail/;
-  let regExPassword = /[a-zA-Z0-9]{2,}/;
-  let ism = signupForm.firstName.value;
-  let email = signupForm.email.value;
-  let password = signupForm.password.value;
-  if (
-    regEx.test(ism) &&
-    regExEmail.test(email) &&
-    regExPassword.test(password)
-  ) {
-    correctAlert.classList.add("active");
-    correctProgress.classList.add("active");
-    setTimeout(() => {
-      correctAlert.classList.remove("active");
-    }, 5000);
-    correctAlertProgress();
-    signupForm.firstName.value = "";
-    signupForm.email.value = "";
-    signupForm.password.value = "";
-  } else {
-    warningAlert.classList.add("active");
-    warningProgress.classList.add("active");
-    setTimeout(() => {
-      warningAlert.classList.remove("active");
-    }, 5000);
-    warningAlertProgress();
+const img = document.querySelectorAll(".imgs img");
+
+let index = 0;
+function changeImage() {
+  if (index > img.length - 1) {
+    index = 0;
+  } else if (index < 0) {
+    index = img.length - 1;
   }
+  imgs.style.marginLeft = `-${index * 100}%`;
+}
+next.addEventListener("click", () => {
+  index++;
+  changeImage();
 });
-warningCloseAlert.addEventListener("click", () => {
-  warningAlert.classList.remove("active");
-  warningCloseAlertProgress();
+
+prew.addEventListener("click", () => {
+  index--;
+  changeImage();
 });
-correctCloseAlert.addEventListener("click", () => {
-  correctAlert.classList.remove("active");
-  correctCloseAlertProgress();
+
+// Region Carousel
+const prew_region = document.getElementById("prew_region");
+const next_region = document.getElementById("next_region");
+const homeRegion_row = document.querySelector(".homeRegion_row");
+
+const homeRegionRow_item = document.querySelectorAll(
+  ".homeRegion_row .homeRegionRow_item"
+);
+console.log(homeRegionRow_item);
+
+let idx = 0;
+function changeRegion() {
+  if (idx > homeRegionRow_item.length - 1) {
+    idx = 0;
+  } else if (idx < 0) {
+    idx = homeRegionRow_item.length - 1;
+  }
+  homeRegion_row.style.transform = `translateX(${-idx * 27}rem)`;
+}
+next_region.addEventListener("click", () => {
+  idx++;
+  changeRegion();
+});
+
+prew_region.addEventListener("click", () => {
+  idx--;
+  changeRegion();
 });

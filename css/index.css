@@ -363,104 +363,13 @@ svg {
   height: 100vh;
   box-shadow: 0px 0 40px 0px rgba(0, 0, 0, 0.858);
 }
-.home_bg_row {
+.imgs {
   display: flex;
   justify-content: space-evenly;
   width: 500%;
   height: 100vh;
-  transition: all 2s ease;
-}
-.HomeCarousel_button {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  width: 100%;
-  bottom: 30px;
-  z-index: 10;
-}
-.HomeCarousel_button label {
-  background-color: #fff;
-  width: 1.3rem;
-  height: 1.3rem;
-  border-radius: 50%;
-  margin: 0 12px;
-  cursor: pointer;
-}
-.HomeCarousel_button label.active {
-  background-color: #4274b8;
-  box-shadow: 0 0 0 6px #ffffff6f;
-}
-#one_bg:checked ~ .home_bg_row {
+  transition: all 1s;
   margin-left: 0;
-}
-#two_bg:checked ~ .home_bg_row {
-  margin-left: -100%;
-}
-#three_bg:checked ~ .home_bg_row {
-  margin-left: -200%;
-}
-#four_bg:checked ~ .home_bg_row {
-  margin-left: -300%;
-}
-#five_bg:checked ~ .home_bg_row {
-  margin-left: -400%;
-}
-
-#two_bg:checked ~ .HomeCarousel_button label.one_bg {
-  background-color: #fff;
-  box-shadow: 0 0 0;
-}
-#two_bg:checked ~ .HomeCarousel_button label.two_bg {
-  background-color: #4274b8;
-  box-shadow: 0 0 0 6px #ffffff6f;
-}
-#three_bg:checked ~ .HomeCarousel_button label.three_bg {
-  background-color: #4274b8;
-  box-shadow: 0 0 0 6px #ffffff6f;
-}
-#three_bg:checked ~ .HomeCarousel_button label.two_bg {
-  background-color: #fff;
-  box-shadow: 0 0 0;
-}
-#three_bg:checked ~ .HomeCarousel_button label.one_bg {
-  background-color: #fff;
-  box-shadow: 0 0 0;
-}
-#four_bg:checked ~ .HomeCarousel_button label.four_bg {
-  background-color: #4274b8;
-  box-shadow: 0 0 0 6px #ffffff6f;
-}
-#four_bg:checked ~ .HomeCarousel_button label.one_bg {
-  background-color: #fff;
-  box-shadow: 0 0 0;
-}
-#four_bg:checked ~ .HomeCarousel_button label.two_bg {
-  background-color: #fff;
-  box-shadow: 0 0 0;
-}
-#four_bg:checked ~ .HomeCarousel_button label.three_bg {
-  background-color: #fff;
-  box-shadow: 0 0 0;
-}
-#five_bg:checked ~ .HomeCarousel_button label.five_bg {
-  background-color: #4274b8;
-  box-shadow: 0 0 0 6px #ffffff6f;
-}
-#five_bg:checked ~ .HomeCarousel_button label.one_bg {
-  background-color: #fff;
-  box-shadow: 0 0 0;
-}
-#five_bg:checked ~ .HomeCarousel_button label.two_bg {
-  background-color: #fff;
-  box-shadow: 0 0 0;
-}
-#five_bg:checked ~ .HomeCarousel_button label.three_bg {
-  background-color: #fff;
-  box-shadow: 0 0 0;
-}
-#five_bg:checked ~ .HomeCarousel_button label.four_bg {
-  background-color: #fff;
-  box-shadow: 0 0 0;
 }
 .home_bg {
   position: absolute;
@@ -473,6 +382,7 @@ svg {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  user-select: none;
 }
 .home__brand {
   display: flex;
@@ -489,15 +399,6 @@ svg {
   line-height: 50px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.home__brand .home_brand_uzbek,
-.home_brand_about {
-  font-family: "Audiowide", cursive;
-  color: rgb(0, 0, 118);
-  font-size: 2.2rem;
-}
-.home_brand_about {
-  color: blue;
-}
 .home__title {
   display: flex;
   justify-content: center;
@@ -507,10 +408,20 @@ svg {
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(5px);
-  bottom: 80px;
+  bottom: 100px;
   width: 75rem;
   border-radius: 20px;
+  padding: 20px 0;
   overflow: hidden;
+}
+.home__brand .home_brand_uzbek,
+.home_brand_about {
+  font-family: "Audiowide", cursive;
+  color: rgb(0, 77, 170);
+  font-size: 2.2rem;
+}
+.home_brand_about {
+  color: #3971ff;
 }
 .home__title p {
   text-align: center;
@@ -521,19 +432,69 @@ svg {
   text-transform: uppercase;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.HomeCarousel_button {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  bottom: 30px;
+  z-index: 10;
+}
+.HomeCarousel_button i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  margin: 0 12px;
+  cursor: pointer;
+  color: white;
+  user-select: none;
+}
 
 /* HOME REGION ABOUT */
-.inset_shadow {
-  padding: 25px 25px;
-  box-shadow: inset 0 0 15px rgba(38, 39, 46, 0.15);
-  border-radius: 20px;
+
+.homeRegion_about {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 150px;
 }
-.regionAbout_margin {
-  margin-right: 60px;
+.homeRegion-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 75rem;
+}
+.homeRegion_items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.homeRegion_row {
+  display: flex;
+  transition: all 1.5s ease;
+  margin-bottom: 70px;
+  transform: translateX(0);
+}
+.region-container {
+  overflow: hidden;
+  width: 27rem;
+  height: 31rem;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+  background-color: white;
+  border-radius: 10px;
 }
 .homeRegionRow_item {
   display: flex;
-  width: 100%;
+  width: 27rem;
+  height: 31rem;
   justify-content: center;
   align-items: center;
 }
@@ -541,27 +502,10 @@ svg {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 50px 30px;
-  background-color: white;
-  width: 19rem;
-  border-radius: 20px;
+  padding: 70px 50px;
+  width: 27rem;
+  height: 31rem;
   transition: all 0.4s ease;
-}
-.homeRegion_item:hover {
-  transform: translateY(-60px);
-  background-color: rgb(241, 246, 255);
-}
-#one:checked ~ .homeRegion_row {
-  margin-left: 0;
-}
-#two:checked ~ .homeRegion_row {
-  margin-left: -100%;
-}
-#four:checked ~ .homeRegion_row {
-  margin-left: -300%;
-}
-#five:checked ~ .homeRegion_row {
-  margin-left: -400%;
 }
 .regionCarosul_title,
 .territory,
@@ -573,7 +517,7 @@ svg {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-weight: 400;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 .territory h1,
 .population h1,
@@ -582,7 +526,7 @@ svg {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-weight: 300;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin-bottom: 10px;
 }
 .territory h3,
@@ -594,69 +538,40 @@ svg {
   font-weight: 300;
   font-size: 1.2rem;
 }
+.map  iframe {
+  width: 37rem;
+  height: 37.625rem;
+  border-radius: 10px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+}
 
-.homeRegion_row {
+.carousel_button_center {
   display: flex;
-  width: 500%;
-  justify-content: space-evenly;
-  align-items: center;
-  transition: all 1.5s ease;
-  margin-bottom: 70px;
-  margin-left: -200%;
+  justify-content: center;
+  width: 100%;
 }
 .regionCarousel_button {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 27rem;
+}
+.regionCarousel_button i {
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 150px;
-}
-.regionCarousel_button label {
-  width: 1.4rem;
-  height: 1.4rem;
-  background-color: #67adbe76;
-  margin: 0 6px;
-  border-radius: 20px;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #90c0ff;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 10px;
   transition: all 0.4s linear;
   cursor: pointer;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 }
-.regionCarousel_button label.active {
-  transform: scale(1.4);
-  background-color: #67adbe;
-}
-.regionCarousel_button label.one,
-.five {
-  transform: scale(0.7);
-  background-color: #67adbe76;
-}
-#one:checked ~ .regionCarousel_button label.one,
-#two:checked ~ .regionCarousel_button label.two,
-#three:checked ~ .regionCarousel_button label.three,
-#four:checked ~ .regionCarousel_button label.four,
-#five:checked ~ .regionCarousel_button label.five {
-  transform: scale(1.4);
-  background-color: #67adbe;
-}
-
-#five:checked ~ .regionCarousel_button label.four,
-#four:checked ~ .regionCarousel_button label.three,
-#three:checked ~ .regionCarousel_button label.two,
-#one:checked ~ .regionCarousel_button label.two,
-#one:checked ~ .regionCarousel_button label.three,
-#two:checked ~ .regionCarousel_button label.three,
-#five:checked ~ .regionCarousel_button label.three {
-  transform: scale(1);
-  background-color: #67adbe76;
-}
-#two:checked ~ .regionCarousel_button label.one,
-#three:checked ~ .regionCarousel_button label.one,
-#four:checked ~ .regionCarousel_button label.one,
-#five:checked ~ .regionCarousel_button label.one {
-  transform: scale(0.7);
-  background-color: #67adbe76;
-}
-
-input[type="radio"] {
-  display: none;
+.regionCarousel_button i:hover {
+  transform: scale(0.9);
 }
 
 /*  REGION  */
