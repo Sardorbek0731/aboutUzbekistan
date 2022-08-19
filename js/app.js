@@ -2,16 +2,19 @@
 
 const scrollHeader = document.querySelector("nav");
 const navUl = document.querySelector(".navUl");
+const brandIcon = document.querySelector("#brand-icon");
 
 document.addEventListener("scroll", (e) => {
   if (window.scrollY > 200) {
     scrollHeader.classList.add("scroll-header");
     scrollHeader.style.position = "fixed";
     navUl.style.display = "flex";
+    brandIcon.style.display = "block";
   } else {
     scrollHeader.classList.remove("scroll-header");
     scrollHeader.style.position = "absolute";
     navUl.style.display = "none";
+    brandIcon.style.display = "none";
   }
 });
 
