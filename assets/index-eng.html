@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/index-media.css" />
-    <link rel="icon" type="image/png" href="./image/brand.png" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/index-media.css" />
+    <link rel="icon" type="image/png" href="../image/brand.png" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <title>Uzbekistan</title>
   </head>
   <body>
@@ -25,17 +26,40 @@
             <h1>Uzbek<span>About</span></h1>
           </a>
           <ul class="navUl">
-            <li class="nav__item active">
-              <a class="nav__link active" href="#home">Bosh sahifa</a>
+            <li class="nav__item">
+              <a class="nav__link" href="#home">
+                <i class="fa-solid fa-house-chimney"></i>
+                Bosh sahifa</a
+              >
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="symbol.html">Ramzlari</a>
+              <a class="nav__link" href="#region">
+                <i class="fa-solid fa-earth-americas"></i>
+                Viloyatlar</a
+              >
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#home">Tarixi</a>
+              <a class="nav__link" href="#culture">
+                <i class="fa-solid fa-graduation-cap"></i>
+                Madaniyat</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#hotel">
+                <i class="fa-solid fa-hotel"></i>
+                Mehmonxona</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#managment">
+                <i class="fa-solid fa-chart-line"></i>
+                Boshqaruv</a
+              >
             </li>
             <li class="nav__item pages__link">
-              <a class="nav__link" href="#"> Sahifa </a>
+              <a class="nav__link" href="#">
+                <i class="fa-solid fa-book-open"></i> Sahifa
+              </a>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="15"
@@ -51,24 +75,30 @@
               </svg>
               <ul class="pages__section">
                 <li class="nav__item_pages">
-                  <a class="pages__link__item" href="#region">Viloyatlar</a>
+                  <a class="pages__link__item" href="./assets/symbol.html">
+                    <i class="fa-solid fa-atom"></i>
+                    Ramzlari</a
+                  >
                 </li>
                 <li class="nav__item_pages">
-                  <a class="pages__link__item" href="#culture">Madaniyat</a>
+                  <a class="pages__link__item" href="#home">
+                    <i class="fa-solid fa-landmark-dome"></i>
+                    Tarixi</a
+                  >
                 </li>
                 <li class="nav__item_pages">
-                  <a class="pages__link__item" href="#hotel">Mehmonxona</a>
-                </li>
-                <li class="nav__item_pages">
-                  <a class="pages__link__item" href="#managment">Boshqaruv</a>
-                </li>
-                <li class="nav__item_pages">
-                  <a class="pages__link__item" href="#footer"> Aloqa </a>
+                  <a class="pages__link__item" href="./assets/contact.html">
+                    <i class="fa-solid fa-user"></i>
+                    Aloqa
+                  </a>
                 </li>
               </ul>
             </li>
             <li class="nav__item language">
-              <a class="nav__link" href="#"> RU </a>
+              <a class="nav__link" href="#">
+                <i class="fa-solid fa-language"></i> ENG
+              </a>
+
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="15"
@@ -84,49 +114,29 @@
               </svg>
               <ul class="navItem_language">
                 <li class="language_link">
-                  <a href="index.html">UZB</a>
+                  <a href="../index.html">UZB</a>
                 </li>
                 <li class="language_link">
-                  <a href="index-eng.html">ENG</a>
+                  <a href="../assets/index-ru.html">RU</a>
                 </li>
               </ul>
             </li>
           </ul>
           <div class="search">
-            <input
-              type="radio"
-              id="search"
-              class="searchNav_input"
-              name="search"
-              placeholder=""
-            />
-            <label for="search" class="searchNav_label">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </label>
-            <input
-              type="radio"
-              id="search_x"
-              class="searchNav_input_x"
-              name="search"
-              placeholder=""
-            />
-            <label for="search_x" class="searchNav_label_x">
-              <i class="fa-solid fa-x"></i>
-            </label>
-            <div class="search_bg">
-              <div class="search_bg_input">
-                <input
-                  type="search"
-                  name="search"
-                  class="search_input"
-                  required
-                  placeholder="Qidirish..."
-                />
-                <label for="search" class="search_label">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </label>
+            <i class="fa-solid fa-magnifying-glass" id="openSearch"></i>
+            <div class="searchOverlay hidden"></div>
+            <div class="searchInput hidden">
+              <input
+                type="search"
+                placeholder="Qidiruv..."
+                id="searchInputValue"
+              />
+              <div class="message"></div>
+              <div class="searchIcon">
+                <i class="fa-solid fa-magnifying-glass" id="inputSearch"></i>
               </div>
             </div>
+            <i class="fa-solid fa-xmark" id="close--searchInput"></i>
           </div>
         </div>
       </nav>
@@ -136,27 +146,19 @@
     <section id="home">
       <div class="home">
         <div class="home_bg">
-          <input type="radio" name="dot_bg" id="one_bg" />
-          <input type="radio" name="dot_bg" id="two_bg" />
-          <input type="radio" name="dot_bg" id="three_bg" />
-          <input type="radio" name="dot_bg" id="four_bg" />
-          <input type="radio" name="dot_bg" id="five_bg" />
-          <div class="home_bg_row">
-            <img class="active" src="./image/home/home_bg1.jpg" alt="Nature" />
-            <img src="./image/home/home.bg2.webp" alt="Food" />
-            <img src="./image/home/home_bg4.jpg" alt="Nature" />
-            <img src="./image/home/home.bg3.jpg" alt="Falk art" />
+          <div class="imgs">
+            <img class="active" src="../image/home/home_bg1.jpg" alt="Nature" />
+            <img src="../image/home/home.bg2.webp" alt="Food" />
+            <img src="../image/home/home_bg4.jpg" alt="Nature" />
+            <img src="../image/home/home.bg3.jpg" alt="Falk art" />
             <img
-              src="./image/home/home_bg5.jpg"
+              src="../image/home/home_bg5.jpg"
               alt="Shavkat Mirziyoyev image"
             />
           </div>
           <div class="HomeCarousel_button">
-            <label for="one_bg" class="one_bg active" id="one_bg"> </label>
-            <label for="two_bg" class="two_bg" id="two_bg"> </label>
-            <label for="three_bg" class="three_bg" id="three_bg"> </label>
-            <label for="four_bg" class="four_bg" id="four_bg"> </label>
-            <label for="five_bg" class="five_bg" id="five_bg"> </label>
+            <i class="fa-solid fa-angle-left" id="prew"></i>
+            <i class="fa-solid fa-angle-right" id="next"></i>
           </div>
         </div>
         <div class="container">
@@ -182,337 +184,334 @@
           <i class="fa-solid fa-phone"></i>
         </a>
       </div>
+      <div class="angle_top">
+        <a href="#home">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-chevron-up"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
+            />
+          </svg>
+        </a>
+      </div>
     </section>
-
-    <!---------  ANGLE UP  --------->
-    <div class="angle_top">
-      <a href="#home">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          fill="currentColor"
-          class="bi bi-chevron-up"
-          viewBox="0 0 16 16"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
-          />
-        </svg>
-      </a>
-    </div>
 
     <!---------  HOME REGION ABOUT  --------->
     <div class="homeRegion_about">
-      <input type="radio" name="dot" id="one" />
-      <input type="radio" name="dot" id="two" />
-      <input type="radio" name="dot" id="three" />
-      <input type="radio" name="dot" id="four" />
-      <input type="radio" name="dot" id="five" />
-      <div class="homeRegion_row">
-        <div class="homeRegionRow_second homeRegionRow_item">
-          <div class="inset_shadow regionAbout_margin">
-            <ul class="regionAbout_xorazm homeRegion_item">
-              <div class="AboutXorazm_title regionCarosul_title">
-                <h1>Xorazm viloyati</h1>
-              </div>
-              <div class="territory">
-                <h1>Maydoni:</h1>
-                <h3>6300 km<sup>2</sup></h3>
-              </div>
-              <div class="population">
-                <h1>Aholi:</h1>
-                <h3>1.8355 million</h3>
-              </div>
-              <div class="gdp">
-                <h1>Yalpi ichki maxsulot:</h1>
-                <h3>15154.2 milliard so‘m</h3>
-              </div>
-            </ul>
-          </div>
-          <div class="inset_shadow regionAbout_margin">
-            <ul class="regionAbout_tashkent homeRegion_item">
-              <div class="AboutToshkent_title regionCarosul_title">
-                <h1>Tashkent viloyati</h1>
-              </div>
-              <div class="territory">
-                <h1>Maydoni:</h1>
-                <h3>15300 km<sup>2</sup></h3>
-              </div>
-              <div class="population">
-                <h1>Aholi:</h1>
-                <h3>2.8987 million</h3>
-              </div>
-              <div class="gdp">
-                <h1>Yalpi ichki maxsulot:</h1>
-                <h3>38398.7 milliard so'm</h3>
-              </div>
-            </ul>
-          </div>
-          <div class="inset_shadow">
-            <ul class="regionAbout_samarqand homeRegion_item">
-              <div class="AboutToshkent_title regionCarosul_title">
-                <h1>Samarqand viloyati</h1>
-              </div>
-              <div class="territory">
-                <h1>Maydoni:</h1>
-                <h3>16400 km<sup>2</sup></h3>
-              </div>
-              <div class="population">
-                <h1>Aholi:</h1>
-                <h3>3.7987 million</h3>
-              </div>
-              <div class="gdp">
-                <h1>Yalpi ichki maxsulot:</h1>
-                <h3>31187.4 milliard so'm</h3>
-              </div>
-            </ul>
+      <div class="homeRegion-container">
+        <div class="homeRegion_items">
+        <div class="region-container">
+          <div class="homeRegion_row">
+            <div class="homeRegionRow_first homeRegionRow_item">
+              <ul class="regionAbout_uzbekistan homeRegion_item">
+                <div class="AboutXorazm_title regionCarosul_title">
+                  <h1>O'zbekistan davlati</h1>
+                </div>
+                <div class="territory">
+                  <h1>Maydoni:</h1>
+                  <h3>448,9 ming km<sup>2</sup></h3>
+                </div>
+                <div class="population">
+                  <h1>Aholi:</h1>
+                  <h3>34,483,713 million</h3>
+                </div>
+                <div class="gdp">
+                  <h1>Yalpi ichki maxsulot:</h1>
+                  <h3>4 million 604,6 ming so‘m</h3>
+                </div>
+              </ul>
+            </div>
+            <div class="homeRegionRow_second homeRegionRow_item">
+              <ul class="regionAbout_qoraqalpaqistan homeRegion_item">
+                <div class="AboutToshkent_title regionCarosul_title">
+                  <h1>Qoraqalpog‘iston davlati</h1>
+                </div>
+                <div class="territory">
+                  <h1>Maydoni:</h1>
+                  <h3>165600 km<sup>2</sup></h3>
+                </div>
+                <div class="population">
+                  <h1>Aholi:</h1>
+                  <h3>1.8697 million</h3>
+                </div>
+                <div class="gdp">
+                  <h1>Yalpi ichki maxsulot:</h1>
+                  <h3>14185.2 milliard so'm</h3>
+                </div>
+              </ul>
+            </div>
+            <div class="homeRegionRow_three homeRegionRow_item">
+              <ul class="regionAbout_tashkent homeRegion_item">
+                <div class="AboutToshkent_title regionCarosul_title">
+                  <h1>Toshkent shahri</h1>
+                </div>
+                <div class="territory">
+                  <h1>Maydoni:</h1>
+                  <h3>300 km<sup>2</sup></h3>
+                </div>
+                <div class="population">
+                  <h1>Aholi:</h1>
+                  <h3>2.5108 million</h3>
+                </div>
+                <div class="gdp">
+                  <h1>Yalpi ichki maxsulot:</h1>
+                  <h3>53287.1 milliard so'm</h3>
+                </div>
+              </ul>
+            </div>
+            <div class="homeRegionRow_four homeRegionRow_item">
+              <ul class="regionAbout_xorazm homeRegion_item">
+                <div class="AboutXorazm_title regionCarosul_title">
+                  <h1>Xorazm viloyati</h1>
+                </div>
+                <div class="territory">
+                  <h1>Maydoni:</h1>
+                  <h3>6300 km<sup>2</sup></h3>
+                </div>
+                <div class="population">
+                  <h1>Aholi:</h1>
+                  <h3>1.8355 million</h3>
+                </div>
+                <div class="gdp">
+                  <h1>Yalpi ichki maxsulot:</h1>
+                  <h3>15154.2 milliard so‘m</h3>
+                </div>
+              </ul>
+            </div>
+            <div class="homeRegionRow_five homeRegionRow_item">
+              <ul class="regionAbout_tashkent homeRegion_item">
+                <div class="AboutToshkent_title regionCarosul_title">
+                  <h1>Tashkent viloyati</h1>
+                </div>
+                <div class="territory">
+                  <h1>Maydoni:</h1>
+                  <h3>15300 km<sup>2</sup></h3>
+                </div>
+                <div class="population">
+                  <h1>Aholi:</h1>
+                  <h3>2.8987 million</h3>
+                </div>
+                <div class="gdp">
+                  <h1>Yalpi ichki maxsulot:</h1>
+                  <h3>38398.7 milliard so'm</h3>
+                </div>
+              </ul>
+            </div>
+            <div class="homeRegionRow_six homeRegionRow_item">
+              <ul class="regionAbout_samarqand homeRegion_item">
+                <div class="AboutToshkent_title regionCarosul_title">
+                  <h1>Samarqand viloyati</h1>
+                </div>
+                <div class="territory">
+                  <h1>Maydoni:</h1>
+                  <h3>16400 km<sup>2</sup></h3>
+                </div>
+                <div class="population">
+                  <h1>Aholi:</h1>
+                  <h3>3.7987 million</h3>
+                </div>
+                <div class="gdp">
+                  <h1>Yalpi ichki maxsulot:</h1>
+                  <h3>31187.4 milliard so'm</h3>
+                </div>
+              </ul>
+            </div>
+            <div class="homeRegionRow_seven homeRegionRow_item">
+              <ul class="regionAbout_buxoro homeRegion_item">
+                <div class="AboutXorazm_title regionCarosul_title">
+                  <h1>Buxoro viloyati</h1>
+                </div>
+                <div class="territory">
+                  <h1>Maydoni:</h1>
+                  <h3>39400 km<sup>2</sup></h3>
+                </div>
+                <div class="population">
+                  <h1>Aholi:</h1>
+                  <h3>1.8995 million</h3>
+                </div>
+                <div class="gdp">
+                  <h1>Yalpi ichki maxsulot:</h1>
+                  <h3>21151.9 milliard so‘m</h3>
+                </div>
+              </ul>
+            </div>
+            <div class="homeRegionRow_eight homeRegionRow_item">
+              <ul class="regionAbout_namangan homeRegion_item">
+                <div class="AboutToshkent_title regionCarosul_title">
+                  <h1>Namangan viloyati</h1>
+                </div>
+                <div class="territory">
+                  <h1>Maydoni:</h1>
+                  <h3>7900 km<sup>2</sup></h3>
+                </div>
+                <div class="population">
+                  <h1>Aholi:</h1>
+                  <h3>2.7527 million</h3>
+                </div>
+                <div class="gdp">
+                  <h1>Yalpi ichki maxsulot:</h1>
+                  <h3>18141.4 milliard so'm</h3>
+                </div>
+              </ul>
+            </div>
+            <div class="homeRegionRow_nine homeRegionRow_item">
+              <ul class="regionAbout_andijon homeRegion_item">
+                <div class="AboutToshkent_title regionCarosul_title">
+                  <h1>Andijon viloyati</h1>
+                </div>
+                <div class="territory">
+                  <h1>Maydoni:</h1>
+                  <h3>4200 km<sup>2</sup></h3>
+                </div>
+                <div class="population">
+                  <h1>Aholi:</h1>
+                  <h3>3.0667 million</h3>
+                </div>
+                <div class="gdp">
+                  <h1>Yalpi ichki maxsulot:</h1>
+                  <h3>27121.6 milliard so'm</h3>
+                </div>
+              </ul>
+            </div>
+            <div class="homeRegionRow_ten homeRegionRow_item">
+              <ul class="regionAbout_sirdaryo homeRegion_item">
+                <div class="AboutXorazm_title regionCarosul_title">
+                  <h1>Sirdaryo viloyati</h1>
+                </div>
+                <div class="territory">
+                  <h1>Maydoni:</h1>
+                  <h3>5100 km<sup>2</sup></h3>
+                </div>
+                <div class="population">
+                  <h1>Aholi:</h1>
+                  <h3>0.8297 million</h3>
+                </div>
+                <div class="gdp">
+                  <h1>Yalpi ichki maxsulot:</h1>
+                  <h3>8200.5 milliard so‘m</h3>
+                </div>
+              </ul>
+            </div>
+            <div class="homeRegionRow_eleven homeRegionRow_item">
+              <ul class="regionAbout_surxondaryo homeRegion_item">
+                <div class="AboutToshkent_title regionCarosul_title">
+                  <h1>Surxondaryo viloyati</h1>
+                </div>
+                <div class="territory">
+                  <h1>Maydoni:</h1>
+                  <h3>20800 km<sup>2</sup></h3>
+                </div>
+                <div class="population">
+                  <h1>Aholi:</h1>
+                  <h3>2.5693 million</h3>
+                </div>
+                <div class="gdp">
+                  <h1>Yalpi ichki maxsulot:</h1>
+                  <h3>17061.9 milliard so'm</h3>
+                </div>
+              </ul>
+            </div>
+            <div class="homeRegionRow_twelve homeRegionRow_item">
+              <ul class="regionAbout_jizzah homeRegion_item">
+                <div class="AboutToshkent_title regionCarosul_title">
+                  <h1>Jizzax viloyati</h1>
+                </div>
+                <div class="territory">
+                  <h1>Maydoni:</h1>
+                  <h3>20500 km<sup>2</sup></h3>
+                </div>
+                <div class="population">
+                  <h1>Aholi:</h1>
+                  <h3>1.3521 million</h3>
+                </div>
+                <div class="gdp">
+                  <h1>Yalpi ichki maxsulot:</h1>
+                  <h3>11820.2 milliard so'm</h3>
+                </div>
+              </ul>
+            </div>
+            <div class="homeRegionRow_threetheeen homeRegionRow_item">
+              <ul class="regionAbout_fergana homeRegion_item">
+                <div class="AboutXorazm_title regionCarosul_title">
+                  <h1>Farg‘ona viloyati</h1>
+                </div>
+                <div class="territory">
+                  <h1>Maydoni:</h1>
+                  <h3>6800 km<sup>2</sup></h3>
+                </div>
+                <div class="population">
+                  <h1>Aholi:</h1>
+                  <h3>3.6831 million</h3>
+                </div>
+                <div class="gdp">
+                  <h1>Yalpi ichki maxsulot:</h1>
+                  <h3>25181.2 milliard so‘m</h3>
+                </div>
+              </ul>
+            </div>
+            <div class="homeRegionRow_fourtheen homeRegionRow_item">
+              <ul class="regionAbout_qashqadaryo homeRegion_item">
+                <div class="AboutToshkent_title regionCarosul_title">
+                  <h1>Qashqadaryo viloyati</h1>
+                </div>
+                <div class="territory">
+                  <h1>Maydoni:</h1>
+                  <h3>28400 km<sup>2</sup></h3>
+                </div>
+                <div class="population">
+                  <h1>Aholi:</h1>
+                  <h3>3.2133 million</h3>
+                </div>
+                <div class="gdp">
+                  <h1>Yalpi ichki maxsulot:</h1>
+                  <h3>28412.2 milliard so'm</h3>
+                </div>
+              </ul>
+            </div>
+            <div class="homeRegionRow_fiftheen homeRegionRow_item">
+              <ul class="regionAbout_navoiy homeRegion_item">
+                <div class="AboutToshkent_title regionCarosul_title">
+                  <h1>Navoiy viloyati</h1>
+                </div>
+                <div class="territory">
+                  <h1>Maydoni:</h1>
+                  <h3>11800 km<sup>2</sup></h3>
+                </div>
+                <div class="population">
+                  <h1>Aholi:</h1>
+                  <h3>0.9743 million</h3>
+                </div>
+                <div class="gdp">
+                  <h1>Yalpi ichki maxsulot:</h1>
+                  <h3>21729 milliard so'm</h3>
+                </div>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="homeRegionRow_three homeRegionRow_item">
-          <div class="inset_shadow regionAbout_margin">
-            <ul class="regionAbout_buxoro homeRegion_item">
-              <div class="AboutXorazm_title regionCarosul_title">
-                <h1>Buxoro viloyati</h1>
-              </div>
-              <div class="territory">
-                <h1>Maydoni:</h1>
-                <h3>39400 km<sup>2</sup></h3>
-              </div>
-              <div class="population">
-                <h1>Aholi:</h1>
-                <h3>1.8995 million</h3>
-              </div>
-              <div class="gdp">
-                <h1>Yalpi ichki maxsulot:</h1>
-                <h3>21151.9 milliard so‘m</h3>
-              </div>
-            </ul>
-          </div>
-          <div class="inset_shadow regionAbout_margin">
-            <ul class="regionAbout_namangan homeRegion_item">
-              <div class="AboutToshkent_title regionCarosul_title">
-                <h1>Namangan viloyati</h1>
-              </div>
-              <div class="territory">
-                <h1>Maydoni:</h1>
-                <h3>7900 km<sup>2</sup></h3>
-              </div>
-              <div class="population">
-                <h1>Aholi:</h1>
-                <h3>2.7527 million</h3>
-              </div>
-              <div class="gdp">
-                <h1>Yalpi ichki maxsulot:</h1>
-                <h3>18141.4 milliard so'm</h3>
-              </div>
-            </ul>
-          </div>
-          <div class="inset_shadow">
-            <ul class="regionAbout_andijon homeRegion_item">
-              <div class="AboutToshkent_title regionCarosul_title">
-                <h1>Andijon viloyati</h1>
-              </div>
-              <div class="territory">
-                <h1>Maydoni:</h1>
-                <h3>4200 km<sup>2</sup></h3>
-              </div>
-              <div class="population">
-                <h1>Aholi:</h1>
-                <h3>3.0667 million</h3>
-              </div>
-              <div class="gdp">
-                <h1>Yalpi ichki maxsulot:</h1>
-                <h3>27121.6 milliard so'm</h3>
-              </div>
-            </ul>
-          </div>
-        </div>
-        <div class="homeRegionRow_first homeRegionRow_item">
-          <div class="inset_shadow regionAbout_margin">
-            <ul class="regionAbout_uzbekistan homeRegion_item">
-              <div class="AboutXorazm_title regionCarosul_title">
-                <h1>O'zbekistan davlati</h1>
-              </div>
-              <div class="territory">
-                <h1>Maydoni:</h1>
-                <h3>448,9 ming km<sup>2</sup></h3>
-              </div>
-              <div class="population">
-                <h1>Aholi:</h1>
-                <h3>34,483,713 million</h3>
-              </div>
-              <div class="gdp">
-                <h1>Yalpi ichki maxsulot:</h1>
-                <h3>4 million 604,6 ming so‘m</h3>
-              </div>
-            </ul>
-          </div>
-          <div class="inset_shadow regionAbout_margin">
-            <ul class="regionAbout_qoraqalpaqistan homeRegion_item">
-              <div class="AboutToshkent_title regionCarosul_title">
-                <h1>Qoraqalpog‘iston davlati</h1>
-              </div>
-              <div class="territory">
-                <h1>Maydoni:</h1>
-                <h3>165600 km<sup>2</sup></h3>
-              </div>
-              <div class="population">
-                <h1>Aholi:</h1>
-                <h3>1.8697 million</h3>
-              </div>
-              <div class="gdp">
-                <h1>Yalpi ichki maxsulot:</h1>
-                <h3>14185.2 milliard so'm</h3>
-              </div>
-            </ul>
-          </div>
-          <div class="inset_shadow">
-            <ul class="regionAbout_tashkent homeRegion_item">
-              <div class="AboutToshkent_title regionCarosul_title">
-                <h1>Toshkent shahri</h1>
-              </div>
-              <div class="territory">
-                <h1>Maydoni:</h1>
-                <h3>300 km<sup>2</sup></h3>
-              </div>
-              <div class="population">
-                <h1>Aholi:</h1>
-                <h3>2.5108 million</h3>
-              </div>
-              <div class="gdp">
-                <h1>Yalpi ichki maxsulot:</h1>
-                <h3>53287.1 milliard so'm</h3>
-              </div>
-            </ul>
-          </div>
-        </div>
-        <div class="homeRegionRow_four homeRegionRow_item">
-          <div class="inset_shadow regionAbout_margin">
-            <ul class="regionAbout_sirdaryo homeRegion_item">
-              <div class="AboutXorazm_title regionCarosul_title">
-                <h1>Sirdaryo viloyati</h1>
-              </div>
-              <div class="territory">
-                <h1>Maydoni:</h1>
-                <h3>5100 km<sup>2</sup></h3>
-              </div>
-              <div class="population">
-                <h1>Aholi:</h1>
-                <h3>0.8297 million</h3>
-              </div>
-              <div class="gdp">
-                <h1>Yalpi ichki maxsulot:</h1>
-                <h3>8200.5 milliard so‘m</h3>
-              </div>
-            </ul>
-          </div>
-          <div class="inset_shadow regionAbout_margin">
-            <ul class="regionAbout_surxondaryo homeRegion_item">
-              <div class="AboutToshkent_title regionCarosul_title">
-                <h1>Surxondaryo viloyati</h1>
-              </div>
-              <div class="territory">
-                <h1>Maydoni:</h1>
-                <h3>20800 km<sup>2</sup></h3>
-              </div>
-              <div class="population">
-                <h1>Aholi:</h1>
-                <h3>2.5693 million</h3>
-              </div>
-              <div class="gdp">
-                <h1>Yalpi ichki maxsulot:</h1>
-                <h3>17061.9 milliard so'm</h3>
-              </div>
-            </ul>
-          </div>
-          <div class="inset_shadow">
-            <ul class="regionAbout_jizzah homeRegion_item">
-              <div class="AboutToshkent_title regionCarosul_title">
-                <h1>Jizzax viloyati</h1>
-              </div>
-              <div class="territory">
-                <h1>Maydoni:</h1>
-                <h3>20500 km<sup>2</sup></h3>
-              </div>
-              <div class="population">
-                <h1>Aholi:</h1>
-                <h3>1.3521 million</h3>
-              </div>
-              <div class="gdp">
-                <h1>Yalpi ichki maxsulot:</h1>
-                <h3>11820.2 milliard so'm</h3>
-              </div>
-            </ul>
-          </div>
-        </div>
-        <div class="homeRegionRow_five homeRegionRow_item">
-          <div class="inset_shadow regionAbout_margin">
-            <ul class="regionAbout_fergana homeRegion_item">
-              <div class="AboutXorazm_title regionCarosul_title">
-                <h1>Farg‘ona viloyati</h1>
-              </div>
-              <div class="territory">
-                <h1>Maydoni:</h1>
-                <h3>6800 km<sup>2</sup></h3>
-              </div>
-              <div class="population">
-                <h1>Aholi:</h1>
-                <h3>3.6831 million</h3>
-              </div>
-              <div class="gdp">
-                <h1>Yalpi ichki maxsulot:</h1>
-                <h3>25181.2 milliard so‘m</h3>
-              </div>
-            </ul>
-          </div>
-          <div class="inset_shadow regionAbout_margin">
-            <ul class="regionAbout_qashqadaryo homeRegion_item">
-              <div class="AboutToshkent_title regionCarosul_title">
-                <h1>Qashqadaryo viloyati</h1>
-              </div>
-              <div class="territory">
-                <h1>Maydoni:</h1>
-                <h3>28400 km<sup>2</sup></h3>
-              </div>
-              <div class="population">
-                <h1>Aholi:</h1>
-                <h3>3.2133 million</h3>
-              </div>
-              <div class="gdp">
-                <h1>Yalpi ichki maxsulot:</h1>
-                <h3>28412.2 milliard so'm</h3>
-              </div>
-            </ul>
-          </div>
-          <div class="inset_shadow">
-            <ul class="regionAbout_navoiy homeRegion_item">
-              <div class="AboutToshkent_title regionCarosul_title">
-                <h1>Navoiy viloyati</h1>
-              </div>
-              <div class="territory">
-                <h1>Maydoni:</h1>
-                <h3>11800 km<sup>2</sup></h3>
-              </div>
-              <div class="population">
-                <h1>Aholi:</h1>
-                <h3>0.9743 million</h3>
-              </div>
-              <div class="gdp">
-                <h1>Yalpi ichki maxsulot:</h1>
-                <h3>21729 milliard so'm</h3>
-              </div>
-            </ul>
+        <div class="carousel_button_center">
+          <div class="regionCarousel_button">
+            <i class="fa-solid fa-angle-left" id="prew_region"></i>
+            <i class="fa-solid fa-angle-right" id="next_region"></i>
           </div>
         </div>
       </div>
-      <div class="regionCarousel_button">
-        <label for="one" class="one" id="one"></label>
-        <label for="two" class="two" id="two"></label>
-        <label for="three" class="three active" id="three"></label>
-        <label for="four" class="four" id="four"></label>
-        <label for="five" class="five" id="five"></label>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95925.51709077595!2d69.2649984!3d41.2942336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef7e2f1d90e45%3A0x24e3caaa0efb6eb!2z0JDRjdGA0L7Qv9C-0YDRgg!5e0!3m2!1sru!2s!4v1656308804295!5m2!1sru!2s"
+          style="border: 0"
+          allowfullscreen="true"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
       </div>
     </div>
 
@@ -528,7 +527,7 @@
           <div class="firstRow_region">
             <div class="regionFirst_img regionItem_img">
               <img
-                src="./image/sectionRegion/region.khiva.jpg"
+                src="../image/sectionRegion/region.khiva.jpg"
                 alt="Khiva image"
               />
               <div class="overlay">
@@ -539,7 +538,7 @@
             </div>
             <div class="regionSecond_img regionItem_img">
               <img
-                src="./image/sectionRegion/region.tashkent.jpg"
+                src="../image/sectionRegion/region.tashkent.jpg"
                 alt="Tashkent image"
               />
               <div class="overlay">
@@ -550,7 +549,7 @@
             </div>
             <div class="regionThree_img regionItem_img">
               <img
-                src="./image/sectionRegion/region.registon.jpg"
+                src="../image/sectionRegion/region.registon.jpg"
                 alt="Registon image"
               />
               <div class="overlay">
@@ -565,7 +564,7 @@
           <div class="secondRow_region">
             <div class="regionFour_img regionItem_img">
               <img
-                src="./image/sectionRegion/region.bukhara.jpg"
+                src="../image/sectionRegion/region.bukhara.jpg"
                 alt="Buxoro image"
               />
               <div class="overlay">
@@ -576,7 +575,7 @@
             </div>
             <div class="regionFive_img regionItem_img">
               <img
-                src="./image/sectionRegion/region.namangan.jpg"
+                src="../image/sectionRegion/region.namangan.jpg"
                 alt="Namangan image"
               />
               <div class="overlay">
@@ -587,7 +586,7 @@
             </div>
             <div class="regionSix_img regionItem_img">
               <img
-                src="./image/sectionRegion/region.bukhara.jpg"
+                src="../image/sectionRegion/region.bukhara.jpg"
                 alt="Buxoro image"
               />
               <div class="overlay">
@@ -654,7 +653,7 @@
             </div>
             <div class="sumalak_img cultureItem_img">
               <img
-                src="./image/culture/culture.sumalak.jpg"
+                src="../image/culture/culture.sumalak.jpg"
                 alt="Sumalak image"
               />
             </div>
@@ -664,7 +663,7 @@
           <div class="clothes culture_item">
             <div class="clothes_img cultureItem_img">
               <img
-                src="./image/culture/culture.clothes.jpg"
+                src="../image/culture/culture.clothes.jpg"
                 alt="Clothes image"
               />
             </div>
@@ -720,7 +719,7 @@
               </p>
             </div>
             <div class="food_img cultureItem_img">
-              <img src="./image/culture/culture.food.jpg" alt="Food image" />
+              <img src="../image/culture/culture.food.jpg" alt="Food image" />
             </div>
           </div>
         </div>
@@ -738,7 +737,7 @@
         <div class="container">
           <div class="hotel_img">
             <div class="hotelFirst_img hotelImg_item">
-              <img src="./image/hotel/hotel.hilton.jpg" alt="Hilton image" />
+              <img src="../image/hotel/hotel.hilton.jpg" alt="Hilton image" />
               <div class="hotel_overlay">
                 <div class="hiltonOverlay_title">
                   <h1>Hilton</h1>
@@ -752,7 +751,7 @@
             </div>
             <div class="hotelSecond_img hotelImg_item">
               <img
-                src="./image/hotel/hotel.saraLind.jpg"
+                src="../image/hotel/hotel.saraLind.jpg"
                 alt="Sara Lind image"
               />
               <div class="hotel_overlay">
@@ -768,7 +767,7 @@
               </div>
             </div>
             <div class="hotelThree_img hotelImg_item">
-              <img src="./image/hotel/hotel.ramada.jpg" alt="Ramada image" />
+              <img src="../image/hotel/hotel.ramada.jpg" alt="Ramada image" />
               <div class="hotel_overlay">
                 <div class="ramadaOverlay_title">
                   <h1>Ramada</h1>
@@ -899,7 +898,7 @@
             <div class="firstManagment_div Managment_div">
               <div class="firstPrizident_managment Prizident_managment">
                 <img
-                  src="./image/managment/first-prizident.jpg"
+                  src="../image/managment/first-prizident.jpg"
                   alt="Birinchi prizident"
                 />
                 <div class="prizidentManagment_p">
@@ -959,7 +958,7 @@
               <div class="Managment_img_first Managment_img_item">
                 <div class="Managment_img_item_img">
                   <img
-                    src="./image/managment/Islom Karimov managment.jpg"
+                    src="../image/managment/Islom Karimov managment.jpg"
                     alt=""
                   />
                   <div class="managmentImg_overlay">
@@ -981,7 +980,7 @@
               <div class="Managment_img_second Managment_img_item">
                 <div class="Managment_img_item_img">
                   <img
-                    src="./image/managment/Islom Karimov managment2.webp"
+                    src="../image/managment/Islom Karimov managment2.webp"
                     alt=""
                   />
                   <div class="managmentImg_overlay">
@@ -1003,7 +1002,7 @@
               <div class="Managment_img_threeth Managment_img_item">
                 <div class="Managment_img_item_img">
                   <img
-                    src="./image/managment/Islom Karimov managment3.jpg"
+                    src="../image/managment/Islom Karimov managment3.jpg"
                     alt=""
                   />
                   <div class="managmentImg_overlay">
@@ -1053,7 +1052,7 @@
               </div>
               <div class="secondPrizident_managment Prizident_managment">
                 <img
-                  src="./image/managment/Shavkat-Mirziyoyev.jpg"
+                  src="../image/managment/Shavkat-Mirziyoyev.jpg"
                   alt="Ikkinchi prizident"
                 />
                 <div class="prizidentManagment_p">
@@ -1086,7 +1085,7 @@
               <div class="Managment_img_first Managment_img_item">
                 <div class="Managment_img_item_img">
                   <img
-                    src="./image/managment/Shavkat-Mirziyoyev managment.jpg"
+                    src="../image/managment/Shavkat-Mirziyoyev managment.jpg"
                     alt=""
                   />
                   <div class="managmentImg_overlay">
@@ -1113,7 +1112,7 @@
               <div class="Managment_img_second Managment_img_item">
                 <div class="Managment_img_item_img">
                   <img
-                    src="./image/managment/Shavkat-Mirziyoyev managment2.jpg"
+                    src="../image/managment/Shavkat-Mirziyoyev managment2.jpg"
                     alt=""
                   />
                   <div class="managmentImg_overlay">
@@ -1140,7 +1139,7 @@
               <div class="Managment_img_treeth Managment_img_item">
                 <div class="Managment_img_item_img">
                   <img
-                    src="./image/managment/Shavkat-Mirziyoyev managment3.png"
+                    src="../image/managment/Shavkat-Mirziyoyev managment3.png"
                     alt=""
                   />
                   <div class="managmentImg_overlay">
@@ -1171,87 +1170,7 @@
     </section>
 
     <!---------  FOOTER  --------->
-    <footer id="footer">
-      <div class="footer">
-        <div class="container">
-          <div class="footer_title">
-            <h1>Aloqa</h1>
-          </div>
-        </div>
-        <div class="container">
-          <div class="footer_item">
-            <div class="form">
-              <form id="signup-form">
-                <div class="contact_item firstName">
-                  <input type="text" id="firstName" required />
-                  <label for="firstName">Ism</label>
-                </div>
-                <div class="contact_item email">
-                  <input type="email" id="email" required />
-                  <label for="email">Email</label>
-                </div>
-                <div class="contact_item password">
-                  <input type="password" id="password" required />
-                  <label for="password">Parol</label>
-                </div>
-                <div class="submit_alert warning_alert" id="warning_alert">
-                  <div class="alert_body">
-                    <div class="alert_check">
-                      <i class="fa-solid fa-check"></i>
-                    </div>
-                    <div class="alert_title">
-                      <h1>Email yoki parol noto'g'ri!</h1>
-                    </div>
-                  </div>
-                  <div class="warningAlert_close alert_close">
-                    <i class="fa-solid fa-xmark" id="closeWarning_alert"></i>
-                  </div>
-                </div>
-                <div class="submit_alert correct_alert" id="correct_alert">
-                  <div class="alert_correct_check alert_check">
-                    <i class="fa-solid fa-check"></i>
-                  </div>
-                  <h1>Xabar muaffaqiyatli jo'natildi!</h1>
-                  <div class="correctAlert_close alert_close">
-                    <i class="fa-solid fa-xmark" id="closeCorrect_alert"></i>
-                  </div>
-                </div>
-                <button class="submit" id="submit">Yuborish</button>
-              </form>
-            </div>
-            <div class="contact_card">
-              <div class="contactCard_row">
-                <div class="contactCard_item contactCard_email">
-                  <i class="fa-solid fa-square-envelope"></i>
-                  <h1>Email</h1>
-                  <a href="#"> sardor.20070731@gmail.com </a>
-                </div>
-                <div class="contactCard_item github">
-                  <i class="fa-brands fa-github"></i>
-                  <h1>Github</h1>
-                  <a href="https://github.com/sardorbek0731" target="_blank">
-                    github.com/sardorbek0731</a
-                  >
-                </div>
-              </div>
-              <div class="contactCardRow_second">
-                <div class="contactCard_item telegram">
-                  <i class="fa-brands fa-telegram"></i>
-                  <h1>Telegram</h1>
-                  <a href="https://t.me/Sardorbek_0731" target="_blank">
-                    t.me/Sardorbek_0731
-                  </a>
-                </div>
-                <div class="contactCard_item number">
-                  <i class="fa-solid fa-square-phone-flip"></i>
-                  <h1>Telefon</h1>
-                  <a href="tel:993477826"> +998 99 3477826 </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <footer>
       <div class="goodbye">
         <div class="contact_brand">
           <a href="#home">
@@ -1334,7 +1253,7 @@
                 d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
               /></svg
           ></a>
-          <a href="#">
+          <a href="contact.html">
             Aloqa
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -1355,6 +1274,7 @@
         </div>
       </div>
     </footer>
-    <script src="./app.js"></script>
+
+    <script src="../js/app.js"></script>
   </body>
 </html>
