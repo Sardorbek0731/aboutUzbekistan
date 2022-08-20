@@ -15,7 +15,24 @@ const clothes = document.querySelector(".clothes");
 const food = document.querySelector(".food");
 const hotelImgItem = document.querySelectorAll(".hotelImg_item");
 const hotelLink = document.querySelector(".hotel_link");
+const firstPrizident = document.querySelector(".firstPrizident_managment");
+const secondPrizident = document.querySelector(".secondPrizident_managment");
+const firstPrizident_about = document.querySelector(".firstPrizident_about");
+const secondPrizident_about = document.querySelector(".secondPrizident_about");
+const firstPrizidentImg = document.querySelectorAll("#firstPrizident_img");
+const secondPrizidentImg = document.querySelectorAll("#secondPrizident_img");
 
+let imgIndex = 0;
+function ifscrollforEach() {
+  imgIndex = 0;
+  item.style.transform = `translateY(${imgIndex * 150}px)`;
+  item.style.opacity = "1";
+}
+function elseScrollForEach() {
+  imgIndex = i;
+  item.style.transform = `translateY(${imgIndex * 150}px)`;
+  item.style.opacity = "0";
+}
 document.addEventListener("scroll", (e) => {
   if (window.scrollY > 200) {
     scrollHeader.classList.add("scroll-header");
@@ -45,7 +62,6 @@ document.addEventListener("scroll", (e) => {
     regioTitle.style.transform = "translateX(-200%)";
   }
   if (window.scrollY > 1250) {
-    let imgIndex = 0;
     regionImg.forEach((item) => {
       imgIndex = 0;
       item.style.transform = `translateY(${imgIndex * 150}px)`;
@@ -65,16 +81,15 @@ document.addEventListener("scroll", (e) => {
     food.style.transform = "translateX(0)";
   } else {
     cultureTitle.style.transform = "translateX(-200%)";
-    sumalak.style.transform = "translateX(-100%)";
-    clothes.style.transform = "translateX(100%)";
-    food.style.transform = "translateX(-100%)";
+    sumalak.style.transform = "translateX(-200%)";
+    clothes.style.transform = "translateX(200%)";
+    food.style.transform = "translateX(-200%)";
   }
-  let hotelImgIndex = 0;
   if (window.scrollY > 4600) {
     hotelTitle.style.transform = "translateX(0)";
     hotelImgItem.forEach((item) => {
-      hotelImgIndex = 0;
-      item.style.transform = `translateY(${hotelImgIndex * 150}px)`;
+      imgIndex = 0;
+      item.style.transform = `translateY(${imgIndex * 150}px)`;
       item.style.opacity = "1";
     });
     hotelLink.style.transform = "translateY(0)";
@@ -82,8 +97,8 @@ document.addEventListener("scroll", (e) => {
   } else {
     hotelTitle.style.transform = "translateX(-200%)";
     hotelImgItem.forEach((item, i) => {
-      hotelImgIndex = i;
-      item.style.transform = `translateY(${hotelImgIndex * 150}px)`;
+      imgIndex = i;
+      item.style.transform = `translateY(${imgIndex * 150}px)`;
       item.style.opacity = "0";
     });
     hotelLink.style.transform = "translateY(150px)";
@@ -91,8 +106,66 @@ document.addEventListener("scroll", (e) => {
   }
   if (window.scrollY > 6000) {
     managmentTitle.style.transform = "translateX(0)";
+    firstPrizident.style.transform = "translateY(0)";
+    firstPrizident.style.opacity = "1";
+    firstPrizident_about.style.transform = "translateY(0)";
+    firstPrizident_about.style.opacity = "1";
   } else {
+    firstPrizident.style.opacity = "0";
+    firstPrizident_about.style.opacity = "0";
     managmentTitle.style.transform = "translateX(-200%)";
+    firstPrizident.style.transform = "translateY(150px)";
+    firstPrizident_about.style.transform = "translateY(150px)";
+  }
+  if (window.scrollY > 7000) {
+    firstPrizidentImg.forEach((item) => {
+      imgIndex = 0;
+      item.style.transform = `translateY(${imgIndex * 150}px)`;
+      item.style.opacity = "1";
+    });
+  } else {
+    firstPrizidentImg.forEach((item, i) => {
+      imgIndex = i;
+      item.style.transform = `translateY(${imgIndex * 150}px)`;
+      item.style.opacity = "0";
+    });
+  }
+  if (window.scrollY > 6000) {
+    managmentTitle.style.transform = "translateX(0)";
+    firstPrizident.style.transform = "translateY(0)";
+    firstPrizident.style.opacity = "1";
+    firstPrizident_about.style.transform = "translateY(0)";
+    firstPrizident_about.style.opacity = "1";
+  } else {
+    firstPrizident.style.opacity = "0";
+    firstPrizident_about.style.opacity = "0";
+    managmentTitle.style.transform = "translateX(-200%)";
+    firstPrizident.style.transform = "translateY(150px)";
+    firstPrizident_about.style.transform = "translateY(150px)";
+  }
+  if (window.scrollY > 8300) {
+    secondPrizidentImg.forEach((item) => {
+      imgIndex = 0;
+      item.style.transform = `translateY(${imgIndex * 150}px)`;
+      item.style.opacity = "1";
+    });
+  } else {
+    secondPrizidentImg.forEach((item, i) => {
+      imgIndex = i;
+      item.style.transform = `translateY(${imgIndex * 150}px)`;
+      item.style.opacity = "0";
+    });
+  }
+  if (window.scrollY > 7500) {
+    secondPrizident.style.transform = "translateY(0)";
+    secondPrizident.style.opacity = "1";
+    secondPrizident_about.style.transform = "translateY(0)";
+    secondPrizident_about.style.opacity = "1";
+  } else {
+    secondPrizident.style.opacity = "0";
+    secondPrizident_about.style.opacity = "0";
+    secondPrizident.style.transform = "translateY(150px)";
+    secondPrizident_about.style.transform = "translateY(150px)";
   }
 });
 
@@ -225,7 +298,8 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
-inputSearch.addEventListener("click", () => {
+inputSearch.addEventListener("click", (e) => {
+  e.preventDefault();
   if (searchInputValue.value.length > 0) {
     message.textContent = "";
   } else {
