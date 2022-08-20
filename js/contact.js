@@ -44,12 +44,12 @@ const correctProgress = document.querySelector(".correct-progress");
 function warningAlertProgress() {
   setTimeout(() => {
     warningProgress.classList.remove("active");
-  }, 5400);
+  }, 5300);
 }
 function correctAlertProgress() {
   setTimeout(() => {
     correctProgress.classList.remove("active");
-  }, 5400);
+  }, 5300);
 }
 function warningCloseAlertProgress() {
   setTimeout(() => {
