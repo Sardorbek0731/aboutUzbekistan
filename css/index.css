@@ -50,16 +50,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  width: 13rem;
-  height: 13rem;
   border-radius: 50%;
-}
-.loaderItem {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  background-color: white;
 }
 
 .please h1 {
@@ -68,18 +59,6 @@ body {
   font-weight: 300;
   font-size: 1.2rem;
   color: white;
-}
-
-@keyframes first_loader {
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes second_loader {
-  100% {
-    transform: rotate(-360deg);
-  }
 }
 #title {
   transition: all 2s;
