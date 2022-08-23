@@ -18,1213 +18,1426 @@
     <title>Uzbekistan</title>
   </head>
   <body>
-    <!---------  HEADER  --------->
-    <header>
-      <nav>
-        <div class="container">
-          <a class="brand" href="index.html">
-            <h1>Uzbek<span>About</span></h1>
-          </a>
-          <div class="brand_icon" id="brand-icon">
-            <h1 class="brand_icon_uz">UZ</h1>
-            <h2 class="brand_icon_a">A</h2>
-          </div>
-          <ul class="navUl">
-            <li class="nav__item">
-              <a class="nav__link" href="#home">
-                <i class="fa-solid fa-house-chimney"></i>
-                Bosh sahifa</a
-              >
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#region">
-                <i class="fa-solid fa-earth-americas"></i>
-                Viloyatlar</a
-              >
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#culture">
-                <i class="fa-solid fa-graduation-cap"></i>
-                Madaniyat</a
-              >
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#hotel">
-                <i class="fa-solid fa-hotel"></i>
-                Mehmonxona</a
-              >
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#managment">
-                <i class="fa-solid fa-chart-line"></i>
-                Boshqaruv</a
-              >
-            </li>
-            <li class="nav__item pages__link">
-              <a class="nav__link" href="#">
-                <i class="fa-solid fa-book-open"></i> Sahifa
-              </a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="15"
-                height="15"
-                fill="currentColor"
-                class="bi bi-chevron-down"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
-                />
-              </svg>
-              <ul class="pages__section">
-                <li class="nav__item_pages">
-                  <a class="pages__link__item" href="./assets/symbol.html">
-                    <i class="fa-solid fa-atom"></i>
-                    Ramzlari</a
-                  >
-                </li>
-                <li class="nav__item_pages">
-                  <a class="pages__link__item" href="#home">
-                    <i class="fa-solid fa-landmark-dome"></i>
-                    Tarixi</a
-                  >
-                </li>
-                <li class="nav__item_pages">
-                  <a class="pages__link__item" href="./assets/contact.html">
-                    <i class="fa-solid fa-user"></i>
-                    Aloqa
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav__item language">
-              <a class="nav__link" href="#">
-                <i class="fa-solid fa-language"></i> UZB
-              </a>
-
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="15"
-                height="15"
-                fill="currentColor"
-                class="bi bi-chevron-down"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
-                />
-              </svg>
-              <ul class="navItem_language">
-                <li class="language_link">
-                  <a href="./assets/index-eng.html">ENG</a>
-                </li>
-                <li class="language_link">
-                  <a href="./assets/index-ru.html">RU</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <div class="search">
-            <i class="fa-solid fa-magnifying-glass" id="openSearch"></i>
-            <div class="searchOverlay hidden"></div>
-            <div class="searchInput hidden">
-              <input
-                type="search"
-                placeholder="Qidiruv..."
-                id="searchInputValue"
-              />
-              <div class="message"></div>
-              <div class="searchIcon">
-                <i class="fa-solid fa-magnifying-glass" id="inputSearch"></i>
-              </div>
-            </div>
-            <i class="fa-solid fa-xmark" id="close--searchInput"></i>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <!---------  HOME  --------->
-    <section id="home">
-      <div class="home">
-        <div class="home_bg">
-          <div class="imgs">
-            <img class="active" src="./image/home/home_bg1.jpg" alt="Nature" />
-            <img src="./image/home/home.bg2.webp" alt="Food" />
-            <img src="./image/home/home_bg4.jpg" alt="Nature" />
-            <img src="./image/home/home.bg3.jpg" alt="Falk art" />
-            <img
-              src="./image/home/home_bg5.jpg"
-              alt="Shavkat Mirziyoyev image"
-            />
-          </div>
-          <div class="HomeCarousel_buttons">
-            <div class="HomeCarousel_button">
-              <i class="fa-solid fa-angle-left" id="prew"></i>
-              <i class="fa-solid fa-angle-right" id="next"></i>
-            </div>
-          </div>
-        </div>
-        <div class="home__title">
-          <h1>
-            <span class="home_brand_uzbek">Uzbek</span
-            ><span class="home_brand_about">About</span> : Siz bu web saytda<br />
-            O'zbekiston haqida ma'lumotga ega<br />
-            bo'lasiz degan umiddaman !<br />
-          </h1>
-        </div>
+    <div class="container-loader">
+      <div class="loader">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          style="margin: auto; display: block"
+          width="200px"
+          height="200px"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="xMidYMid"
+        >
+          <g transform="translate(85,50)">
+            <g transform="rotate(0)">
+              <circle cx="0" cy="0" r="6" fill="#ffffff" fill-opacity="1">
+                <animateTransform
+                  attributeName="transform"
+                  type="scale"
+                  begin="-1.5624999999999998s"
+                  values="1.86 1.86;1 1"
+                  keyTimes="0;1"
+                  dur="1.7857142857142856s"
+                  repeatCount="indefinite"
+                ></animateTransform>
+                <animate
+                  attributeName="fill-opacity"
+                  keyTimes="0;1"
+                  dur="1.7857142857142856s"
+                  repeatCount="indefinite"
+                  values="1;0"
+                  begin="-1.5624999999999998s"
+                ></animate>
+              </circle>
+            </g>
+          </g>
+          <g transform="translate(74.74873734152916,74.74873734152916)">
+            <g transform="rotate(45)">
+              <circle cx="0" cy="0" r="6" fill="#ffffff" fill-opacity="0.875">
+                <animateTransform
+                  attributeName="transform"
+                  type="scale"
+                  begin="-1.3392857142857142s"
+                  values="1.86 1.86;1 1"
+                  keyTimes="0;1"
+                  dur="1.7857142857142856s"
+                  repeatCount="indefinite"
+                ></animateTransform>
+                <animate
+                  attributeName="fill-opacity"
+                  keyTimes="0;1"
+                  dur="1.7857142857142856s"
+                  repeatCount="indefinite"
+                  values="1;0"
+                  begin="-1.3392857142857142s"
+                ></animate>
+              </circle>
+            </g>
+          </g>
+          <g transform="translate(50,85)">
+            <g transform="rotate(90)">
+              <circle cx="0" cy="0" r="6" fill="#ffffff" fill-opacity="0.75">
+                <animateTransform
+                  attributeName="transform"
+                  type="scale"
+                  begin="-1.1160714285714284s"
+                  values="1.86 1.86;1 1"
+                  keyTimes="0;1"
+                  dur="1.7857142857142856s"
+                  repeatCount="indefinite"
+                ></animateTransform>
+                <animate
+                  attributeName="fill-opacity"
+                  keyTimes="0;1"
+                  dur="1.7857142857142856s"
+                  repeatCount="indefinite"
+                  values="1;0"
+                  begin="-1.1160714285714284s"
+                ></animate>
+              </circle>
+            </g>
+          </g>
+          <g transform="translate(25.25126265847084,74.74873734152916)">
+            <g transform="rotate(135)">
+              <circle cx="0" cy="0" r="6" fill="#ffffff" fill-opacity="0.625">
+                <animateTransform
+                  attributeName="transform"
+                  type="scale"
+                  begin="-0.8928571428571428s"
+                  values="1.86 1.86;1 1"
+                  keyTimes="0;1"
+                  dur="1.7857142857142856s"
+                  repeatCount="indefinite"
+                ></animateTransform>
+                <animate
+                  attributeName="fill-opacity"
+                  keyTimes="0;1"
+                  dur="1.7857142857142856s"
+                  repeatCount="indefinite"
+                  values="1;0"
+                  begin="-0.8928571428571428s"
+                ></animate>
+              </circle>
+            </g>
+          </g>
+          <g transform="translate(15,50.00000000000001)">
+            <g transform="rotate(180)">
+              <circle cx="0" cy="0" r="6" fill="#ffffff" fill-opacity="0.5">
+                <animateTransform
+                  attributeName="transform"
+                  type="scale"
+                  begin="-0.6696428571428571s"
+                  values="1.86 1.86;1 1"
+                  keyTimes="0;1"
+                  dur="1.7857142857142856s"
+                  repeatCount="indefinite"
+                ></animateTransform>
+                <animate
+                  attributeName="fill-opacity"
+                  keyTimes="0;1"
+                  dur="1.7857142857142856s"
+                  repeatCount="indefinite"
+                  values="1;0"
+                  begin="-0.6696428571428571s"
+                ></animate>
+              </circle>
+            </g>
+          </g>
+          <g transform="translate(25.251262658470832,25.25126265847084)">
+            <g transform="rotate(225)">
+              <circle cx="0" cy="0" r="6" fill="#ffffff" fill-opacity="0.375">
+                <animateTransform
+                  attributeName="transform"
+                  type="scale"
+                  begin="-0.4464285714285714s"
+                  values="1.86 1.86;1 1"
+                  keyTimes="0;1"
+                  dur="1.7857142857142856s"
+                  repeatCount="indefinite"
+                ></animateTransform>
+                <animate
+                  attributeName="fill-opacity"
+                  keyTimes="0;1"
+                  dur="1.7857142857142856s"
+                  repeatCount="indefinite"
+                  values="1;0"
+                  begin="-0.4464285714285714s"
+                ></animate>
+              </circle>
+            </g>
+          </g>
+          <g transform="translate(49.99999999999999,15)">
+            <g transform="rotate(270)">
+              <circle cx="0" cy="0" r="6" fill="#ffffff" fill-opacity="0.25">
+                <animateTransform
+                  attributeName="transform"
+                  type="scale"
+                  begin="-0.2232142857142857s"
+                  values="1.86 1.86;1 1"
+                  keyTimes="0;1"
+                  dur="1.7857142857142856s"
+                  repeatCount="indefinite"
+                ></animateTransform>
+                <animate
+                  attributeName="fill-opacity"
+                  keyTimes="0;1"
+                  dur="1.7857142857142856s"
+                  repeatCount="indefinite"
+                  values="1;0"
+                  begin="-0.2232142857142857s"
+                ></animate>
+              </circle>
+            </g>
+          </g>
+          <g transform="translate(74.74873734152916,25.251262658470832)">
+            <g transform="rotate(315)">
+              <circle cx="0" cy="0" r="6" fill="#ffffff" fill-opacity="0.125">
+                <animateTransform
+                  attributeName="transform"
+                  type="scale"
+                  begin="0s"
+                  values="1.86 1.86;1 1"
+                  keyTimes="0;1"
+                  dur="1.7857142857142856s"
+                  repeatCount="indefinite"
+                ></animateTransform>
+                <animate
+                  attributeName="fill-opacity"
+                  keyTimes="0;1"
+                  dur="1.7857142857142856s"
+                  repeatCount="indefinite"
+                  values="1;0"
+                  begin="0s"
+                ></animate>
+              </circle>
+            </g>
+          </g>
+        </svg>
       </div>
-      <div class="my_telephone">
-        <a href="tel:993477826">
-          <i class="fa-solid fa-phone"></i>
-        </a>
-      </div>
-      <div class="angle_top">
-        <a href="#home">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-chevron-up"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
-            />
-          </svg>
-        </a>
-      </div>
-    </section>
-
-    <!---------  HOME REGION ABOUT  --------->
-    <div class="homeRegion_about">
-      <div class="homeRegion-container">
-        <div class="homeRegion_items">
-          <div class="region-container">
-            <div class="homeRegion_row">
-              <div class="homeRegionRow_first homeRegionRow_item">
-                <ul class="regionAbout_uzbekistan homeRegion_item">
-                  <div class="AboutXorazm_title regionCarosul_title">
-                    <h1>O'zbekistan davlati</h1>
-                  </div>
-                  <div class="territory">
-                    <h1>Maydoni:</h1>
-                    <h3>448,9 ming km<sup>2</sup></h3>
-                  </div>
-                  <div class="population">
-                    <h1>Aholi:</h1>
-                    <h3>34,483,713 million</h3>
-                  </div>
-                  <div class="gdp">
-                    <h1>Yalpi ichki maxsulot:</h1>
-                    <h3>4 million 604,6 ming so‘m</h3>
-                  </div>
-                </ul>
-              </div>
-              <div class="homeRegionRow_second homeRegionRow_item">
-                <ul class="regionAbout_qoraqalpaqistan homeRegion_item">
-                  <div class="AboutToshkent_title regionCarosul_title">
-                    <h1>Qoraqalpog‘iston davlati</h1>
-                  </div>
-                  <div class="territory">
-                    <h1>Maydoni:</h1>
-                    <h3>165600 km<sup>2</sup></h3>
-                  </div>
-                  <div class="population">
-                    <h1>Aholi:</h1>
-                    <h3>1.8697 million</h3>
-                  </div>
-                  <div class="gdp">
-                    <h1>Yalpi ichki maxsulot:</h1>
-                    <h3>14185.2 milliard so'm</h3>
-                  </div>
-                </ul>
-              </div>
-              <div class="homeRegionRow_three homeRegionRow_item">
-                <ul class="regionAbout_tashkent homeRegion_item">
-                  <div class="AboutToshkent_title regionCarosul_title">
-                    <h1>Toshkent shahri</h1>
-                  </div>
-                  <div class="territory">
-                    <h1>Maydoni:</h1>
-                    <h3>300 km<sup>2</sup></h3>
-                  </div>
-                  <div class="population">
-                    <h1>Aholi:</h1>
-                    <h3>2.5108 million</h3>
-                  </div>
-                  <div class="gdp">
-                    <h1>Yalpi ichki maxsulot:</h1>
-                    <h3>53287.1 milliard so'm</h3>
-                  </div>
-                </ul>
-              </div>
-              <div class="homeRegionRow_four homeRegionRow_item">
-                <ul class="regionAbout_xorazm homeRegion_item">
-                  <div class="AboutXorazm_title regionCarosul_title">
-                    <h1>Xorazm viloyati</h1>
-                  </div>
-                  <div class="territory">
-                    <h1>Maydoni:</h1>
-                    <h3>6300 km<sup>2</sup></h3>
-                  </div>
-                  <div class="population">
-                    <h1>Aholi:</h1>
-                    <h3>1.8355 million</h3>
-                  </div>
-                  <div class="gdp">
-                    <h1>Yalpi ichki maxsulot:</h1>
-                    <h3>15154.2 milliard so‘m</h3>
-                  </div>
-                </ul>
-              </div>
-              <div class="homeRegionRow_five homeRegionRow_item">
-                <ul class="regionAbout_tashkent homeRegion_item">
-                  <div class="AboutToshkent_title regionCarosul_title">
-                    <h1>Tashkent viloyati</h1>
-                  </div>
-                  <div class="territory">
-                    <h1>Maydoni:</h1>
-                    <h3>15300 km<sup>2</sup></h3>
-                  </div>
-                  <div class="population">
-                    <h1>Aholi:</h1>
-                    <h3>2.8987 million</h3>
-                  </div>
-                  <div class="gdp">
-                    <h1>Yalpi ichki maxsulot:</h1>
-                    <h3>38398.7 milliard so'm</h3>
-                  </div>
-                </ul>
-              </div>
-              <div class="homeRegionRow_six homeRegionRow_item">
-                <ul class="regionAbout_samarqand homeRegion_item">
-                  <div class="AboutToshkent_title regionCarosul_title">
-                    <h1>Samarqand viloyati</h1>
-                  </div>
-                  <div class="territory">
-                    <h1>Maydoni:</h1>
-                    <h3>16400 km<sup>2</sup></h3>
-                  </div>
-                  <div class="population">
-                    <h1>Aholi:</h1>
-                    <h3>3.7987 million</h3>
-                  </div>
-                  <div class="gdp">
-                    <h1>Yalpi ichki maxsulot:</h1>
-                    <h3>31187.4 milliard so'm</h3>
-                  </div>
-                </ul>
-              </div>
-              <div class="homeRegionRow_seven homeRegionRow_item">
-                <ul class="regionAbout_buxoro homeRegion_item">
-                  <div class="AboutXorazm_title regionCarosul_title">
-                    <h1>Buxoro viloyati</h1>
-                  </div>
-                  <div class="territory">
-                    <h1>Maydoni:</h1>
-                    <h3>39400 km<sup>2</sup></h3>
-                  </div>
-                  <div class="population">
-                    <h1>Aholi:</h1>
-                    <h3>1.8995 million</h3>
-                  </div>
-                  <div class="gdp">
-                    <h1>Yalpi ichki maxsulot:</h1>
-                    <h3>21151.9 milliard so‘m</h3>
-                  </div>
-                </ul>
-              </div>
-              <div class="homeRegionRow_eight homeRegionRow_item">
-                <ul class="regionAbout_namangan homeRegion_item">
-                  <div class="AboutToshkent_title regionCarosul_title">
-                    <h1>Namangan viloyati</h1>
-                  </div>
-                  <div class="territory">
-                    <h1>Maydoni:</h1>
-                    <h3>7900 km<sup>2</sup></h3>
-                  </div>
-                  <div class="population">
-                    <h1>Aholi:</h1>
-                    <h3>2.7527 million</h3>
-                  </div>
-                  <div class="gdp">
-                    <h1>Yalpi ichki maxsulot:</h1>
-                    <h3>18141.4 milliard so'm</h3>
-                  </div>
-                </ul>
-              </div>
-              <div class="homeRegionRow_nine homeRegionRow_item">
-                <ul class="regionAbout_andijon homeRegion_item">
-                  <div class="AboutToshkent_title regionCarosul_title">
-                    <h1>Andijon viloyati</h1>
-                  </div>
-                  <div class="territory">
-                    <h1>Maydoni:</h1>
-                    <h3>4200 km<sup>2</sup></h3>
-                  </div>
-                  <div class="population">
-                    <h1>Aholi:</h1>
-                    <h3>3.0667 million</h3>
-                  </div>
-                  <div class="gdp">
-                    <h1>Yalpi ichki maxsulot:</h1>
-                    <h3>27121.6 milliard so'm</h3>
-                  </div>
-                </ul>
-              </div>
-              <div class="homeRegionRow_ten homeRegionRow_item">
-                <ul class="regionAbout_sirdaryo homeRegion_item">
-                  <div class="AboutXorazm_title regionCarosul_title">
-                    <h1>Sirdaryo viloyati</h1>
-                  </div>
-                  <div class="territory">
-                    <h1>Maydoni:</h1>
-                    <h3>5100 km<sup>2</sup></h3>
-                  </div>
-                  <div class="population">
-                    <h1>Aholi:</h1>
-                    <h3>0.8297 million</h3>
-                  </div>
-                  <div class="gdp">
-                    <h1>Yalpi ichki maxsulot:</h1>
-                    <h3>8200.5 milliard so‘m</h3>
-                  </div>
-                </ul>
-              </div>
-              <div class="homeRegionRow_eleven homeRegionRow_item">
-                <ul class="regionAbout_surxondaryo homeRegion_item">
-                  <div class="AboutToshkent_title regionCarosul_title">
-                    <h1>Surxondaryo viloyati</h1>
-                  </div>
-                  <div class="territory">
-                    <h1>Maydoni:</h1>
-                    <h3>20800 km<sup>2</sup></h3>
-                  </div>
-                  <div class="population">
-                    <h1>Aholi:</h1>
-                    <h3>2.5693 million</h3>
-                  </div>
-                  <div class="gdp">
-                    <h1>Yalpi ichki maxsulot:</h1>
-                    <h3>17061.9 milliard so'm</h3>
-                  </div>
-                </ul>
-              </div>
-              <div class="homeRegionRow_twelve homeRegionRow_item">
-                <ul class="regionAbout_jizzah homeRegion_item">
-                  <div class="AboutToshkent_title regionCarosul_title">
-                    <h1>Jizzax viloyati</h1>
-                  </div>
-                  <div class="territory">
-                    <h1>Maydoni:</h1>
-                    <h3>20500 km<sup>2</sup></h3>
-                  </div>
-                  <div class="population">
-                    <h1>Aholi:</h1>
-                    <h3>1.3521 million</h3>
-                  </div>
-                  <div class="gdp">
-                    <h1>Yalpi ichki maxsulot:</h1>
-                    <h3>11820.2 milliard so'm</h3>
-                  </div>
-                </ul>
-              </div>
-              <div class="homeRegionRow_threetheeen homeRegionRow_item">
-                <ul class="regionAbout_fergana homeRegion_item">
-                  <div class="AboutXorazm_title regionCarosul_title">
-                    <h1>Farg‘ona viloyati</h1>
-                  </div>
-                  <div class="territory">
-                    <h1>Maydoni:</h1>
-                    <h3>6800 km<sup>2</sup></h3>
-                  </div>
-                  <div class="population">
-                    <h1>Aholi:</h1>
-                    <h3>3.6831 million</h3>
-                  </div>
-                  <div class="gdp">
-                    <h1>Yalpi ichki maxsulot:</h1>
-                    <h3>25181.2 milliard so‘m</h3>
-                  </div>
-                </ul>
-              </div>
-              <div class="homeRegionRow_fourtheen homeRegionRow_item">
-                <ul class="regionAbout_qashqadaryo homeRegion_item">
-                  <div class="AboutToshkent_title regionCarosul_title">
-                    <h1>Qashqadaryo viloyati</h1>
-                  </div>
-                  <div class="territory">
-                    <h1>Maydoni:</h1>
-                    <h3>28400 km<sup>2</sup></h3>
-                  </div>
-                  <div class="population">
-                    <h1>Aholi:</h1>
-                    <h3>3.2133 million</h3>
-                  </div>
-                  <div class="gdp">
-                    <h1>Yalpi ichki maxsulot:</h1>
-                    <h3>28412.2 milliard so'm</h3>
-                  </div>
-                </ul>
-              </div>
-              <div class="homeRegionRow_fiftheen homeRegionRow_item">
-                <ul class="regionAbout_navoiy homeRegion_item">
-                  <div class="AboutToshkent_title regionCarosul_title">
-                    <h1>Navoiy viloyati</h1>
-                  </div>
-                  <div class="territory">
-                    <h1>Maydoni:</h1>
-                    <h3>11800 km<sup>2</sup></h3>
-                  </div>
-                  <div class="population">
-                    <h1>Aholi:</h1>
-                    <h3>0.9743 million</h3>
-                  </div>
-                  <div class="gdp">
-                    <h1>Yalpi ichki maxsulot:</h1>
-                    <h3>21729 milliard so'm</h3>
-                  </div>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="carousel_button_center">
-            <div class="regionCarousel_button">
-              <i class="fa-solid fa-angle-left" id="prew_region"></i>
-              <i class="fa-solid fa-angle-right" id="next_region"></i>
-            </div>
-          </div>
-        </div>
-        <div class="map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95925.51709077595!2d69.2649984!3d41.2942336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef7e2f1d90e45%3A0x24e3caaa0efb6eb!2z0JDRjdGA0L7Qv9C-0YDRgg!5e0!3m2!1sru!2s!4v1656308804295!5m2!1sru!2s"
-            style="border: 0"
-            allowfullscreen="true"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
+      <div class="please">
+        <h1>Iltimos, kuting...</h1>
       </div>
     </div>
 
-    <!---------  REGION  --------->
-    <section id="region">
-      <div class="region">
-        <div class="container">
-          <div class="region_title" id="title">
-            <h1>Viloyatlar</h1>
-          </div>
-        </div>
-        <div class="container">
-          <div class="firstRow_region">
-            <div class="regionFirst_img regionItem_img">
-              <img
-                src="./image/sectionRegion/region.khiva.jpg"
-                alt="Khiva image"
-              />
-              <div class="overlay">
-                <div class="overlay__item">
-                  <h2 class="overlayItem__title">Xorazm viloyati</h2>
-                </div>
-              </div>
-            </div>
-            <div class="regionSecond_img regionItem_img">
-              <img
-                src="./image/sectionRegion/region.tashkent.jpg"
-                alt="Tashkent image"
-              />
-              <div class="overlay">
-                <div class="overlay__item">
-                  <h2 class="overlayItem__title">Tashkent viloyati</h2>
-                </div>
-              </div>
-            </div>
-            <div class="regionThree_img regionItem_img">
-              <img
-                src="./image/sectionRegion/region.registon.jpg"
-                alt="Registon image"
-              />
-              <div class="overlay">
-                <div class="overlay__item">
-                  <h2 class="overlayItem__title">Samarqand viloyati</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="secondRow_region">
-            <div class="regionFour_img regionItem_img">
-              <img
-                src="./image/sectionRegion/region.bukhara.jpg"
-                alt="Buxoro image"
-              />
-              <div class="overlay">
-                <div class="overlay__item">
-                  <h2 class="overlayItem__title">Buxoro viloyati</h2>
-                </div>
-              </div>
-            </div>
-            <div class="regionFive_img regionItem_img">
-              <img
-                src="./image/sectionRegion/region.namangan.jpg"
-                alt="Namangan image"
-              />
-              <div class="overlay">
-                <div class="overlay__item">
-                  <h2 class="overlayItem__title">Namangan viloyati</h2>
-                </div>
-              </div>
-            </div>
-            <div class="regionSix_img regionItem_img">
-              <img
-                src="./image/sectionRegion/region.bukhara.jpg"
-                alt="Buxoro image"
-              />
-              <div class="overlay">
-                <div class="overlay__item">
-                  <h2 class="overlayItem__title">Buxoro viloyati</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="threeth_row">
-            <iframe
-              src="https://www.youtube.com/embed/qr3tvR2tcJA"
-              title="Uzbekistan from above. Best drone video of the Uzbekistan country by AirCinema. 6K."
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-            <div class="allRegion_link">
-              <a href="#">
-                <button type="button" class="regionAll_button">
-                  Hamma viloyatlar
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!---------  CULTURE  --------->
-    <section id="culture">
-      <div class="culture">
-        <div class="container">
-          <div class="culture_title" id="title">
-            <h1>Madaniyat</h1>
-          </div>
-        </div>
-        <div class="container">
-          <div class="sumalak culture_item">
-            <div class="sumalak_p cultureItem_p">
-              <p>
-                Sumalak har doim yangi yil va yangi hayotning boshlanishini
-                nishonlaydigan<br />
-                “Navro‘z” – milliy bayramimiz uchun pishiriladi. “Navro‘z”
-                hayotimizga baxt<br />
-                va shodlik olib keladi, deb ishoniladi. Bu bayram uchun “Ko‘k
-                somsa”, “Ko‘k<br />
-                chuchvara” va albatta “Sumalak” kabi turli xil taomlar
-                tayyorlanadi. “Suma<br />
-                lak” – qadimiy va chinakam milliy taomimiz. U asrlar davomida
-                pishiriladi va <br />
-                retseptlar mintaqaga qarab farq qilishi mumkin, ammo
-                ingredientlar har do-<br />
-                im bir xil: un, suv va yog'da yuvilgan bug'doy nihollari. Bu
-                juda kuchli dori, u <br />
-                immunitetni mustahkamlashga yordam beradi, uni yoshartiradi va
-                tanani <br />
-                mustahkamlaydi.“Sumalak”ni yaxshi va mehribon odamlar pishirishi
-                kerak,<br />
-                u o'zbeklar uchun muqaddas va muqaddas taomdir.<br />
-              </p>
-            </div>
-            <div class="sumalak_img cultureItem_img">
-              <img
-                src="./image/culture/culture.sumalak.jpg"
-                alt="Sumalak image"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="clothes culture_item">
-            <div class="clothes_img cultureItem_img">
-              <img
-                src="./image/culture/culture.clothes.jpg"
-                alt="Clothes image"
-              />
-            </div>
-            <div class="clothes_p cultureItem_p">
-              <p>
-                Mahalliy xalqlar kiyimlarining o'ziga xosligi doimo iqlim,
-                ijtimoiy va qa-<br />
-                bilaviy an'analar bilan belgilanadi. 19-asrgacha kiyim-kechaklar
-                (ko'ylak-<br />
-                lar, ko'ylaklar va ko'ylaklar) arxaik xususiyatlarni saqlab
-                qolishda davom<br />
-                etdi: keng, uzun, to'liq kesilgan, u inson tanasining
-                shakllarini yashirgan<br />
-                holda erkin tushib ketdi. Kiyimlar birlashtirildi: qish va yoz
-                uchun, erkak-<br />
-                lar, ayollar va bolalar uchun ular yaqin va dizayn edi.
-                An'anaviy milliy er-<br />
-                kaklar libosi issiq to'qilgan xalat - ro'mol yoki sharf bilan
-                bog'langan cho-<br />
-                pon, bosh kiyimi tyubeyka va nozik teridan tikilgan etiklardan
-                iborat.<br />
-                Erkaklar to'g'ridan-to'g'ri dizayndagi ko'ylak, ichki va tashqi
-                xalat kiyish-<br />
-                gan. Libos engil yoki issiq bo'lishi mumkin, ko'rpa-to'shak
-                bilan tikilgan.<br />
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="food culture_item">
-            <div class="food_p cultureItem_p">
-              <p>
-                Palov o‘zbek taomlarining ramzi hisoblanadi. U har bir
-                o'zbekistonlik oilada,<br />
-                xoh o'zbek, xoh rus, xoh koreys tatarida tayyorlanadi. O'zbek
-                palovi O'zbe-<br />
-                kiston xalqi mentalitetining bir qismidir. An'anaga ko'ra, palov
-                erkaklar tomo-<br />
-                nidan pishiriladi. Turli ingredientlar bilan o'zbek palovini
-                tayyorlashning ming-<br />
-                dan ortiq retseptlari mavjud va hatto faqat shu taomga
-                bag'ishlangan pazan-<br />
-                dachilik kitoblari ham mavjud. Sarigli palov - Eritilgan yog'da
-                o'zbek palov-<br />
-                Shodibek Palov - Uzbek Shodibek palovTovuk palov - Tovuqli
-                o'zbek palov <br />
-                O‘zbekistonning turli hududlarida o‘zbek palovini tayyorlashning
-                o‘ziga xos<br />
-                retseptlari bor. Masalan, buxoroliklar yashil grammli palov
-                tayyorlaydilar. Sa-<br />
-                marqand palovi yengil, Farg‘ona palovi aksincha jigarrang.<br />
-              </p>
-            </div>
-            <div class="food_img cultureItem_img">
-              <img src="./image/culture/culture.food.jpg" alt="Food image" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!---------  HOTEL  --------->
-    <section id="hotel">
-      <div class="hotel">
-        <div class="container">
-          <div class="hotel_title" id="title">
-            <h1>Mehmonxona</h1>
-          </div>
-        </div>
-        <div class="container">
-          <div class="hotel_img">
-            <div class="hotelFirst_img hotelImg_item">
-              <img src="./image/hotel/hotel.hilton.jpg" alt="Hilton image" />
-              <div class="hotel_overlay">
-                <div class="hiltonOverlay_title">
-                  <h1>Hilton</h1>
-                </div>
-                <p>
-                  <span class="hotel_address">Address:</span> Tashkent city,<br />
-                  Islom Karimov street.<br />
-                </p>
-                <p></p>
-              </div>
-            </div>
-            <div class="hotelSecond_img hotelImg_item">
-              <img
-                src="./image/hotel/hotel.saraLind.jpg"
-                alt="Sara Lind image"
-              />
-              <div class="hotel_overlay">
-                <div class="SaraLindOverlay_title">
-                  <h1>Sara Lind</h1>
-                </div>
-                <p>
-                  <span class="hotel_address">Address:</span> Tashkent shahri,
-                  <br />
-                  Kohinur street.<br />
-                </p>
-                <p></p>
-              </div>
-            </div>
-            <div class="hotelThree_img hotelImg_item">
-              <img src="./image/hotel/hotel.ramada.jpg" alt="Ramada image" />
-              <div class="hotel_overlay">
-                <div class="ramadaOverlay_title">
-                  <h1>Ramada</h1>
-                </div>
-                <p>
-                  <span class="hotel_address">Address:</span> Tashkent shahri,
-                  <br />
-                  Abdulla Qodiriy street.<br />
-                </p>
-                <p></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="hotel_link">
-            <div class="hotelLink_bg"></div>
-            <div class="hotelLink_brand">
-              <h1>Uzbek<span>About</span></h1>
-              <p>Tezroq xona buyurtirish uchun imkoniyatlar!</p>
-            </div>
-            <div class="hotelLink_item">
-              <div class="hotelLink_item_first">
-                <div class="hotelLink_p">
-                  <a
-                    target="_blank"
-                    href="https://www.booking.com/country/uz.en-gb.html?aid=356980&label=gog235jc-1DCAIo7gFCAnV6SDNYA2juAYgBAZgBCbgBF8gBDNgBA-gBAYgCAagCA7gCzcGRlgbAAgHSAiRhN2Y0ZDVmNS1iNmZlLTQ4Y2ItYjBlNi1kYmNmZjI0ZDU2ODfYAgTgAgE&sid=7d9f923661637cc53670130629dfbed4&keep_landing=1&"
-                  >
-                    <h3>
-                      Xona buyurtirish
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="25"
-                        height="25"
-                        fill="currentColor"
-                        class="bi bi-chevron-right"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-                        />
-                      </svg>
-                    </h3>
-                  </a>
-                </div>
-                <div class="hotel_money">
-                  <a href="#">
-                    <h2>Narxlarni bilish</h2>
-                  </a>
-                </div>
-              </div>
-              <div class="hotelLink_item_second">
-                <div class="hotelLink_p">
-                  <a href="#">
-                    <h3>
-                      Online ro'yxatdan o'tish
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="25"
-                        height="25"
-                        fill="currentColor"
-                        class="bi bi-chevron-right"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-                        />
-                      </svg>
-                    </h3>
-                  </a>
-                </div>
-                <div class="hotel_money">
-                  <a href="#">
-                    <h2>Ro'yxatdan o'ting</h2>
-                  </a>
-                </div>
-              </div>
-              <div class="hotelLink_item_three">
-                <div class="hotelLink_p">
-                  <a href="#">
-                    <h3>
-                      Xona buyurtirish shartlari
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="25"
-                        height="25"
-                        fill="currentColor"
-                        class="bi bi-chevron-right"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-                        />
-                      </svg>
-                    </h3>
-                  </a>
-                </div>
-                <div class="hotel_money">
-                  <a href="#">
-                    <h2>Shartlar bilan tanishing</h2>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="hotelLink_learning">
-              <a href="#">
-                <h3>UzbekAbout haqida batafsil</h3>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!---------  MANAGMENT  --------->
-    <section id="managment">
-      <div class="managment">
-        <div class="container">
-          <div class="managment_title" id="title">
-            <h1>Boshqaruv</h1>
-          </div>
-        </div>
-        <div class="container">
-          <div class="Islom-Karimov">
-            <div class="firstManagment_div Managment_div">
-              <div class="firstPrizident_managment Prizident_managment">
-                <img
-                  src="./image/managment/first-prizident.jpg"
-                  alt="Birinchi prizident"
-                />
-                <div class="prizidentManagment_p">
-                  <div class="prizidentManagment_icon">
-                    <div class="managmentIcon_website managmentIcon_item">
-                      <a href="#">
-                        <i class="fa-solid fa-link"></i>
-                        <h2>Website</h2>
-                      </a>
-                    </div>
-                    <div class="managmentIcon_date managmentIcon_item">
-                      <a href="#">
-                        <i class="fa-regular fa-calendar"></i>
-                        <h2>Dekabr 29, 1991</h2>
-                      </a>
-                    </div>
-                  </div>
-                  <h1>Islom Karimov</h1>
-                  <p>
-                    Islom Abdugʻaniyevich Karimov 1938-yil <br />
-                    30-yanvar, Samarqandda dunyoga kelgan.<br />
-                    Islom Abdug‘aniyevich Karimov 1991-yil<br />
-                    29-dekabrda O'zbekiston Respublikasini <br />
-                    birinchi prizidenti hisoblangan<br />
-                  </p>
-                </div>
-              </div>
-              <div class="firstPrizident_about PrizidentManagment_about">
-                <p>
-                  Islom Abdug‘aniyevich Karimov 1938 yil 30 yanvarida
-                  Samarqand<br />
-                  shahrida oddiy xizmatchi oilasida tug'ilgan.Uning oilasida har
-                  kun-<br />
-                  gi og‘ir mehnat yashash uchun pul topishning yagona usuli
-                  edi.<br />
-                  Uning bolaligi urush va urushdan keyingi yillarga to‘g‘ri
-                  keldi. U va<br />
-                  uning barcha yaqinlari bir burda nonning haqiqiy bahosini
-                  bilganiga<br />
-                  qaramasdan, qiyinchilik va yo‘qchilikni boshidan kechirdi,
-                  ular ming-<br />
-                  lab vatandoshlarimiz kabi Ikkinchi jahon urushi vaqtida
-                  O‘zbekis-<br />
-                  tonga evakuatsiya qilingan kishilar bilan o‘z uyi va
-                  tuz-nonini baham<br />
-                  ko‘rgandi. Islom Karimov 1945 yilda Samarqanddagi
-                  A.S.Pushkin<br />
-                  nomidagi 21-maktabga o‘qishga kirib, uni oltin medal bilan
-                  tamom- <br />
-                  ladi. O‘quvchilik yillari mobaynida ko‘p adabiyotlarni,
-                  ayniqsa, tarix<br />
-                  bo‘yicha adabiyotlarni o‘qidi.<br />
-                </p>
-              </div>
-            </div>
-            <div class="IslomKarimov_managment_img Managment_img">
-              <div
-                class="Managment_img_first Managment_img_item"
-                id="firstPrizident_img"
-              >
-                <div class="Managment_img_item_img">
-                  <img
-                    src="./image/managment/Islom Karimov managment.jpg"
-                    alt=""
-                  />
-                  <div class="managmentImg_overlay">
-                    <h1>
-                      Islom Karimov<br />
-                      boshqaruvi
-                    </h1>
-                  </div>
-                </div>
-                <div class="ManagmentImg_item_about">
-                  <p>
-                    O‘zbekiston va Tojikiston rahbar-<br />
-                    lari ikki tomonlama hamkorlikning<br />
-                    dolzarb masalalarini muhokama qi-<br />
-                    lishdi<br />
-                  </p>
-                </div>
-              </div>
-              <div
-                class="Managment_img_second Managment_img_item"
-                id="firstPrizident_img"
-              >
-                <div class="Managment_img_item_img">
-                  <img
-                    src="./image/managment/Islom Karimov managment2.webp"
-                    alt=""
-                  />
-                  <div class="managmentImg_overlay">
-                    <h1>
-                      Islom Karimov<br />
-                      boshqaruvi
-                    </h1>
-                  </div>
-                </div>
-                <div class="ManagmentImg_item_about">
-                  <p>
-                    O‘zbekiston va Tojikiston rahbar-<br />
-                    lari ikki tomonlama hamkorlikning<br />
-                    dolzarb masalalarini muhokama qi-<br />
-                    lishdi<br />
-                  </p>
-                </div>
-              </div>
-              <div
-                class="Managment_img_threeth Managment_img_item"
-                id="firstPrizident_img"
-              >
-                <div class="Managment_img_item_img">
-                  <img
-                    src="./image/managment/Islom Karimov managment3.jpg"
-                    alt=""
-                  />
-                  <div class="managmentImg_overlay">
-                    <h1>
-                      Islom Karimov<br />
-                      boshqaruvi
-                    </h1>
-                  </div>
-                </div>
-                <div class="ManagmentImg_item_about">
-                  <p>
-                    O‘zbekiston va Tojikiston rahbar-<br />
-                    lari ikki tomonlama hamkorlikning<br />
-                    dolzarb masalalarini muhokama qi-<br />
-                    lishdi<br />
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="Shavkat-Mirziyoyev">
-            <div class="secondManagment_div Managment_div">
-              <div class="PrizidentManagment_about secondPrizident_about">
-                <p>
-                  Shavkat Mirziyoyev Miromonovich 1957 yil 24 iyulda Jizzax
-                  <br />
-                  viloyatining Zomin tumanida shifokor oilasida tugʻilgan.
-                  Mil-<br />
-                  lati – oʻzbek. Oliy maʼlumotli, 1981 yili Toshkent
-                  irrigatsiya<br />
-                  va qishloq xoʻjaligini mexanizatsiyalash muhandislari
-                  institu-<br />
-                  tini tugatgan. Muhandis-mexanik mutaxassisligiga ega.
-                  Texni-<br />
-                  ka fanlari nomzodi, dotsent. Mehnat faoliyatini 1981 yilda<br />
-                  Toshkent irrigatsiya va qishloq xoʻjaligini
-                  mexanizatsiyalash<br />
-                  muhandislari institutida boshlab, dotsent, oʻquv ishlari
-                  boʻ-<br />
-                  yicha prorektor lavozimlarida ishladi. 1992 yilda Toshkent<br />
-                  shahrining Mirzo Ulugʻbek tumani hokimi lavozimiga tayin-<br />
-                  landi. Shavkat Mirziyoyev 2016-yil 14-dekabrda O'zbekiston<br />
-                  Respublikasini ikkinchi prizidenti hisoblangan<br />
-                </p>
-              </div>
-              <div class="secondPrizident_managment Prizident_managment">
-                <img
-                  src="./image/managment/Shavkat-Mirziyoyev.jpg"
-                  alt="Ikkinchi prizident"
-                />
-                <div class="prizidentManagment_p">
-                  <div class="prizidentManagment_icon">
-                    <div class="managmentIcon_website managmentIcon_item">
-                      <a href="https://president.uz" target="_blank">
-                        <i class="fa-solid fa-link"></i>
-                        <h2>Website</h2>
-                      </a>
-                    </div>
-                    <div class="managmentIcon_date managmentIcon_item">
-                      <a href="#">
-                        <i class="fa-regular fa-calendar"></i>
-                        <h2>Dekabr 14, 2016</h2>
-                      </a>
-                    </div>
-                  </div>
-                  <h1>Shavkat Mirziyoyev</h1>
-                  <p>
-                    Shavkat Miromonovich Mirziyoyev 1957-yil <br />
-                    24-iyulda, Jizzahda dunyoga kelgan. Shavkat<br />
-                    Miromonovich Mirziyoyev 2016-yil 14-de -<br />
-                    kabrda O'zbekiston Respublikasini ikkinchi prizidenti
-                    hisoblangan
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="Mirziyoyev_managment_img Managment_img">
-              <div
-                class="Managment_img_first Managment_img_item"
-                id="secondPrizident_img"
-              >
-                <div class="Managment_img_item_img">
-                  <img
-                    src="./image/managment/Shavkat-Mirziyoyev managment.jpg"
-                    alt=""
-                  />
-                  <div class="managmentImg_overlay">
-                    <h1>
-                      Shavkat Mirziyoyev<br />
-                      boshqaruvi
-                    </h1>
-                  </div>
-                </div>
-                <div class="ManagmentImg_item_about">
-                  <p>
-                    O‘zbekiston va Tojikiston rahbarlari ikki<br />
-                    tomonlama hamkorlikning dolzarb ma-<br />
-                    salalarini muhokama qilishdi<br />
-                  </p>
-                  <a href="#">
-                    <h1>
-                      <i class="fa-regular fa-calendar"></i>
-                      21-07-2022
-                    </h1>
-                  </a>
-                </div>
-              </div>
-              <div
-                class="Managment_img_second Managment_img_item"
-                id="secondPrizident_img"
-              >
-                <div class="Managment_img_item_img">
-                  <img
-                    src="./image/managment/Shavkat-Mirziyoyev managment2.jpg"
-                    alt=""
-                  />
-                  <div class="managmentImg_overlay">
-                    <h1>
-                      Shavkat Mirziyoyev<br />
-                      boshqaruvi
-                    </h1>
-                  </div>
-                </div>
-                <div class="ManagmentImg_item_about">
-                  <p>
-                    O‘zbekiston davlati, Qozog‘iston davlati <br />
-                    va Qirg‘iziston davlati rahbarlarining iliq<br />
-                    uchrashuvi bo‘lib o‘tdi<br />
-                  </p>
-                  <a href="#">
-                    <h1>
-                      <i class="fa-regular fa-calendar"></i>
-                      20-07-2022
-                    </h1>
-                  </a>
-                </div>
-              </div>
-              <div
-                class="Managment_img_treeth Managment_img_item"
-                id="secondPrizident_img"
-              >
-                <div class="Managment_img_item_img">
-                  <img
-                    src="./image/managment/Shavkat-Mirziyoyev managment3.png"
-                    alt=""
-                  />
-                  <div class="managmentImg_overlay">
-                    <h1>
-                      Shavkat Mirziyoyev<br />
-                      boshqaruvi
-                    </h1>
-                  </div>
-                </div>
-                <div class="ManagmentImg_item_about">
-                  <p>
-                    O‘zbekiston va Belarus Prezidenti ama-<br />
-                    liy hamkorlikni kengaytirish masalalarini<br />
-                    muhokama qildilar<br />
-                  </p>
-                  <a href="#">
-                    <h1>
-                      <i class="fa-regular fa-calendar"></i>
-                      24.07.2022
-                    </h1>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!---------  FOOTER  --------->
-    <footer>
-      <div class="container">
-        <div class="goodbye">
-          <div class="contact_brand">
-            <a href="#home">
+    <main id="main">
+      <!---------  HEADER  --------->
+      <header>
+        <nav>
+          <div class="container">
+            <a class="brand" href="index.html">
               <h1>Uzbek<span>About</span></h1>
             </a>
-            <p>
-              Siz bu web saytda O'zbekiston haqida ma'lumotga ega bo'ldingiz
-              degan<br />
-              umiddaman. Biz bilan birga bo'lganingizdan mamnunman!<br />
-            </p>
-          </div>
-          <div class="footer_hr"></div>
-          <div class="goodbye_links">
-            <div class="website_map">
-              <a href="#home"> Bosh sahifa</a>
-              <a href="#region"> Viloyatlar</a>
-              <a href="#culture"> Madaniyat</a>
-              <a href="#hotel"> Mehmonxona</a>
-              <a href="#managment"> Boshqaruv</a>
+            <div class="brand_icon" id="brand-icon">
+              <h1 class="brand_icon_uz">UZ</h1>
+              <h2 class="brand_icon_a">A</h2>
             </div>
-            <div class="follow">
-              <a href="#">Bog'lanish </a>
-              <a href="#">Telegram </a>
-              <a href="#">Facebook </a>
-              <a href="#">Github </a>
-              <a href="#">Youtube </a>
+            <ul class="navUl">
+              <li class="nav__item">
+                <a class="nav__link" href="#home">
+                  <i class="fa-solid fa-house-chimney"></i>
+                  Bosh sahifa</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#region">
+                  <i class="fa-solid fa-earth-americas"></i>
+                  Viloyatlar</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#culture">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                  Madaniyat</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#hotel">
+                  <i class="fa-solid fa-hotel"></i>
+                  Mehmonxona</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#managment">
+                  <i class="fa-solid fa-chart-line"></i>
+                  Boshqaruv</a
+                >
+              </li>
+              <li class="nav__item pages__link">
+                <a class="nav__link" href="#">
+                  <i class="fa-solid fa-book-open"></i> Sahifa
+                </a>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  fill="currentColor"
+                  class="bi bi-chevron-down"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+                <ul class="pages__section">
+                  <li class="nav__item_pages">
+                    <a class="pages__link__item" href="./assets/symbol.html">
+                      <i class="fa-solid fa-atom"></i>
+                      Ramzlari</a
+                    >
+                  </li>
+                  <li class="nav__item_pages">
+                    <a class="pages__link__item" href="#home">
+                      <i class="fa-solid fa-landmark-dome"></i>
+                      Tarixi</a
+                    >
+                  </li>
+                  <li class="nav__item_pages">
+                    <a class="pages__link__item" href="./assets/contact.html">
+                      <i class="fa-solid fa-user"></i>
+                      Aloqa
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav__item language">
+                <a class="nav__link" href="#">
+                  <i class="fa-solid fa-language"></i> UZB
+                </a>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  fill="currentColor"
+                  class="bi bi-chevron-down"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+                <ul class="navItem_language">
+                  <li class="language_link">
+                    <a href="./assets/index-eng.html">ENG</a>
+                  </li>
+                  <li class="language_link">
+                    <a href="./assets/index-ru.html">RU</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="search">
+              <i class="fa-solid fa-magnifying-glass" id="openSearch"></i>
+              <div class="searchOverlay hidden"></div>
+              <div class="searchInput hidden">
+                <input
+                  type="search"
+                  placeholder="Qidiruv..."
+                  id="searchInputValue"
+                />
+                <div class="message"></div>
+                <div class="searchIcon">
+                  <i class="fa-solid fa-magnifying-glass" id="inputSearch"></i>
+                </div>
+              </div>
+              <i class="fa-solid fa-xmark" id="close--searchInput"></i>
             </div>
           </div>
-          <div class="by">
+        </nav>
+      </header>
+
+      <!---------  HOME  --------->
+      <section id="home">
+        <div class="home">
+          <div class="home_bg">
+            <div class="imgs">
+              <img
+                class="active"
+                src="./image/home/home_bg1.jpg"
+                alt="Nature"
+              />
+              <img src="./image/home/home.bg2.webp" alt="Food" />
+              <img src="./image/home/home_bg4.jpg" alt="Nature" />
+              <img src="./image/home/home.bg3.jpg" alt="Falk art" />
+              <img
+                src="./image/home/home_bg5.jpg"
+                alt="Shavkat Mirziyoyev image"
+              />
+            </div>
+            <div class="HomeCarousel_buttons">
+              <div class="HomeCarousel_button">
+                <i class="fa-solid fa-angle-left" id="prew"></i>
+                <i class="fa-solid fa-angle-right" id="next"></i>
+              </div>
+            </div>
+          </div>
+          <div class="home__title">
             <h1>
-              <i class="fa-solid fa-user-gear"></i>
-              by
-              <a href="#">Sardorbek Olimov</a>
+              <span class="home_brand_uzbek">Uzbek</span
+              ><span class="home_brand_about">About</span> : Siz bu web
+              saytda<br />
+              O'zbekiston haqida ma'lumotga ega<br />
+              bo'lasiz degan umiddaman !<br />
             </h1>
           </div>
         </div>
+        <div class="my_telephone">
+          <a href="tel:993477826">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+        </div>
+        <div class="angle_top">
+          <a href="#home">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-up"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
+              />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <!---------  HOME REGION ABOUT  --------->
+      <div class="homeRegion_about">
+        <div class="homeRegion-container">
+          <div class="homeRegion_items">
+            <div class="region-container">
+              <div class="homeRegion_row">
+                <div class="homeRegionRow_first homeRegionRow_item">
+                  <ul class="regionAbout_uzbekistan homeRegion_item">
+                    <div class="AboutXorazm_title regionCarosul_title">
+                      <h1>O'zbekistan davlati</h1>
+                    </div>
+                    <div class="territory">
+                      <h1>Maydoni:</h1>
+                      <h3>448,9 ming km<sup>2</sup></h3>
+                    </div>
+                    <div class="population">
+                      <h1>Aholi:</h1>
+                      <h3>34,483,713 million</h3>
+                    </div>
+                    <div class="gdp">
+                      <h1>Yalpi ichki maxsulot:</h1>
+                      <h3>4 million 604,6 ming so‘m</h3>
+                    </div>
+                  </ul>
+                </div>
+                <div class="homeRegionRow_second homeRegionRow_item">
+                  <ul class="regionAbout_qoraqalpaqistan homeRegion_item">
+                    <div class="AboutToshkent_title regionCarosul_title">
+                      <h1>Qoraqalpog‘iston davlati</h1>
+                    </div>
+                    <div class="territory">
+                      <h1>Maydoni:</h1>
+                      <h3>165600 km<sup>2</sup></h3>
+                    </div>
+                    <div class="population">
+                      <h1>Aholi:</h1>
+                      <h3>1.8697 million</h3>
+                    </div>
+                    <div class="gdp">
+                      <h1>Yalpi ichki maxsulot:</h1>
+                      <h3>14185.2 milliard so'm</h3>
+                    </div>
+                  </ul>
+                </div>
+                <div class="homeRegionRow_three homeRegionRow_item">
+                  <ul class="regionAbout_tashkent homeRegion_item">
+                    <div class="AboutToshkent_title regionCarosul_title">
+                      <h1>Toshkent shahri</h1>
+                    </div>
+                    <div class="territory">
+                      <h1>Maydoni:</h1>
+                      <h3>300 km<sup>2</sup></h3>
+                    </div>
+                    <div class="population">
+                      <h1>Aholi:</h1>
+                      <h3>2.5108 million</h3>
+                    </div>
+                    <div class="gdp">
+                      <h1>Yalpi ichki maxsulot:</h1>
+                      <h3>53287.1 milliard so'm</h3>
+                    </div>
+                  </ul>
+                </div>
+                <div class="homeRegionRow_four homeRegionRow_item">
+                  <ul class="regionAbout_xorazm homeRegion_item">
+                    <div class="AboutXorazm_title regionCarosul_title">
+                      <h1>Xorazm viloyati</h1>
+                    </div>
+                    <div class="territory">
+                      <h1>Maydoni:</h1>
+                      <h3>6300 km<sup>2</sup></h3>
+                    </div>
+                    <div class="population">
+                      <h1>Aholi:</h1>
+                      <h3>1.8355 million</h3>
+                    </div>
+                    <div class="gdp">
+                      <h1>Yalpi ichki maxsulot:</h1>
+                      <h3>15154.2 milliard so‘m</h3>
+                    </div>
+                  </ul>
+                </div>
+                <div class="homeRegionRow_five homeRegionRow_item">
+                  <ul class="regionAbout_tashkent homeRegion_item">
+                    <div class="AboutToshkent_title regionCarosul_title">
+                      <h1>Tashkent viloyati</h1>
+                    </div>
+                    <div class="territory">
+                      <h1>Maydoni:</h1>
+                      <h3>15300 km<sup>2</sup></h3>
+                    </div>
+                    <div class="population">
+                      <h1>Aholi:</h1>
+                      <h3>2.8987 million</h3>
+                    </div>
+                    <div class="gdp">
+                      <h1>Yalpi ichki maxsulot:</h1>
+                      <h3>38398.7 milliard so'm</h3>
+                    </div>
+                  </ul>
+                </div>
+                <div class="homeRegionRow_six homeRegionRow_item">
+                  <ul class="regionAbout_samarqand homeRegion_item">
+                    <div class="AboutToshkent_title regionCarosul_title">
+                      <h1>Samarqand viloyati</h1>
+                    </div>
+                    <div class="territory">
+                      <h1>Maydoni:</h1>
+                      <h3>16400 km<sup>2</sup></h3>
+                    </div>
+                    <div class="population">
+                      <h1>Aholi:</h1>
+                      <h3>3.7987 million</h3>
+                    </div>
+                    <div class="gdp">
+                      <h1>Yalpi ichki maxsulot:</h1>
+                      <h3>31187.4 milliard so'm</h3>
+                    </div>
+                  </ul>
+                </div>
+                <div class="homeRegionRow_seven homeRegionRow_item">
+                  <ul class="regionAbout_buxoro homeRegion_item">
+                    <div class="AboutXorazm_title regionCarosul_title">
+                      <h1>Buxoro viloyati</h1>
+                    </div>
+                    <div class="territory">
+                      <h1>Maydoni:</h1>
+                      <h3>39400 km<sup>2</sup></h3>
+                    </div>
+                    <div class="population">
+                      <h1>Aholi:</h1>
+                      <h3>1.8995 million</h3>
+                    </div>
+                    <div class="gdp">
+                      <h1>Yalpi ichki maxsulot:</h1>
+                      <h3>21151.9 milliard so‘m</h3>
+                    </div>
+                  </ul>
+                </div>
+                <div class="homeRegionRow_eight homeRegionRow_item">
+                  <ul class="regionAbout_namangan homeRegion_item">
+                    <div class="AboutToshkent_title regionCarosul_title">
+                      <h1>Namangan viloyati</h1>
+                    </div>
+                    <div class="territory">
+                      <h1>Maydoni:</h1>
+                      <h3>7900 km<sup>2</sup></h3>
+                    </div>
+                    <div class="population">
+                      <h1>Aholi:</h1>
+                      <h3>2.7527 million</h3>
+                    </div>
+                    <div class="gdp">
+                      <h1>Yalpi ichki maxsulot:</h1>
+                      <h3>18141.4 milliard so'm</h3>
+                    </div>
+                  </ul>
+                </div>
+                <div class="homeRegionRow_nine homeRegionRow_item">
+                  <ul class="regionAbout_andijon homeRegion_item">
+                    <div class="AboutToshkent_title regionCarosul_title">
+                      <h1>Andijon viloyati</h1>
+                    </div>
+                    <div class="territory">
+                      <h1>Maydoni:</h1>
+                      <h3>4200 km<sup>2</sup></h3>
+                    </div>
+                    <div class="population">
+                      <h1>Aholi:</h1>
+                      <h3>3.0667 million</h3>
+                    </div>
+                    <div class="gdp">
+                      <h1>Yalpi ichki maxsulot:</h1>
+                      <h3>27121.6 milliard so'm</h3>
+                    </div>
+                  </ul>
+                </div>
+                <div class="homeRegionRow_ten homeRegionRow_item">
+                  <ul class="regionAbout_sirdaryo homeRegion_item">
+                    <div class="AboutXorazm_title regionCarosul_title">
+                      <h1>Sirdaryo viloyati</h1>
+                    </div>
+                    <div class="territory">
+                      <h1>Maydoni:</h1>
+                      <h3>5100 km<sup>2</sup></h3>
+                    </div>
+                    <div class="population">
+                      <h1>Aholi:</h1>
+                      <h3>0.8297 million</h3>
+                    </div>
+                    <div class="gdp">
+                      <h1>Yalpi ichki maxsulot:</h1>
+                      <h3>8200.5 milliard so‘m</h3>
+                    </div>
+                  </ul>
+                </div>
+                <div class="homeRegionRow_eleven homeRegionRow_item">
+                  <ul class="regionAbout_surxondaryo homeRegion_item">
+                    <div class="AboutToshkent_title regionCarosul_title">
+                      <h1>Surxondaryo viloyati</h1>
+                    </div>
+                    <div class="territory">
+                      <h1>Maydoni:</h1>
+                      <h3>20800 km<sup>2</sup></h3>
+                    </div>
+                    <div class="population">
+                      <h1>Aholi:</h1>
+                      <h3>2.5693 million</h3>
+                    </div>
+                    <div class="gdp">
+                      <h1>Yalpi ichki maxsulot:</h1>
+                      <h3>17061.9 milliard so'm</h3>
+                    </div>
+                  </ul>
+                </div>
+                <div class="homeRegionRow_twelve homeRegionRow_item">
+                  <ul class="regionAbout_jizzah homeRegion_item">
+                    <div class="AboutToshkent_title regionCarosul_title">
+                      <h1>Jizzax viloyati</h1>
+                    </div>
+                    <div class="territory">
+                      <h1>Maydoni:</h1>
+                      <h3>20500 km<sup>2</sup></h3>
+                    </div>
+                    <div class="population">
+                      <h1>Aholi:</h1>
+                      <h3>1.3521 million</h3>
+                    </div>
+                    <div class="gdp">
+                      <h1>Yalpi ichki maxsulot:</h1>
+                      <h3>11820.2 milliard so'm</h3>
+                    </div>
+                  </ul>
+                </div>
+                <div class="homeRegionRow_threetheeen homeRegionRow_item">
+                  <ul class="regionAbout_fergana homeRegion_item">
+                    <div class="AboutXorazm_title regionCarosul_title">
+                      <h1>Farg‘ona viloyati</h1>
+                    </div>
+                    <div class="territory">
+                      <h1>Maydoni:</h1>
+                      <h3>6800 km<sup>2</sup></h3>
+                    </div>
+                    <div class="population">
+                      <h1>Aholi:</h1>
+                      <h3>3.6831 million</h3>
+                    </div>
+                    <div class="gdp">
+                      <h1>Yalpi ichki maxsulot:</h1>
+                      <h3>25181.2 milliard so‘m</h3>
+                    </div>
+                  </ul>
+                </div>
+                <div class="homeRegionRow_fourtheen homeRegionRow_item">
+                  <ul class="regionAbout_qashqadaryo homeRegion_item">
+                    <div class="AboutToshkent_title regionCarosul_title">
+                      <h1>Qashqadaryo viloyati</h1>
+                    </div>
+                    <div class="territory">
+                      <h1>Maydoni:</h1>
+                      <h3>28400 km<sup>2</sup></h3>
+                    </div>
+                    <div class="population">
+                      <h1>Aholi:</h1>
+                      <h3>3.2133 million</h3>
+                    </div>
+                    <div class="gdp">
+                      <h1>Yalpi ichki maxsulot:</h1>
+                      <h3>28412.2 milliard so'm</h3>
+                    </div>
+                  </ul>
+                </div>
+                <div class="homeRegionRow_fiftheen homeRegionRow_item">
+                  <ul class="regionAbout_navoiy homeRegion_item">
+                    <div class="AboutToshkent_title regionCarosul_title">
+                      <h1>Navoiy viloyati</h1>
+                    </div>
+                    <div class="territory">
+                      <h1>Maydoni:</h1>
+                      <h3>11800 km<sup>2</sup></h3>
+                    </div>
+                    <div class="population">
+                      <h1>Aholi:</h1>
+                      <h3>0.9743 million</h3>
+                    </div>
+                    <div class="gdp">
+                      <h1>Yalpi ichki maxsulot:</h1>
+                      <h3>21729 milliard so'm</h3>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="carousel_button_center">
+              <div class="regionCarousel_button">
+                <i class="fa-solid fa-angle-left" id="prew_region"></i>
+                <i class="fa-solid fa-angle-right" id="next_region"></i>
+              </div>
+            </div>
+          </div>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95925.51709077595!2d69.2649984!3d41.2942336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef7e2f1d90e45%3A0x24e3caaa0efb6eb!2z0JDRjdGA0L7Qv9C-0YDRgg!5e0!3m2!1sru!2s!4v1656308804295!5m2!1sru!2s"
+              style="border: 0"
+              allowfullscreen="true"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
       </div>
-    </footer>
+
+      <!---------  REGION  --------->
+      <section id="region">
+        <div class="region">
+          <div class="container">
+            <div class="region_title" id="title">
+              <h1>Viloyatlar</h1>
+            </div>
+          </div>
+          <div class="container">
+            <div class="firstRow_region">
+              <div class="regionFirst_img regionItem_img">
+                <img
+                  src="./image/sectionRegion/region.khiva.jpg"
+                  alt="Khiva image"
+                />
+                <div class="overlay">
+                  <div class="overlay__item">
+                    <h2 class="overlayItem__title">Xorazm viloyati</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="regionSecond_img regionItem_img">
+                <img
+                  src="./image/sectionRegion/region.tashkent.jpg"
+                  alt="Tashkent image"
+                />
+                <div class="overlay">
+                  <div class="overlay__item">
+                    <h2 class="overlayItem__title">Tashkent viloyati</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="regionThree_img regionItem_img">
+                <img
+                  src="./image/sectionRegion/region.registon.jpg"
+                  alt="Registon image"
+                />
+                <div class="overlay">
+                  <div class="overlay__item">
+                    <h2 class="overlayItem__title">Samarqand viloyati</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="secondRow_region">
+              <div class="regionFour_img regionItem_img">
+                <img
+                  src="./image/sectionRegion/region.bukhara.jpg"
+                  alt="Buxoro image"
+                />
+                <div class="overlay">
+                  <div class="overlay__item">
+                    <h2 class="overlayItem__title">Buxoro viloyati</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="regionFive_img regionItem_img">
+                <img
+                  src="./image/sectionRegion/region.namangan.jpg"
+                  alt="Namangan image"
+                />
+                <div class="overlay">
+                  <div class="overlay__item">
+                    <h2 class="overlayItem__title">Namangan viloyati</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="regionSix_img regionItem_img">
+                <img
+                  src="./image/sectionRegion/region.bukhara.jpg"
+                  alt="Buxoro image"
+                />
+                <div class="overlay">
+                  <div class="overlay__item">
+                    <h2 class="overlayItem__title">Buxoro viloyati</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="threeth_row">
+              <iframe
+                src="https://www.youtube.com/embed/qr3tvR2tcJA"
+                title="Uzbekistan from above. Best drone video of the Uzbekistan country by AirCinema. 6K."
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <div class="allRegion_link">
+                <a href="#">
+                  <button type="button" class="regionAll_button">
+                    Hamma viloyatlar
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!---------  CULTURE  --------->
+      <section id="culture">
+        <div class="culture">
+          <div class="container">
+            <div class="culture_title" id="title">
+              <h1>Madaniyat</h1>
+            </div>
+          </div>
+          <div class="container">
+            <div class="sumalak culture_item">
+              <div class="sumalak_p cultureItem_p">
+                <p>
+                  Sumalak har doim yangi yil va yangi hayotning boshlanishini
+                  nishonlaydigan<br />
+                  “Navro‘z” – milliy bayramimiz uchun pishiriladi. “Navro‘z”
+                  hayotimizga baxt<br />
+                  va shodlik olib keladi, deb ishoniladi. Bu bayram uchun “Ko‘k
+                  somsa”, “Ko‘k<br />
+                  chuchvara” va albatta “Sumalak” kabi turli xil taomlar
+                  tayyorlanadi. “Suma<br />
+                  lak” – qadimiy va chinakam milliy taomimiz. U asrlar davomida
+                  pishiriladi va <br />
+                  retseptlar mintaqaga qarab farq qilishi mumkin, ammo
+                  ingredientlar har do-<br />
+                  im bir xil: un, suv va yog'da yuvilgan bug'doy nihollari. Bu
+                  juda kuchli dori, u <br />
+                  immunitetni mustahkamlashga yordam beradi, uni yoshartiradi va
+                  tanani <br />
+                  mustahkamlaydi.“Sumalak”ni yaxshi va mehribon odamlar
+                  pishirishi kerak,<br />
+                  u o'zbeklar uchun muqaddas va muqaddas taomdir.<br />
+                </p>
+              </div>
+              <div class="sumalak_img cultureItem_img">
+                <img
+                  src="./image/culture/culture.sumalak.jpg"
+                  alt="Sumalak image"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="clothes culture_item">
+              <div class="clothes_img cultureItem_img">
+                <img
+                  src="./image/culture/culture.clothes.jpg"
+                  alt="Clothes image"
+                />
+              </div>
+              <div class="clothes_p cultureItem_p">
+                <p>
+                  Mahalliy xalqlar kiyimlarining o'ziga xosligi doimo iqlim,
+                  ijtimoiy va qa-<br />
+                  bilaviy an'analar bilan belgilanadi. 19-asrgacha
+                  kiyim-kechaklar (ko'ylak-<br />
+                  lar, ko'ylaklar va ko'ylaklar) arxaik xususiyatlarni saqlab
+                  qolishda davom<br />
+                  etdi: keng, uzun, to'liq kesilgan, u inson tanasining
+                  shakllarini yashirgan<br />
+                  holda erkin tushib ketdi. Kiyimlar birlashtirildi: qish va yoz
+                  uchun, erkak-<br />
+                  lar, ayollar va bolalar uchun ular yaqin va dizayn edi.
+                  An'anaviy milliy er-<br />
+                  kaklar libosi issiq to'qilgan xalat - ro'mol yoki sharf bilan
+                  bog'langan cho-<br />
+                  pon, bosh kiyimi tyubeyka va nozik teridan tikilgan etiklardan
+                  iborat.<br />
+                  Erkaklar to'g'ridan-to'g'ri dizayndagi ko'ylak, ichki va
+                  tashqi xalat kiyish-<br />
+                  gan. Libos engil yoki issiq bo'lishi mumkin, ko'rpa-to'shak
+                  bilan tikilgan.<br />
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="food culture_item">
+              <div class="food_p cultureItem_p">
+                <p>
+                  Palov o‘zbek taomlarining ramzi hisoblanadi. U har bir
+                  o'zbekistonlik oilada,<br />
+                  xoh o'zbek, xoh rus, xoh koreys tatarida tayyorlanadi. O'zbek
+                  palovi O'zbe-<br />
+                  kiston xalqi mentalitetining bir qismidir. An'anaga ko'ra,
+                  palov erkaklar tomo-<br />
+                  nidan pishiriladi. Turli ingredientlar bilan o'zbek palovini
+                  tayyorlashning ming-<br />
+                  dan ortiq retseptlari mavjud va hatto faqat shu taomga
+                  bag'ishlangan pazan-<br />
+                  dachilik kitoblari ham mavjud. Sarigli palov - Eritilgan
+                  yog'da o'zbek palov-<br />
+                  Shodibek Palov - Uzbek Shodibek palovTovuk palov - Tovuqli
+                  o'zbek palov <br />
+                  O‘zbekistonning turli hududlarida o‘zbek palovini
+                  tayyorlashning o‘ziga xos<br />
+                  retseptlari bor. Masalan, buxoroliklar yashil grammli palov
+                  tayyorlaydilar. Sa-<br />
+                  marqand palovi yengil, Farg‘ona palovi aksincha jigarrang.<br />
+                </p>
+              </div>
+              <div class="food_img cultureItem_img">
+                <img src="./image/culture/culture.food.jpg" alt="Food image" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!---------  HOTEL  --------->
+      <section id="hotel">
+        <div class="hotel">
+          <div class="container">
+            <div class="hotel_title" id="title">
+              <h1>Mehmonxona</h1>
+            </div>
+          </div>
+          <div class="container">
+            <div class="hotel_img">
+              <div class="hotelFirst_img hotelImg_item">
+                <img src="./image/hotel/hotel.hilton.jpg" alt="Hilton image" />
+                <div class="hotel_overlay">
+                  <div class="hiltonOverlay_title">
+                    <h1>Hilton</h1>
+                  </div>
+                  <p>
+                    <span class="hotel_address">Address:</span> Tashkent
+                    city,<br />
+                    Islom Karimov street.<br />
+                  </p>
+                  <p></p>
+                </div>
+              </div>
+              <div class="hotelSecond_img hotelImg_item">
+                <img
+                  src="./image/hotel/hotel.saraLind.jpg"
+                  alt="Sara Lind image"
+                />
+                <div class="hotel_overlay">
+                  <div class="SaraLindOverlay_title">
+                    <h1>Sara Lind</h1>
+                  </div>
+                  <p>
+                    <span class="hotel_address">Address:</span> Tashkent shahri,
+                    <br />
+                    Kohinur street.<br />
+                  </p>
+                  <p></p>
+                </div>
+              </div>
+              <div class="hotelThree_img hotelImg_item">
+                <img src="./image/hotel/hotel.ramada.jpg" alt="Ramada image" />
+                <div class="hotel_overlay">
+                  <div class="ramadaOverlay_title">
+                    <h1>Ramada</h1>
+                  </div>
+                  <p>
+                    <span class="hotel_address">Address:</span> Tashkent shahri,
+                    <br />
+                    Abdulla Qodiriy street.<br />
+                  </p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="hotel_link">
+              <div class="hotelLink_bg"></div>
+              <div class="hotelLink_brand">
+                <h1>Uzbek<span>About</span></h1>
+                <p>Tezroq xona buyurtirish uchun imkoniyatlar!</p>
+              </div>
+              <div class="hotelLink_item">
+                <div class="hotelLink_item_first">
+                  <div class="hotelLink_p">
+                    <a
+                      target="_blank"
+                      href="https://www.booking.com/country/uz.en-gb.html?aid=356980&label=gog235jc-1DCAIo7gFCAnV6SDNYA2juAYgBAZgBCbgBF8gBDNgBA-gBAYgCAagCA7gCzcGRlgbAAgHSAiRhN2Y0ZDVmNS1iNmZlLTQ4Y2ItYjBlNi1kYmNmZjI0ZDU2ODfYAgTgAgE&sid=7d9f923661637cc53670130629dfbed4&keep_landing=1&"
+                    >
+                      <h3>
+                        Xona buyurtirish
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="25"
+                          height="25"
+                          fill="currentColor"
+                          class="bi bi-chevron-right"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                          />
+                        </svg>
+                      </h3>
+                    </a>
+                  </div>
+                  <div class="hotel_money">
+                    <a href="#">
+                      <h2>Narxlarni bilish</h2>
+                    </a>
+                  </div>
+                </div>
+                <div class="hotelLink_item_second">
+                  <div class="hotelLink_p">
+                    <a href="#">
+                      <h3>
+                        Online ro'yxatdan o'tish
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="25"
+                          height="25"
+                          fill="currentColor"
+                          class="bi bi-chevron-right"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                          />
+                        </svg>
+                      </h3>
+                    </a>
+                  </div>
+                  <div class="hotel_money">
+                    <a href="#">
+                      <h2>Ro'yxatdan o'ting</h2>
+                    </a>
+                  </div>
+                </div>
+                <div class="hotelLink_item_three">
+                  <div class="hotelLink_p">
+                    <a href="#">
+                      <h3>
+                        Xona buyurtirish shartlari
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="25"
+                          height="25"
+                          fill="currentColor"
+                          class="bi bi-chevron-right"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                          />
+                        </svg>
+                      </h3>
+                    </a>
+                  </div>
+                  <div class="hotel_money">
+                    <a href="#">
+                      <h2>Shartlar bilan tanishing</h2>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="hotelLink_learning">
+                <a href="#">
+                  <h3>UzbekAbout haqida batafsil</h3>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!---------  MANAGMENT  --------->
+      <section id="managment">
+        <div class="managment">
+          <div class="container">
+            <div class="managment_title" id="title">
+              <h1>Boshqaruv</h1>
+            </div>
+          </div>
+          <div class="container">
+            <div class="Islom-Karimov">
+              <div class="firstManagment_div Managment_div">
+                <div class="firstPrizident_managment Prizident_managment">
+                  <img
+                    src="./image/managment/first-prizident.jpg"
+                    alt="Birinchi prizident"
+                  />
+                  <div class="prizidentManagment_p">
+                    <div class="prizidentManagment_icon">
+                      <div class="managmentIcon_website managmentIcon_item">
+                        <a href="#">
+                          <i class="fa-solid fa-link"></i>
+                          <h2>Website</h2>
+                        </a>
+                      </div>
+                      <div class="managmentIcon_date managmentIcon_item">
+                        <a href="#">
+                          <i class="fa-regular fa-calendar"></i>
+                          <h2>Dekabr 29, 1991</h2>
+                        </a>
+                      </div>
+                    </div>
+                    <h1>Islom Karimov</h1>
+                    <p>
+                      Islom Abdugʻaniyevich Karimov 1938-yil <br />
+                      30-yanvar, Samarqandda dunyoga kelgan.<br />
+                      Islom Abdug‘aniyevich Karimov 1991-yil<br />
+                      29-dekabrda O'zbekiston Respublikasini <br />
+                      birinchi prizidenti hisoblangan<br />
+                    </p>
+                  </div>
+                </div>
+                <div class="firstPrizident_about PrizidentManagment_about">
+                  <p>
+                    Islom Abdug‘aniyevich Karimov 1938 yil 30 yanvarida
+                    Samarqand<br />
+                    shahrida oddiy xizmatchi oilasida tug'ilgan.Uning oilasida
+                    har kun-<br />
+                    gi og‘ir mehnat yashash uchun pul topishning yagona usuli
+                    edi.<br />
+                    Uning bolaligi urush va urushdan keyingi yillarga to‘g‘ri
+                    keldi. U va<br />
+                    uning barcha yaqinlari bir burda nonning haqiqiy bahosini
+                    bilganiga<br />
+                    qaramasdan, qiyinchilik va yo‘qchilikni boshidan kechirdi,
+                    ular ming-<br />
+                    lab vatandoshlarimiz kabi Ikkinchi jahon urushi vaqtida
+                    O‘zbekis-<br />
+                    tonga evakuatsiya qilingan kishilar bilan o‘z uyi va
+                    tuz-nonini baham<br />
+                    ko‘rgandi. Islom Karimov 1945 yilda Samarqanddagi
+                    A.S.Pushkin<br />
+                    nomidagi 21-maktabga o‘qishga kirib, uni oltin medal bilan
+                    tamom- <br />
+                    ladi. O‘quvchilik yillari mobaynida ko‘p adabiyotlarni,
+                    ayniqsa, tarix<br />
+                    bo‘yicha adabiyotlarni o‘qidi.<br />
+                  </p>
+                </div>
+              </div>
+              <div class="IslomKarimov_managment_img Managment_img">
+                <div
+                  class="Managment_img_first Managment_img_item"
+                  id="firstPrizident_img"
+                >
+                  <div class="Managment_img_item_img">
+                    <img
+                      src="./image/managment/Islom Karimov managment.jpg"
+                      alt=""
+                    />
+                    <div class="managmentImg_overlay">
+                      <h1>
+                        Islom Karimov<br />
+                        boshqaruvi
+                      </h1>
+                    </div>
+                  </div>
+                  <div class="ManagmentImg_item_about">
+                    <p>
+                      O‘zbekiston va Tojikiston rahbar-<br />
+                      lari ikki tomonlama hamkorlikning<br />
+                      dolzarb masalalarini muhokama qi-<br />
+                      lishdi<br />
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="Managment_img_second Managment_img_item"
+                  id="firstPrizident_img"
+                >
+                  <div class="Managment_img_item_img">
+                    <img
+                      src="./image/managment/Islom Karimov managment2.webp"
+                      alt=""
+                    />
+                    <div class="managmentImg_overlay">
+                      <h1>
+                        Islom Karimov<br />
+                        boshqaruvi
+                      </h1>
+                    </div>
+                  </div>
+                  <div class="ManagmentImg_item_about">
+                    <p>
+                      O‘zbekiston va Tojikiston rahbar-<br />
+                      lari ikki tomonlama hamkorlikning<br />
+                      dolzarb masalalarini muhokama qi-<br />
+                      lishdi<br />
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="Managment_img_threeth Managment_img_item"
+                  id="firstPrizident_img"
+                >
+                  <div class="Managment_img_item_img">
+                    <img
+                      src="./image/managment/Islom Karimov managment3.jpg"
+                      alt=""
+                    />
+                    <div class="managmentImg_overlay">
+                      <h1>
+                        Islom Karimov<br />
+                        boshqaruvi
+                      </h1>
+                    </div>
+                  </div>
+                  <div class="ManagmentImg_item_about">
+                    <p>
+                      O‘zbekiston va Tojikiston rahbar-<br />
+                      lari ikki tomonlama hamkorlikning<br />
+                      dolzarb masalalarini muhokama qi-<br />
+                      lishdi<br />
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="Shavkat-Mirziyoyev">
+              <div class="secondManagment_div Managment_div">
+                <div class="PrizidentManagment_about secondPrizident_about">
+                  <p>
+                    Shavkat Mirziyoyev Miromonovich 1957 yil 24 iyulda Jizzax
+                    <br />
+                    viloyatining Zomin tumanida shifokor oilasida tugʻilgan.
+                    Mil-<br />
+                    lati – oʻzbek. Oliy maʼlumotli, 1981 yili Toshkent
+                    irrigatsiya<br />
+                    va qishloq xoʻjaligini mexanizatsiyalash muhandislari
+                    institu-<br />
+                    tini tugatgan. Muhandis-mexanik mutaxassisligiga ega.
+                    Texni-<br />
+                    ka fanlari nomzodi, dotsent. Mehnat faoliyatini 1981
+                    yilda<br />
+                    Toshkent irrigatsiya va qishloq xoʻjaligini
+                    mexanizatsiyalash<br />
+                    muhandislari institutida boshlab, dotsent, oʻquv ishlari
+                    boʻ-<br />
+                    yicha prorektor lavozimlarida ishladi. 1992 yilda
+                    Toshkent<br />
+                    shahrining Mirzo Ulugʻbek tumani hokimi lavozimiga tayin-<br />
+                    landi. Shavkat Mirziyoyev 2016-yil 14-dekabrda
+                    O'zbekiston<br />
+                    Respublikasini ikkinchi prizidenti hisoblangan<br />
+                  </p>
+                </div>
+                <div class="secondPrizident_managment Prizident_managment">
+                  <img
+                    src="./image/managment/Shavkat-Mirziyoyev.jpg"
+                    alt="Ikkinchi prizident"
+                  />
+                  <div class="prizidentManagment_p">
+                    <div class="prizidentManagment_icon">
+                      <div class="managmentIcon_website managmentIcon_item">
+                        <a href="https://president.uz" target="_blank">
+                          <i class="fa-solid fa-link"></i>
+                          <h2>Website</h2>
+                        </a>
+                      </div>
+                      <div class="managmentIcon_date managmentIcon_item">
+                        <a href="#">
+                          <i class="fa-regular fa-calendar"></i>
+                          <h2>Dekabr 14, 2016</h2>
+                        </a>
+                      </div>
+                    </div>
+                    <h1>Shavkat Mirziyoyev</h1>
+                    <p>
+                      Shavkat Miromonovich Mirziyoyev 1957-yil <br />
+                      24-iyulda, Jizzahda dunyoga kelgan. Shavkat<br />
+                      Miromonovich Mirziyoyev 2016-yil 14-de -<br />
+                      kabrda O'zbekiston Respublikasini ikkinchi prizidenti
+                      hisoblangan
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="Mirziyoyev_managment_img Managment_img">
+                <div
+                  class="Managment_img_first Managment_img_item"
+                  id="secondPrizident_img"
+                >
+                  <div class="Managment_img_item_img">
+                    <img
+                      src="./image/managment/Shavkat-Mirziyoyev managment.jpg"
+                      alt=""
+                    />
+                    <div class="managmentImg_overlay">
+                      <h1>
+                        Shavkat Mirziyoyev<br />
+                        boshqaruvi
+                      </h1>
+                    </div>
+                  </div>
+                  <div class="ManagmentImg_item_about">
+                    <p>
+                      O‘zbekiston va Tojikiston rahbarlari ikki<br />
+                      tomonlama hamkorlikning dolzarb ma-<br />
+                      salalarini muhokama qilishdi<br />
+                    </p>
+                    <a href="#">
+                      <h1>
+                        <i class="fa-regular fa-calendar"></i>
+                        21-07-2022
+                      </h1>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="Managment_img_second Managment_img_item"
+                  id="secondPrizident_img"
+                >
+                  <div class="Managment_img_item_img">
+                    <img
+                      src="./image/managment/Shavkat-Mirziyoyev managment2.jpg"
+                      alt=""
+                    />
+                    <div class="managmentImg_overlay">
+                      <h1>
+                        Shavkat Mirziyoyev<br />
+                        boshqaruvi
+                      </h1>
+                    </div>
+                  </div>
+                  <div class="ManagmentImg_item_about">
+                    <p>
+                      O‘zbekiston davlati, Qozog‘iston davlati <br />
+                      va Qirg‘iziston davlati rahbarlarining iliq<br />
+                      uchrashuvi bo‘lib o‘tdi<br />
+                    </p>
+                    <a href="#">
+                      <h1>
+                        <i class="fa-regular fa-calendar"></i>
+                        20-07-2022
+                      </h1>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="Managment_img_treeth Managment_img_item"
+                  id="secondPrizident_img"
+                >
+                  <div class="Managment_img_item_img">
+                    <img
+                      src="./image/managment/Shavkat-Mirziyoyev managment3.png"
+                      alt=""
+                    />
+                    <div class="managmentImg_overlay">
+                      <h1>
+                        Shavkat Mirziyoyev<br />
+                        boshqaruvi
+                      </h1>
+                    </div>
+                  </div>
+                  <div class="ManagmentImg_item_about">
+                    <p>
+                      O‘zbekiston va Belarus Prezidenti ama-<br />
+                      liy hamkorlikni kengaytirish masalalarini<br />
+                      muhokama qildilar<br />
+                    </p>
+                    <a href="#">
+                      <h1>
+                        <i class="fa-regular fa-calendar"></i>
+                        24.07.2022
+                      </h1>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!---------  FOOTER  --------->
+      <footer>
+        <div class="container">
+          <div class="goodbye">
+            <div class="contact_brand">
+              <a href="#home">
+                <h1>Uzbek<span>About</span></h1>
+              </a>
+              <p>
+                Siz bu web saytda O'zbekiston haqida ma'lumotga ega bo'ldingiz
+                degan<br />
+                umiddaman. Biz bilan birga bo'lganingizdan mamnunman!<br />
+              </p>
+            </div>
+            <div class="footer_hr"></div>
+            <div class="goodbye_links">
+              <div class="website_map">
+                <a href="#home"> Bosh sahifa</a>
+                <a href="#region"> Viloyatlar</a>
+                <a href="#culture"> Madaniyat</a>
+                <a href="#hotel"> Mehmonxona</a>
+                <a href="#managment"> Boshqaruv</a>
+              </div>
+              <div class="follow">
+                <a href="#">Bog'lanish </a>
+                <a href="#">Telegram </a>
+                <a href="#">Facebook </a>
+                <a href="#">Github </a>
+                <a href="#">Youtube </a>
+              </div>
+            </div>
+            <div class="by">
+              <h1>
+                <i class="fa-solid fa-user-gear"></i>
+                by
+                <a href="#">Sardorbek Olimov</a>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
 
     <script src="./js/app.js"></script>
   </body>

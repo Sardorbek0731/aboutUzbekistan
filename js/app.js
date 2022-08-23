@@ -1,3 +1,13 @@
+// Loader
+
+const containerLoader = document.querySelector(".container-loader");
+const main = document.querySelector("#main");
+
+setTimeout(() => {
+  containerLoader.style.display = "none";
+  main.style.display = "block";
+}, 5000);
+
 // Scroll Header
 
 const scrollHeader = document.querySelector("nav");
