@@ -3,11 +3,10 @@
 const containerLoader = document.querySelector(".container-loader");
 const main = document.querySelector("#main");
 
-
 setTimeout(() => {
   containerLoader.style.display = "none";
   main.style.display = "block";
-}, 6000);
+}, 3000);
 
 // Scroll Header
 
@@ -15,6 +14,11 @@ const scrollHeader = document.querySelector("nav");
 const navUl = document.querySelector(".navUl");
 const brandIcon = document.querySelector("#brand-icon");
 const homeRegionItems = document.querySelector(".homeRegion_items");
+const homeRegionAbout = document.querySelector(".homeRegion_about");
+const home = document.querySelector("#home");
+const region = document.querySelector("#region");
+const culture = document.querySelector("#culture");
+const hotel = document.querySelector("#hotel");
 const map = document.querySelector(".map");
 const regioTitle = document.querySelector(".region_title");
 const cultureTitle = document.querySelector(".culture_title");
@@ -56,7 +60,7 @@ document.addEventListener("scroll", (e) => {
     navUl.style.display = "none";
     brandIcon.style.display = "none";
   }
-  if (window.scrollY > 300) {
+  if (window.scrollY > home.clientHeight / 1.5) {
     homeRegionItems.style.opacity = "1";
     homeRegionItems.style.transform = "translateY(0)";
     map.style.opacity = "1";
@@ -67,12 +71,12 @@ document.addEventListener("scroll", (e) => {
     homeRegionItems.style.opacity = "0";
     map.style.opacity = "0";
   }
-  if (window.scrollY > 1100) {
+  if (window.scrollY > home.clientHeight + homeRegionAbout.clientHeight) {
     regioTitle.style.transform = "translateX(0)";
   } else {
     regioTitle.style.transform = "translateX(-200%)";
   }
-  if (window.scrollY > 1250) {
+  if (window.scrollY > home.clientHeight + homeRegionAbout.clientHeight) {
     regionImg.forEach((item) => {
       imgIndex = 0;
       item.style.transform = `translateY(${imgIndex * 150}px)`;
@@ -85,7 +89,10 @@ document.addEventListener("scroll", (e) => {
       item.style.opacity = "0";
     });
   }
-  if (window.scrollY > 2600) {
+  if (
+    window.scrollY >
+    home.clientHeight + homeRegionAbout.clientHeight + region.clientHeight
+  ) {
     cultureTitle.style.transform = "translateX(0)";
     sumalak.style.transform = "translateX(0)";
     clothes.style.transform = "translateX(0)";
@@ -96,7 +103,13 @@ document.addEventListener("scroll", (e) => {
     clothes.style.transform = "translateX(200%)";
     food.style.transform = "translateX(-200%)";
   }
-  if (window.scrollY > 4600) {
+  if (
+    window.scrollY >
+    home.clientHeight +
+      homeRegionAbout.clientHeight +
+      region.clientHeight +
+      culture.clientHeight
+  ) {
     hotelTitle.style.transform = "translateX(0)";
     hotelImgItem.forEach((item) => {
       imgIndex = 0;
@@ -115,7 +128,14 @@ document.addEventListener("scroll", (e) => {
     hotelLink.style.transform = "translateY(150px)";
     hotelLink.style.opacity = "0";
   }
-  if (window.scrollY > 6000) {
+  if (
+    window.scrollY >
+    home.clientHeight +
+      homeRegionAbout.clientHeight +
+      region.clientHeight +
+      culture.clientHeight +
+      hotel.clientHeight
+  ) {
     managmentTitle.style.transform = "translateX(0)";
     firstPrizident.style.transform = "translateY(0)";
     firstPrizident.style.opacity = "1";
@@ -128,7 +148,14 @@ document.addEventListener("scroll", (e) => {
     firstPrizident.style.transform = "translateY(150px)";
     firstPrizident_about.style.transform = "translateY(150px)";
   }
-  if (window.scrollY > 7000) {
+  if (
+    window.scrollY >
+    home.clientHeight +
+      homeRegionAbout.clientHeight +
+      region.clientHeight +
+      culture.clientHeight +
+      hotel.clientHeight * 1.5
+  ) {
     firstPrizidentImg.forEach((item) => {
       imgIndex = 0;
       item.style.transform = `translateY(${imgIndex * 150}px)`;
@@ -141,20 +168,32 @@ document.addEventListener("scroll", (e) => {
       item.style.opacity = "0";
     });
   }
-  if (window.scrollY > 6000) {
-    managmentTitle.style.transform = "translateX(0)";
-    firstPrizident.style.transform = "translateY(0)";
-    firstPrizident.style.opacity = "1";
-    firstPrizident_about.style.transform = "translateY(0)";
-    firstPrizident_about.style.opacity = "1";
+  if (
+    window.scrollY >
+    home.clientHeight +
+      homeRegionAbout.clientHeight +
+      region.clientHeight +
+      culture.clientHeight +
+      hotel.clientHeight * 2
+  ) {
+    secondPrizident.style.transform = "translateY(0)";
+    secondPrizident.style.opacity = "1";
+    secondPrizident_about.style.transform = "translateY(0)";
+    secondPrizident_about.style.opacity = "1";
   } else {
-    firstPrizident.style.opacity = "0";
-    firstPrizident_about.style.opacity = "0";
-    managmentTitle.style.transform = "translateX(-200%)";
-    firstPrizident.style.transform = "translateY(150px)";
-    firstPrizident_about.style.transform = "translateY(150px)";
+    secondPrizident.style.opacity = "0";
+    secondPrizident_about.style.opacity = "0";
+    secondPrizident.style.transform = "translateY(150px)";
+    secondPrizident_about.style.transform = "translateY(150px)";
   }
-  if (window.scrollY > 8300) {
+  if (
+    window.scrollY >
+    home.clientHeight +
+      homeRegionAbout.clientHeight +
+      region.clientHeight +
+      culture.clientHeight +
+      hotel.clientHeight * 2.5
+  ) {
     secondPrizidentImg.forEach((item) => {
       imgIndex = 0;
       item.style.transform = `translateY(${imgIndex * 150}px)`;
@@ -166,17 +205,6 @@ document.addEventListener("scroll", (e) => {
       item.style.transform = `translateY(${imgIndex * 150}px)`;
       item.style.opacity = "0";
     });
-  }
-  if (window.scrollY > 7500) {
-    secondPrizident.style.transform = "translateY(0)";
-    secondPrizident.style.opacity = "1";
-    secondPrizident_about.style.transform = "translateY(0)";
-    secondPrizident_about.style.opacity = "1";
-  } else {
-    secondPrizident.style.opacity = "0";
-    secondPrizident_about.style.opacity = "0";
-    secondPrizident.style.transform = "translateY(150px)";
-    secondPrizident_about.style.transform = "translateY(150px)";
   }
 });
 
