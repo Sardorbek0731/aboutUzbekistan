@@ -6,7 +6,7 @@ const main = document.querySelector("#main");
 setTimeout(() => {
   containerLoader.style.display = "none";
   main.style.display = "block";
-}, 3000);
+}, 2000);
 
 // Scroll Header
 
