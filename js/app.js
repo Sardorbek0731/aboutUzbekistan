@@ -3,10 +3,10 @@
 const containerLoader = document.querySelector(".container-loader");
 const main = document.querySelector("#main");
 
-setTimeout(() => {
+window.addEventListener("load", () => {
   containerLoader.style.display = "none";
   main.style.display = "block";
-}, 2000);
+});
 
 // Scroll Header
 
