@@ -3,14 +3,15 @@
   <head>
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/index-media.css" />
-    <link rel="icon" type="image/png" href="./image/brand.png" />
+    <link rel="icon" type="image/png" href="./image/logo.png" />
+
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -33,87 +34,60 @@
       <!---------  HEADER  --------->
       <header>
         <nav>
-          <div class="container">
-            <a class="brand" href="index.html">
-              <img src="./image/brand.png" alt="Brand Icon" />
-            </a>
+          <a class="logo" href="index.html">
+            <img src="./image/logo.png" alt="Logo Icon" />
+          </a>
 
-            <ul class="navUl">
-              <li class="nav__item">
-                <a class="nav__link" href="#home"> Bosh sahifa</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#region"> Viloyatlar</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#culture"> Madaniyat</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#hotel"> Mehmonxona</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#managment"> Boshqaruv</a>
-              </li>
-              <li class="nav__item pages__link">
-                <a class="nav__link" href="#"> Sahifa </a>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="15"
-                  height="15"
-                  fill="currentColor"
-                  class="bi bi-chevron-down"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
-                  />
-                </svg>
-                <ul class="pages__section">
-                  <li class="nav__item_pages">
-                    <a class="pages__link__item" href="./assets/symbol.html">
-                      Ramzlari</a
-                    >
-                  </li>
-                  <li class="nav__item_pages">
-                    <a class="pages__link__item" href="#home"> Tarixi</a>
-                  </li>
-                  <li class="nav__item_pages">
-                    <a class="pages__link__item" href="./assets/contact.html">
-                      Aloqa
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav__item language">
-                <a class="nav__link" href="#">
-                  <i class="fa-solid fa-language"></i> UZB
-                </a>
+          <ul class="navbar">
+            <li>
+              <a href="#home">Bosh sahifa</a>
+            </li>
+            <li>
+              <a href="#region">Viloyatlar</a>
+            </li>
+            <li>
+              <a href="#culture">Madaniyat</a>
+            </li>
+            <li>
+              <a href="#managment">Boshqaruv</a>
+            </li>
 
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="15"
-                  height="15"
-                  fill="currentColor"
-                  class="bi bi-chevron-down"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
-                  />
-                </svg>
-                <ul class="navItem_language">
-                  <li class="language_link">
-                    <a href="./assets/index-eng.html">ENG</a>
-                  </li>
-                  <li class="language_link">
-                    <a href="./assets/index-ru.html">RU</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+            <li class="pages">
+              <a href="#">
+                Sahifa
+                <i class="fa-solid fa-angle-down"></i>
+              </a>
+
+              <ul class="pagesNavbar">
+                <li>
+                  <a href="./assets/symbol.html">Ramzlari</a>
+                </li>
+                <li>
+                  <a href="#home">Tarixi</a>
+                </li>
+                <li>
+                  <a href="./assets/contact.html">Aloqa</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="languages">
+              <a href="#">
+                <i class="fa-solid fa-language"></i>
+                UZB
+                <i class="fa-solid fa-angle-down"></i>
+              </a>
+
+              <ul class="languagesNavbar">
+                <li>
+                  <a href="./assets/index-eng.html">ENG</a>
+                </li>
+                <li>
+                  <a href="./assets/index-ru.html">RU</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </nav>
       </header>
 
@@ -141,13 +115,6 @@
                 <i class="fa-solid fa-angle-right" id="next"></i>
               </div>
             </div>
-          </div>
-          <div class="home__title">
-            <h1>
-              Siz bu web saytda<br />
-              O'zbekiston haqida ma'lumotga ega<br />
-              bo'lasiz degan umiddaman !<br />
-            </h1>
           </div>
         </div>
         <div class="my_telephone">
@@ -700,164 +667,161 @@
       </section>
 
       <!---------  HOTEL  --------->
-      <section id="hotel">
-        <div class="hotel">
-          <div class="container">
-            <div class="hotel_title" id="title">
-              <h1>Mehmonxona</h1>
-            </div>
+      <div class="hotel" id="hotel">
+        <div class="container">
+          <div class="hotel_title" id="title">
+            <h1>Mehmonxona</h1>
           </div>
-          <div class="container">
-            <div class="hotel_img">
-              <div class="hotelFirst_img hotelImg_item">
-                <img src="./image/hotel/hotel.hilton.jpg" alt="Hilton image" />
-                <div class="hotel_overlay">
-                  <div class="hiltonOverlay_title">
-                    <h1>Hilton</h1>
-                  </div>
-                  <p>
-                    <span class="hotel_address">Address:</span> Tashkent
-                    city,<br />
-                    Islom Karimov street.<br />
-                  </p>
-                  <p></p>
+        </div>
+        <div class="container">
+          <div class="hotel_img">
+            <div class="hotelFirst_img hotelImg_item">
+              <img src="./image/hotel/hotel.hilton.jpg" alt="Hilton image" />
+              <div class="hotel_overlay">
+                <div class="hiltonOverlay_title">
+                  <h1>Hilton</h1>
                 </div>
-              </div>
-              <div class="hotelSecond_img hotelImg_item">
-                <img
-                  src="./image/hotel/hotel.saraLind.jpg"
-                  alt="Sara Lind image"
-                />
-                <div class="hotel_overlay">
-                  <div class="SaraLindOverlay_title">
-                    <h1>Sara Lind</h1>
-                  </div>
-                  <p>
-                    <span class="hotel_address">Address:</span> Tashkent shahri,
-                    <br />
-                    Kohinur street.<br />
-                  </p>
-                  <p></p>
-                </div>
-              </div>
-              <div class="hotelThree_img hotelImg_item">
-                <img src="./image/hotel/hotel.ramada.jpg" alt="Ramada image" />
-                <div class="hotel_overlay">
-                  <div class="ramadaOverlay_title">
-                    <h1>Ramada</h1>
-                  </div>
-                  <p>
-                    <span class="hotel_address">Address:</span> Tashkent shahri,
-                    <br />
-                    Abdulla Qodiriy street.<br />
-                  </p>
-                  <p></p>
-                </div>
+                <p>
+                  <span class="hotel_address">Address:</span> Tashkent city,<br />
+                  Islom Karimov street.<br />
+                </p>
+                <p></p>
               </div>
             </div>
-          </div>
-          <div class="container">
-            <div class="hotel_link">
-              <div class="hotelLink_bg"></div>
-              <div class="hotelLink_brand">
-                <h1>Uzbek<span>About</span></h1>
-                <p>Tezroq xona buyurtirish uchun imkoniyatlar!</p>
+            <div class="hotelSecond_img hotelImg_item">
+              <img
+                src="./image/hotel/hotel.saraLind.jpg"
+                alt="Sara Lind image"
+              />
+              <div class="hotel_overlay">
+                <div class="SaraLindOverlay_title">
+                  <h1>Sara Lind</h1>
+                </div>
+                <p>
+                  <span class="hotel_address">Address:</span> Tashkent shahri,
+                  <br />
+                  Kohinur street.<br />
+                </p>
+                <p></p>
               </div>
-              <div class="hotelLink_item">
-                <div class="hotelLink_item_first">
-                  <div class="hotelLink_p">
-                    <a
-                      target="_blank"
-                      href="https://www.booking.com/country/uz.en-gb.html?aid=356980&label=gog235jc-1DCAIo7gFCAnV6SDNYA2juAYgBAZgBCbgBF8gBDNgBA-gBAYgCAagCA7gCzcGRlgbAAgHSAiRhN2Y0ZDVmNS1iNmZlLTQ4Y2ItYjBlNi1kYmNmZjI0ZDU2ODfYAgTgAgE&sid=7d9f923661637cc53670130629dfbed4&keep_landing=1&"
-                    >
-                      <h3>
-                        Xona buyurtirish
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="25"
-                          height="25"
-                          fill="currentColor"
-                          class="bi bi-chevron-right"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-                          />
-                        </svg>
-                      </h3>
-                    </a>
-                  </div>
-                  <div class="hotel_money">
-                    <a href="#">
-                      <h2>Narxlarni bilish</h2>
-                    </a>
-                  </div>
+            </div>
+            <div class="hotelThree_img hotelImg_item">
+              <img src="./image/hotel/hotel.ramada.jpg" alt="Ramada image" />
+              <div class="hotel_overlay">
+                <div class="ramadaOverlay_title">
+                  <h1>Ramada</h1>
                 </div>
-                <div class="hotelLink_item_second">
-                  <div class="hotelLink_p">
-                    <a href="#">
-                      <h3>
-                        Online ro'yxatdan o'tish
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="25"
-                          height="25"
-                          fill="currentColor"
-                          class="bi bi-chevron-right"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-                          />
-                        </svg>
-                      </h3>
-                    </a>
-                  </div>
-                  <div class="hotel_money">
-                    <a href="#">
-                      <h2>Ro'yxatdan o'ting</h2>
-                    </a>
-                  </div>
-                </div>
-                <div class="hotelLink_item_three">
-                  <div class="hotelLink_p">
-                    <a href="#">
-                      <h3>
-                        Xona buyurtirish shartlari
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="25"
-                          height="25"
-                          fill="currentColor"
-                          class="bi bi-chevron-right"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-                          />
-                        </svg>
-                      </h3>
-                    </a>
-                  </div>
-                  <div class="hotel_money">
-                    <a href="#">
-                      <h2>Shartlar bilan tanishing</h2>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="hotelLink_learning">
-                <a href="#">
-                  <h3>UzbekAbout haqida batafsil</h3>
-                </a>
+                <p>
+                  <span class="hotel_address">Address:</span> Tashkent shahri,
+                  <br />
+                  Abdulla Qodiriy street.<br />
+                </p>
+                <p></p>
               </div>
             </div>
           </div>
         </div>
-      </section>
+        <div class="container">
+          <div class="hotel_link">
+            <div class="hotelLink_bg"></div>
+            <div class="hotelLink_brand">
+              <h1>Uzbek<span>About</span></h1>
+              <p>Tezroq xona buyurtirish uchun imkoniyatlar!</p>
+            </div>
+            <div class="hotelLink_item">
+              <div class="hotelLink_item_first">
+                <div class="hotelLink_p">
+                  <a
+                    target="_blank"
+                    href="https://www.booking.com/country/uz.en-gb.html?aid=356980&label=gog235jc-1DCAIo7gFCAnV6SDNYA2juAYgBAZgBCbgBF8gBDNgBA-gBAYgCAagCA7gCzcGRlgbAAgHSAiRhN2Y0ZDVmNS1iNmZlLTQ4Y2ItYjBlNi1kYmNmZjI0ZDU2ODfYAgTgAgE&sid=7d9f923661637cc53670130629dfbed4&keep_landing=1&"
+                  >
+                    <h3>
+                      Xona buyurtirish
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="currentColor"
+                        class="bi bi-chevron-right"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                        />
+                      </svg>
+                    </h3>
+                  </a>
+                </div>
+                <div class="hotel_money">
+                  <a href="#">
+                    <h2>Narxlarni bilish</h2>
+                  </a>
+                </div>
+              </div>
+              <div class="hotelLink_item_second">
+                <div class="hotelLink_p">
+                  <a href="#">
+                    <h3>
+                      Online ro'yxatdan o'tish
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="currentColor"
+                        class="bi bi-chevron-right"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                        />
+                      </svg>
+                    </h3>
+                  </a>
+                </div>
+                <div class="hotel_money">
+                  <a href="#">
+                    <h2>Ro'yxatdan o'ting</h2>
+                  </a>
+                </div>
+              </div>
+              <div class="hotelLink_item_three">
+                <div class="hotelLink_p">
+                  <a href="#">
+                    <h3>
+                      Xona buyurtirish shartlari
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="currentColor"
+                        class="bi bi-chevron-right"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                        />
+                      </svg>
+                    </h3>
+                  </a>
+                </div>
+                <div class="hotel_money">
+                  <a href="#">
+                    <h2>Shartlar bilan tanishing</h2>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="hotelLink_learning">
+              <a href="#">
+                <h3>UzbekAbout haqida batafsil</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!---------  MANAGMENT  --------->
       <section id="managment">
