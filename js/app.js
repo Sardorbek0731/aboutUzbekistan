@@ -10,9 +10,6 @@ window.addEventListener("load", () => {
 
 // Scroll Header
 
-const scrollHeader = document.querySelector("nav");
-const navUl = document.querySelector(".navUl");
-const brandIcon = document.querySelector("#brand-icon");
 const homeRegionItems = document.querySelector(".homeRegion_items");
 const homeRegionAbout = document.querySelector(".homeRegion_about");
 const home = document.querySelector("#home");
@@ -49,17 +46,6 @@ function elseScrollForEach() {
   item.style.opacity = "0";
 }
 document.addEventListener("scroll", (e) => {
-  if (window.scrollY > 200) {
-    scrollHeader.classList.add("scroll-header");
-    scrollHeader.style.position = "fixed";
-    navUl.style.display = "flex";
-    brandIcon.style.display = "block";
-  } else {
-    scrollHeader.classList.remove("scroll-header");
-    scrollHeader.style.position = "absolute";
-    navUl.style.display = "none";
-    brandIcon.style.display = "none";
-  }
   if (window.scrollY > home.clientHeight / 1.5) {
     homeRegionItems.style.opacity = "1";
     homeRegionItems.style.transform = "translateY(0)";
@@ -307,47 +293,6 @@ document.addEventListener("scroll", () => {
       }
     });
   }
-});
-
-// Search
-
-const openSearch = document.querySelector("#openSearch");
-const searchOverlay = document.querySelector(".searchOverlay");
-const searchInput = document.querySelector(".searchInput");
-const closeSearchInput = document.querySelector("#close--searchInput");
-const inputSearch = document.querySelector("#inputSearch");
-const searchInputValue = document.querySelector("#searchInputValue");
-const message = document.querySelector(".message");
-
-openSearch.addEventListener("click", () => {
-  searchOverlay.classList.remove("hidden");
-  searchInput.classList.remove("hidden");
-  closeSearchInput.style.display = "flex";
-});
-closeSearchInput.addEventListener("click", () => {
-  searchOverlay.classList.add("hidden");
-  searchInput.classList.add("hidden");
-  closeSearchInput.style.display = "none";
-});
-document.addEventListener("keydown", (e) => {
-  if (e.which == 27) {
-    searchOverlay.classList.add("hidden");
-    searchInput.classList.add("hidden");
-    closeSearchInput.style.display = "none";
-  }
-});
-
-inputSearch.addEventListener("click", (e) => {
-  e.preventDefault();
-  if (searchInputValue.value.length > 0) {
-    message.textContent = "";
-  } else {
-    message.textContent = `Iltimos, qidirilayotgan narsani kiriting...`;
-    setTimeout(() => {
-      message.textContent = "";
-    }, 4000);
-  }
-  searchInputValue.value = "";
 });
 
 // Angle top && My telephone
